@@ -3,7 +3,7 @@
    ========================= */
 :root {
   --dark-bg: #1a1a1a;
-  --text-light: #f0e6d2;
+  --text-light: #e1e09a;
   --accent-magenta: #9c27b0;
   --accent-cyan: #00bcd4;
   --accent-orange: #ff9800;
@@ -56,7 +56,7 @@ body {
 
 .logo h1 {
   font-size: 2rem;
-  color: #fff;
+  color: var(--text-light);
 }
 .logo span {
   font-size: .8rem;
@@ -173,13 +173,13 @@ h2 {
 .about-section {
   background: url("assets/bg-pattern-purple.png") repeat;
   background-color: #4a145e;
-  color: white;
+  color: var(--text-light);
 }
 
 .mictlan-section {
   background: url("assets/bg-pattern-orange.png") repeat;
-  background-color: #a34c00;
-  color: #fff8e1;
+  background-color: #6f3400;
+  color: var(--text-light);
 }
 
 .projects-section {
@@ -191,7 +191,7 @@ h2 {
   background: url("assets/bg-pattern-gray.png") repeat;
   background-color: #1a1a1a;
   padding: 4rem 2rem;
-  color: white;
+  color: var(--text-light);
 }
 
 /* =========================
@@ -218,14 +218,13 @@ h2 {
   background: #111;
   padding: 1.5rem;
   border-radius: 10px;
-  color: #fff;
+  color: var(--text-light);
   border: 2px solid transparent;
   transition: 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 12px currentColor;
 }
 
 .accent-magenta { border-color: var(--accent-magenta); }
@@ -284,4 +283,94 @@ footer {
     padding: 0.75rem 1rem;
   }
   h2 { font-size: 1.6rem; }
+}
+
+/* Contact Section Styling */
+.contact-method {
+  margin: 2rem 0;
+}
+
+.contact-method h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-box {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-box span {
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.copy-btn {
+  background: #000;
+  color: var(--text-light);
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.copy-btn:hover {
+  background: var(--accent-orange);
+  color: #000;
+}
+
+/* Particles */
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: fly 600ms ease-out forwards;
+}
+
+@keyframes fly {
+  from {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0.5);
+  }
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid var(--text-light);
+  color: var(--text-light);
+  font-size: 1.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1100;
+}
+
+.back-to-top:hover {
+  background: var(--accent-orange);
+  color: #000;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
 }
