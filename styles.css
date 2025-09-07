@@ -1,0 +1,287 @@
+/* =========================
+   COLORS & FONTS
+   ========================= */
+:root {
+  --dark-bg: #1a1a1a;
+  --text-light: #f0e6d2;
+  --accent-magenta: #9c27b0;
+  --accent-cyan: #00bcd4;
+  --accent-orange: #ff9800;
+  --accent-red: #e53935;
+  --accent-yellow: #ffeb3b;
+  --accent-green: #4caf50;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --header-height: 120px; /* fallback */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--dark-bg);
+  color: var(--text-light);
+  line-height: 1.6;
+
+  padding-top: var(--header-height);
+}
+
+/* =========================
+   HEADER
+   ========================= */
+.site-header {
+  background: url("assets/bg-pattern-gray.png") repeat;
+  background-color: #1a1a1a; /* fallback */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-dog {
+  height: 80px;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+.logo span {
+  font-size: .8rem;
+  display: block;
+  color: #ff9800;
+}
+
+/* =========================
+   DESKTOP NAVIGATION BUTTONS
+   ========================= */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0 1.5rem;
+  align-items: center;
+}
+
+/* Base nav button (PNG) */
+.nav-btn {
+  display: block;
+  width: 120px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+/* PNG buttons */
+.nav-about { background-image: url("assets/about-default.png"); }
+.nav-about:hover { background-image: url("assets/about-colored.png"); }
+
+.nav-mictlan { background-image: url("assets/mictlan-default.png"); }
+.nav-mictlan:hover { background-image: url("assets/mictlan-colored.png"); }
+
+.nav-projects { background-image: url("assets/projects-default.png"); }
+.nav-projects:hover { background-image: url("assets/projects-colored.png"); }
+
+.nav-contact { background-image: url("assets/contact-default.png"); }
+.nav-contact:hover { background-image: url("assets/contact-colored.png"); }
+
+/* =========================
+   HAMBURGER MENU (MOBILE)
+   ========================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: var(--text-light);
+  border-radius: 2px;
+}
+
+/* Mobile menu (hidden by default) */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  padding: 1rem;
+  position: absolute;
+  top: var(--header-height);
+  right: 0;
+  width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.mobile-menu a {
+  color: var(--text-light);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* colored text links */
+.mobile-menu .nav-about { color: var(--accent-magenta); background: none; text-indent: 0; }
+.mobile-menu .nav-mictlan { color: var(--accent-orange); background: none; text-indent: 0; }
+.mobile-menu .nav-projects { color: var(--accent-green); background: none; text-indent: 0; }
+.mobile-menu .nav-contact { color: #2196f3; background: none; text-indent: 0; }
+
+.mobile-menu a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* =========================
+   SECTIONS
+   ========================= */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-size: auto;
+  scroll-margin-top: calc(var(--header-height) + 8px);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/* -------------------------
+   BACKGROUND PATTERNS
+   ------------------------- */
+.about-section {
+  background: url("assets/bg-pattern-purple.png") repeat;
+  background-color: #4a145e;
+  color: white;
+}
+
+.mictlan-section {
+  background: url("assets/bg-pattern-orange.png") repeat;
+  background-color: #a34c00;
+  color: #fff8e1;
+}
+
+.projects-section {
+  background: url("assets/bg-pattern-gray.png") repeat;
+  background-color: #1a1a1a;
+}
+
+.contact-section {
+  background: url("assets/bg-pattern-gray.png") repeat;
+  background-color: #1a1a1a;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+/* =========================
+   DECOR
+   ========================= */
+.decor-divider img,
+.decor-flower img {
+  max-width: 90px;
+  margin: 2rem auto;
+  display: block;
+}
+
+/* =========================
+   PROJECT CARDS
+   ========================= */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: #111;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px currentColor;
+}
+
+.accent-magenta { border-color: var(--accent-magenta); }
+.accent-cyan { border-color: var(--accent-cyan); }
+.accent-orange { border-color: var(--accent-orange); }
+.accent-red { border-color: var(--accent-red); }
+.accent-yellow { border-color: var(--accent-yellow); }
+.accent-green { border-color: var(--accent-green); }
+
+/* =========================
+   CONTACT
+   ========================= */
+.contact-section a {
+  color: var(--accent-magenta);
+  font-weight: bold;
+  text-decoration: none;
+}
+.contact-section a:hover {
+  color: var(--accent-orange);
+  text-shadow: 0 0 6px var(--accent-orange);
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  /* hide PNG nav buttons */
+  nav ul { display: none; }
+
+  /* show hamburger */
+  .hamburger { display: flex; }
+
+  /* show mobile menu when active */
+  .mobile-menu.active { display: flex; }
+
+  .logo-dog { height: 64px; }
+  .logo h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.8rem; }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+  }
+  h2 { font-size: 1.6rem; }
+}
