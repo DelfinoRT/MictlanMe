@@ -491,6 +491,12 @@ ls -R
                         <li>
                             <strong>Create a new group.</strong> This group will contain your project members.
                             <div class="overflow-x-auto">
+                                <p class="mt-2 text-sm text-gray-500"><code>First use this command to display the current content of the /etc/group file on your Linux system. It will show all current groups:</code></p>
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>cat /etc/group</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            
+                            <div class="overflow-x-auto">
+                                <p class="mt-2 text-sm text-gray-500"><code>Then, this command will create a new group called developers on your Linux system:</code></p>
                                 <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo groupadd developers</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
                             </div>
                         </li>
@@ -498,8 +504,14 @@ ls -R
                         <li>
                             <strong>Create two new users.</strong> Alice (a developer) and Bob (a read-only user).
                             <div class="overflow-x-auto">
+                                <p class="mt-2 text-sm text-gray-500"><code>First, run this command to print the list of all the current user accounts on your Linux system:</code></p>
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>getent passwd</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <div class="overflow-x-auto">
+                                <p class="mt-2 text-sm text-gray-500"><code>Then, run these two commands to create the two required user accounts:</code></p>
                                 <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo useradd -m -g developers -s /bin/bash alice
 sudo useradd -m -s /bin/bash bob</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                                <p class="mt-2 text-sm text-gray-500"><code>Both alice and bob were created with their own home directories (-m), login shells set to Bash (-s /bin/bash), with alice’s primary group explicitly set to developers (-g developers) while bob was assigned a private group named after himself by default</code></p>
                             </div>
                         </li>
                         
@@ -518,69 +530,113 @@ sudo useradd -m -s /bin/bash bob</code><button class="copy-btn absolute top-2 ri
                         </li>
                         
                         <li>
-                            <strong>Understand permission numbers.</strong> 
-                            Each permission is built from 3 possible rights: 
-                            <ul class="list-disc list-inside ml-4 text-sm">
-                                <li><code>r</code> (read) = 4 → view/list files</li>
-                                <li><code>w</code> (write) = 2 → modify/create/delete</li>
-                                <li><code>x</code> (execute) = 1 → run a file, or enter a directory</li>
-                            </ul>
-                            <p class="mt-2">You add these numbers together for each category:</p>
-                            
-                            <div class="overflow-x-auto">
-                                <table class="table-auto border-collapse border border-gray-300 text-sm mt-3">
-                                    <thead>
-                                        <tr class="bg-gray-100">
-                                            <th class="border border-gray-300 px-3 py-1">Value</th>
-                                            <th class="border border-gray-300 px-3 py-1">Meaning</th>
-                                            <th class="border border-gray-300 px-3 py-1">Permissions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr><td class="border px-3 py-1">7</td><td class="border px-3 py-1">4+2+1</td><td class="border px-3 py-1">rwx → full access</td></tr>
-                                        <tr><td class="border px-3 py-1">6</td><td class="border px-3 py-1">4+2</td><td class="border px-3 py-1">rw- → read &amp; write</td></tr>
-                                        <tr><td class="border px-3 py-1">5</td><td class="border px-3 py-1">4+1</td><td class="border px-3 py-1">r-x → read &amp; execute</td></tr>
-                                        <tr><td class="border px-3 py-1">4</td><td class="border px-3 py-1">4</td><td class="border px-3 py-1">r-- → read only</td></tr>
-                                        <tr><td class="border px-3 py-1">0</td><td class="border px-3 py-1">none</td><td class="border px-3 py-1">--- → no access</td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            
-                            <p class="mt-3 text-sm text-gray-500">That’s why <code>755</code> = <b>7 (owner: rwx), 5 (group: r-x), 5 (others: r-x)</b>.</p>
-                        </li>
-                        
-                        <li>
-                            <strong>Set permissions for this project.</strong> Let’s give developers write access but allow others only to read and enter:
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo chmod 775 /srv/project_alpha</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                            <p class="mt-2 text-sm text-gray-500">✔ <code>775</code> = owner (rwx), group (rwx), others (r-x)<br>
-                            ✔ If we used <code>755</code>, only the owner could write — even developers would be read-only.<br>
-                            ✔ If we used <code>770</code>, others (like Bob) would have no access at all.<br>
-                            ✔ <code>700</code> is often used for private directories where only the owner should enter.</p>
-                        </li>
-                        
-                        <li>
-                            <strong>Alternative syntax (symbolic mode).</strong>
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo chmod u=rwx,g=rwx,o=rx /srv/project_alpha</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                            <p class="mt-2 text-sm text-gray-500"><code>u</code> = user/owner, <code>g</code> = group, <code>o</code> = others. Same as <code>775</code>, but more descriptive.</p>
-                        </li>
-                        
-                        <li>
-                            <strong>Test it!</strong>
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>su - alice
-cd /srv/project_alpha
-touch dev_file.txt  # should work
+    <strong>Understand Linux file permissions (numbers & symbols).</strong>
+    <p class="mt-2 text-sm text-gray-700">
+        Every file or directory in Linux has three sets of permissions: 
+        <b>owner (user)</b>, <b>group</b>, and <b>others</b>. 
+        Each set can have three rights:
+    </p>
+    <ul class="list-disc list-inside ml-4 text-sm">
+        <li><code>r</code> (read = 4) → view a file, or list directory contents</li>
+        <li><code>w</code> (write = 2) → modify, create, or delete files</li>
+        <li><code>x</code> (execute = 1) → run a file, or enter a directory</li>
+    </ul>
+    
+    <p class="mt-2 text-sm text-gray-700">
+        These numbers are added together to form a permission value for each category:
+    </p>
+    
+    <div class="overflow-x-auto">
+        <table class="table-auto border-collapse border border-gray-300 text-sm mt-3">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="border border-gray-300 px-3 py-1">Value</th>
+                    <th class="border border-gray-300 px-3 py-1">Calculation</th>
+                    <th class="border border-gray-300 px-3 py-1">Permissions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="border px-3 py-1">7</td><td class="border px-3 py-1">4+2+1</td><td class="border px-3 py-1">rwx → full access</td></tr>
+                <tr><td class="border px-3 py-1">6</td><td class="border px-3 py-1">4+2</td><td class="border px-3 py-1">rw- → read &amp; write</td></tr>
+                <tr><td class="border px-3 py-1">5</td><td class="border px-3 py-1">4+1</td><td class="border px-3 py-1">r-x → read &amp; execute</td></tr>
+                <tr><td class="border px-3 py-1">4</td><td class="border px-3 py-1">4</td><td class="border px-3 py-1">r-- → read only</td></tr>
+                <tr><td class="border px-3 py-1">0</td><td class="border px-3 py-1">none</td><td class="border px-3 py-1">--- → no access</td></tr>
+            </tbody>
+        </table>
+    </div>
 
+    <p class="mt-3 text-sm text-gray-500">
+        Example: <code>755</code> = <b>7 (owner: rwx)</b>, <b>5 (group: r-x)</b>, <b>5 (others: r-x)</b>.
+    </p>
+</li>
+
+<li>
+    <strong>Set permissions for a shared project folder.</strong>
+    <p class="mt-2 text-sm text-gray-700">
+        By default, a new directory like <code>/srv/project_alpha</code> is owned by <b>root</b> and not writable by normal users.
+        To allow both the <code>developers</code> group and the owner to fully manage it, while giving others read-only access, run:
+    </p>
+    <div class="overflow-x-auto">
+        <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative">
+<code>sudo chmod 775 /srv/project_alpha</code>
+<button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+    </div>
+    <p class="mt-2 text-sm text-gray-500">
+        ✔ <code>775</code> = owner (rwx), group (rwx), others (r-x)<br>
+        ✔ <code>755</code> = owner full, group & others read-only (developers couldn’t write)<br>
+        ✔ <code>770</code> = owner & group full, others blocked completely<br>
+        ✔ <code>700</code> = private folder, only the owner can access
+    </p>
+</li>
+
+<li>
+    <strong>Alternative syntax (symbolic mode).</strong>
+    <p class="mt-2 text-sm text-gray-700">
+        Instead of numbers, you can describe permissions with letters:
+    </p>
+    <div class="overflow-x-auto">
+        <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative">
+<code>sudo chmod u=rwx,g=rwx,o=rx /srv/project_alpha</code>
+<button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+    </div>
+    <p class="mt-2 text-sm text-gray-500">
+        <code>u</code> = user/owner, <code>g</code> = group, <code>o</code> = others.  
+        Same as <code>775</code>, but more descriptive.
+    </p>
+</li>
+
+                        
+                        <li>
+    <strong>Test the permissions in practice.</strong>
+    <p class="mt-2 text-sm text-gray-700">
+        To confirm that our permissions work, we’ll switch users and try creating/reading files inside
+        <code>/srv/project_alpha</code>. The <code>su</code> command (<i>substitute user</i>) lets you temporarily
+        become another user without logging out.
+        Adding <code>-</code> ensures you start a full login shell (with that user’s environment).
+    </p>
+
+    <div class="overflow-x-auto">
+        <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative">
+<code># Switch to Alice (member of developers group)
+su - alice
+cd /srv/project_alpha
+touch dev_file.txt   # ✅ should work: Alice can write here
+
+# Switch to Bob (not in developers group by default)
 su - bob
 cd /srv/project_alpha
-touch readonly.txt  # should fail
-cat dev_file.txt    # should work</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
+touch readonly.txt   # ❌ should fail: Bob has only read/execute rights
+cat dev_file.txt     # ✅ should work: Bob can still read existing files</code>
+<button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+    </div>
+
+    <p class="mt-2 text-sm text-gray-500">
+        ✔ <b>Alice</b> succeeds because she belongs to the <code>developers</code> group, which has full (rwx) access.<br>
+        ✔ <b>Bob</b> cannot create files since "others" only have read/execute (r-x) permission, but he can still open and view files.<br>
+        ✔ This test confirms that <code>775</code> is correctly allowing collaboration for developers while limiting everyone else to read-only access.
+    </p>
+</li>
+
                     </ol>
                 </div>
             </section>
@@ -588,40 +644,87 @@ cat dev_file.txt    # should work</code><button class="copy-btn absolute top-2 r
             <div class="section-divider"></div>
 
             <section id="project3" class="project-card rounded-xl p-8 shadow-sm">
-                <h3 class="text-3xl font-bold text-gray-900 mb-2">⏱️ Project 3: Process Control</h3>
-                <p class="text-lg text-gray-600 mb-6">Learn how to find, monitor, and manage running processes on your system—a critical skill for any Linux user.</p>
-                <div class="space-y-4 text-gray-700">
-                    <p><strong>Concepts you'll learn:</strong> <code>ps</code>, <code>grep</code>, <code>kill</code>, background processes (`&`).</p>
-                    <ol class="list-decimal list-inside space-y-6">
-                        <li>
-                            <strong>Start a simple background process.</strong> The <code>&</code> at the end tells the command to run in the background, so you get your terminal prompt back immediately.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sleep 1000 &</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Find the process.</strong> We'll list all processes and use <code>grep</code> to filter for our "sleep" command.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>ps aux | grep sleep</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                            <p class="mt-2 text-sm text-gray-500">You'll see a line of output. The second number in that line is the Process ID (PID). Note it down.</p>
-                        </li>
-                        <li>
-                            <strong>Terminate the process.</strong> Use the <code>kill</code> command with the PID you just found. Replace `[PID]` with the actual number.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>kill [PID]</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Verify it's gone.</strong> Run the find command again.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>ps aux | grep sleep</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                            <p class="mt-2 text-sm text-gray-500">The original process should no longer appear in the list (you might see the `grep` process itself, which is normal).</p>
-                        </li>
-                    </ol>
+    <h3 class="text-3xl font-bold text-gray-900 mb-2">⏱️ Project 3: Process Control</h3>
+    <p class="text-lg text-gray-600 mb-6">
+        Every program running on Linux is a <b>process</b>. Being able to start, find, monitor, and stop processes 
+        is a fundamental skill for troubleshooting and system administration.
+    </p>
+    <div class="space-y-4 text-gray-700">
+        <p>
+            <strong>Concepts you'll learn:</strong> 
+            <code>ps</code> (list processes), 
+            <code>grep</code> (filter output), 
+            <code>kill</code> (terminate processes), 
+            backgrounding with <code>&</code>.
+        </p>
+        <ol class="list-decimal list-inside space-y-6">
+            <li>
+                <strong>Start a simple background process.</strong>
+                <p class="mt-2 text-sm text-gray-700">
+                    The command below runs <code>sleep 1000</code>, which tells the system to "do nothing" for 1000 seconds. 
+                    Adding <code>&</code> runs it in the <b>background</b>, so your terminal is free for other commands. 
+                    You’ll see a job number in <code>[1]</code> and the process ID (PID).
+                </p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative">
+<code>sleep 1000 &</code>
+<button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
                 </div>
-            </section>
+            </li>
+            
+            <li>
+                <strong>Find the process.</strong>
+                <p class="mt-2 text-sm text-gray-700">
+                    Use <code>ps aux</code> to list all processes. To avoid scrolling through hundreds of lines, 
+                    pipe the output to <code>grep sleep</code>, which filters only lines containing “sleep”. 
+                    In the output, the <b>second column is the PID</b>—the unique identifier of the process. Write it down.
+                </p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative">
+<code>ps aux | grep sleep</code>
+<button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-sm text-gray-500">
+                    ✅ Expect to see a line like: <code>user  12345 ... sleep 1000</code>. Here, <code>12345</code> is the PID.
+                </p>
+            </li>
+            
+            <li>
+                <strong>Terminate the process.</strong>
+                <p class="mt-2 text-sm text-gray-700">
+                    To stop the process, use <code>kill</code> followed by the PID you noted earlier. 
+                    This sends a <b>TERM signal</b>, politely asking the process to exit. Replace <code>[PID]</code> with the actual number.
+                </p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative">
+<code>kill [PID]</code>
+<button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-sm text-gray-500">
+                    ✅ No output means the signal was sent successfully. If the process refuses to exit, you can use <code>kill -9 [PID]</code> 
+                    to force it (use cautiously).
+                </p>
+            </li>
+            
+            <li>
+                <strong>Verify the process is gone.</strong>
+                <p class="mt-2 text-sm text-gray-700">
+                    Run the search command again. If the process terminated, you will no longer see your <code>sleep</code> entry. 
+                    You may still see the <code>grep sleep</code> command itself, which is normal—it appears because it matches the word “sleep”.
+                </p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative">
+<code>ps aux | grep sleep</code>
+<button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-sm text-gray-500">
+                    ✅ Expect: your original <code>sleep 1000</code> process is gone. If it still shows up, double-check the PID and try <code>kill</code> again.
+                </p>
+            </li>
+        </ol>
+    </div>
+</section>
+
 
             <div class="section-divider"></div>
 
@@ -684,89 +787,175 @@ echo "Backup process finished."
             <div class="section-divider"></div>
             
             <section id="project5" class="project-card rounded-xl p-8 shadow-sm">
-                <h3 class="text-3xl font-bold text-gray-900 mb-2">⚙️ Project 5: Service Management & Automation</h3>
-                <p class="text-lg text-gray-600 mb-6">This project teaches you how to manage system services, which are programs that run in the background. It's a critical skill for understanding how servers work.</p>
-                <div class="space-y-4 text-gray-700">
-                    <p><strong>Concepts you'll learn:</strong> <code>systemctl</code>, <code>journalctl</code>, <code>cron</code>, and service status.</p>
-                    <ol class="list-decimal list-inside space-y-6">
-                        <li>
-                            <strong>Create the logging script.</strong> Use <code>nano</code> to create a new file called <code>my_service.sh</code>.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>nano my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Add script content.</strong> This script simply writes the current date and time to the system log.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code class="text-gray-800" style="white-space: pre-wrap;">#!/bin/bash
-echo "This is a log entry from my_service.sh at $(date)" | sudo tee -a /var/log/my_service.log
-                            </code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Make the script executable.</strong>
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>chmod +x my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Create the cron job.</strong> The <code>crontab -e</code> command opens a file where you can schedule commands. When prompted, choose an editor like <code>nano</code>. Add the following line to the bottom of the file to run your script every minute:
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code class="text-gray-800">crontab -e
-* * * * * /home/your_username/my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Monitor the service.</strong> Wait a few minutes and then check your new log file and the system journal. The <code>journalctl -f</code> command shows you a live stream of the system log, which is a powerful tool for real-time debugging.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>cat /var/log/my_service.log
-journalctl -f</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Clean up.</strong> After you've confirmed it's working, remove the cron job to stop the script from running.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>crontab -r</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                    </ol>
+    <h3 class="text-3xl font-bold text-gray-900 mb-2">⚙️ Project 5: Service Management & Automation</h3>
+    <p class="text-lg text-gray-600 mb-6">
+        In this project, you’ll practice managing background services and automating tasks. 
+        Services are essential for keeping applications running reliably, while automation ensures 
+        repetitive jobs happen without manual input. By the end, you’ll understand how to use 
+        <code>systemctl</code> for service management, <code>journalctl</code> for logs, 
+        and <code>cron</code> for automation.
+    </p>
+
+    <div class="space-y-4 text-gray-700">
+        <p><strong>Concepts you'll learn:</strong> Managing services with <code>systemctl</code>, 
+        viewing logs with <code>journalctl</code>, scheduling tasks with <code>cron</code>, 
+        and verifying service activity.</p>
+
+        <ol class="list-decimal list-inside space-y-6">
+            <li>
+                <strong>Create a logging script.</strong>  
+                You’ll start by writing a simple script that generates log entries.  
+                Open a file named <code>my_service.sh</code> using <code>nano</code>: 
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>nano my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
                 </div>
-            </section>
+                <p class="mt-2 text-gray-600">This script will simulate a background service by writing timestamps into a log file.</p>
+            </li>
+
+            <li>
+                <strong>Add script content.</strong>  
+                Paste the following into the file:  
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code class="text-gray-800" style="white-space: pre-wrap;">#!/bin/bash
+echo "This is a log entry from my_service.sh at $(date)" | sudo tee -a /var/log/my_service.log
+</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-600">Every time this script runs, it appends a new line with the current date and time into <code>/var/log/my_service.log</code>.</p>
+            </li>
+
+            <li>
+                <strong>Make the script executable.</strong>  
+                Without this step, you won’t be able to run the script directly.  
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>chmod +x my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+            </li>
+
+            <li>
+                <strong>Schedule the script with cron.</strong>  
+                Cron is a time-based job scheduler. You’ll use it to run the script automatically every minute.  
+                <p class="mt-2 text-gray-600">Open your crontab configuration:</p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>crontab -e</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-600">Then add this line at the bottom (replace <code>your_username</code> with your actual username):</p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>* * * * * /home/your_username/my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-600">This means: run the script <em>every minute</em>, indefinitely.</p>
+            </li>
+
+            <li>
+                <strong>Monitor the service activity.</strong>  
+                Wait 2–3 minutes, then check if logs are being written:  
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>cat /var/log/my_service.log</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-600">You should see multiple log entries with timestamps.  
+                To monitor system logs live, use:</p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>journalctl -f</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-600"><code>-f</code> makes <code>journalctl</code> behave like <code>tail -f</code>, showing new log lines as they appear.</p>
+            </li>
+
+            <li>
+                <strong>Clean up.</strong>  
+                Once you’ve confirmed the automation works, remove the cron job to stop the script from running every minute:  
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>crontab -r</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-600">This deletes your crontab entirely. If you want finer control, instead run <code>crontab -e</code> and just remove the specific line.</p>
+            </li>
+        </ol>
+
+        <div class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-md">
+            <p class="text-blue-800"><strong>✅ Expected Outcome:</strong>  
+            After 2–3 minutes, your <code>/var/log/my_service.log</code> file will contain multiple log entries created automatically by cron.  
+            You’ll also have practiced service-like automation and learned how to monitor logs in real time.</p>
+        </div>
+    </div>
+</section>
+
 
             <div class="section-divider"></div>
 
             <section id="project6" class="project-card rounded-xl p-8 shadow-sm">
-                <h3 class="text-3xl font-bold text-gray-900 mb-2">📊 Project 6: Basic System Monitoring</h3>
-                <p class="text-lg text-gray-600 mb-6">Understanding how to check your system's resources is vital for troubleshooting performance issues. This project introduces you to tools for monitoring CPU, memory, and disk usage.</p>
-                <div class="space-y-4 text-gray-700">
-                    <p><strong>Concepts you'll learn:</strong> <code>top</code>, <code>htop</code>, <code>df</code>, and <code>du</code>.</p>
-                    <ol class="list-decimal list-inside space-y-6">
-                        <li>
-                            <strong>Monitor running processes.</strong> The <code>top</code> command provides a real-time overview of your system's processes. This command is a lot to take in at first, but focus on these key columns: <strong>PID</strong> (Process ID), <strong>%CPU</strong> (CPU usage), and <strong>%MEM</strong> (memory usage). Press <code>q</code> to exit. A more user-friendly alternative is <code>htop</code>, which you may need to install with <code>sudo apt-get install htop</code>.
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>top</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Check disk usage.</strong> Use <code>df</code> to see how much space is left on your disks and <code>du</code> to see how much space a specific directory is using.
-                            <ul class="list-disc list-inside mt-2 text-gray-700">
-                                <li><code>df -h</code>: The <code>-h</code> flag makes the output "human-readable," so you see sizes in GB or MB instead of bytes.</li>
-                                <li><code>du -sh /home/your_username</code>: This shows the total size of your home directory.</li>
-                            </ul>
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>df -h
-du -sh /home/your_username</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                        <li>
-                            <strong>Put it all together.</strong> Open two terminals. In the first, run a command that uses a lot of resources (e.g., <code>yes > /dev/null</code>). In the second, run <code>top</code> or <code>htop</code>. Can you identify which process is consuming the most CPU?
-                            <div class="overflow-x-auto">
-                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>yes > /dev/null</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
-                            </div>
-                        </li>
-                    </ol>
+    <h3 class="text-3xl font-bold text-gray-900 mb-2">📊 Project 6: Basic System Monitoring</h3>
+    <p class="text-lg text-gray-600 mb-6">
+        Monitoring your system's resources is essential to troubleshoot performance issues and understand how your Linux system behaves. 
+        This project introduces tools for checking CPU, memory, and disk usage in real-time and via summary commands.
+    </p>
+
+    <div class="space-y-4 text-gray-700">
+        <p><strong>Concepts you'll learn:</strong> <code>top</code>, <code>htop</code>, <code>df</code>, <code>du</code>, and identifying high-resource processes.</p>
+
+        <ol class="list-decimal list-inside space-y-6">
+            <li>
+                <strong>Monitor running processes with <code>top</code> or <code>htop</code>.</strong>
+                <p class="mt-2 text-gray-600">
+                    <code>top</code> provides a real-time overview of running processes and resource usage. Focus on these key columns:
+                </p>
+                <ul class="list-disc list-inside ml-4 text-gray-600">
+                    <li><strong>PID</strong> → Process ID, useful for managing processes.</li>
+                    <li><strong>%CPU</strong> → CPU usage of each process.</li>
+                    <li><strong>%MEM</strong> → Memory usage of each process.</li>
+                </ul>
+                <p class="mt-2 text-gray-600">
+                    Press <code>q</code> to exit. Alternatively, <code>htop</code> offers a more interactive interface (use arrow keys to navigate, <code>F10</code> to quit). If not installed, run <code>sudo apt-get install htop</code>.
+                </p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>top</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
                 </div>
-            </section>
+                <p class="mt-2 text-gray-500">✅ Expect: a live-updating list of processes, showing which programs are using the most CPU and memory.</p>
+            </li>
+
+            <li>
+                <strong>Check disk usage.</strong>
+                <p class="mt-2 text-gray-600">
+                    Use <code>df</code> to see free space on disks and <code>du</code> to check how much space specific directories use.
+                </p>
+                <ul class="list-disc list-inside ml-4 text-gray-600">
+                    <li><code>df -h</code> → "human-readable" output, showing sizes in MB/GB instead of bytes.</li>
+                    <li><code>du -sh /home/your_username</code> → total disk usage of your home directory.</li>
+                </ul>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>df -h
+du -sh /home/your_username</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-500">✅ Expect: <code>df</code> shows disk partitions and free space; <code>du</code> shows directory sizes, helping identify large folders.</p>
+            </li>
+
+            <li>
+                <strong>Put it all together: identify high-resource processes.</strong>
+                <p class="mt-2 text-gray-600">
+                    Open two terminal windows. In the first, run a CPU-intensive command like:
+                </p>
+                <div class="overflow-x-auto">
+                    <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>yes > /dev/null</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                </div>
+                <p class="mt-2 text-gray-600">
+                    This command continuously outputs "y" to <code>/dev/null</code>, consuming CPU.  
+                    In the second terminal, run <code>top</code> or <code>htop</code> and observe which process uses the most CPU.
+                </p>
+                <p class="mt-2 text-gray-500">
+                    ✅ Expect: the <code>yes</code> process will appear at the top of <code>top</code> or <code>htop</code> sorted by CPU usage. Press <code>Ctrl+C</code> in the first terminal to stop it.
+                </p>
+            </li>
+        </ol>
+
+        <div class="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded-md">
+            <p class="text-blue-800"><strong>✅ Key Takeaways:</strong> You now know how to:
+                <ul class="list-disc list-inside ml-4 mt-2 text-blue-800">
+                    <li>Monitor real-time CPU and memory usage with <code>top</code> and <code>htop</code>.</li>
+                    <li>Check available disk space and directory sizes with <code>df</code> and <code>du</code>.</li>
+                    <li>Identify resource-hogging processes and respond accordingly.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+</section>
+
         </div>
     </main>
 
