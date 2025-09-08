@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #FDFDFB;
+            color: #3C3C3C;
+            font-family: 'Inter', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fira+Code:wght@400;500&display=swap');
+        code, pre {
+            font-family: 'Fira Code', monospace;
+        }
+        .project-card {
+            background-color: #FFFFFF;
+            border: 1px solid #EFEFEF;
+            transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+        .copy-btn {
+            background-color: #EFEFEF;
+            color: #555;
+            transition: background-color 0.2s;
+        }
+        .copy-btn:hover {
+            background-color: #DCDCDC;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 220px;
+            background-color: #3C3C3C;
+            color: #fff;
+            text-align: left;
+            border-radius: 6px;
+            padding: 8px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -110px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.875rem;
+        }
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+        .section-divider {
+            margin: 4rem auto;
+            width: 90%;
+            border: 0;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-gray-800">Linux Explorer</h1>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-button" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 rounded-md p-2">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop navigation -->
+                <nav class="hidden md:flex md:space-x-8">
+                    <a href="#basics" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">Linux Basics</a>
+                    <a href="#sandbox" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">Command Sandbox</a>
+                    <a href="#project1" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">File Organizer</a>
+                    <a href="#project2" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">Permissions Manager</a>
+                    <a href="#project3" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">Process Control</a>
+                    <a href="#project4" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">Log Investigator</a>
+                    <a href="#project5" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">Service Management</a>
+                    <a href="#project6" class="text-gray-600 hover:text-blue-600 transition duration-150 ease-in-out">System Monitoring</a>
+                </nav>
+            </div>
+        </div>
+        <!-- Mobile menu container -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#basics" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Linux Basics</a>
+                <a href="#sandbox" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Command Sandbox</a>
+                <a href="#project1" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">File Organizer</a>
+                <a href="#project2" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Permissions Manager</a>
+                <a href="#project3" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Process Control</a>
+                <a href="#project4" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Log Investigator</a>
+                <a href="#project5" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Service Management</a>
+                <a href="#project6" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">System Monitoring</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">Welcome, Linux Explorer!</h2>
+            <p class="mt-4 text-xl text-gray-600">These projects are designed to give you hands-on experience with the core concepts of Linux. Start with the basics to build your confidence before moving on to the projects.</p>
+        </div>
+
+        <section id="setup" class="project-card rounded-xl p-8 shadow-sm">
+            <h3 class="text-3xl font-bold text-gray-900 mb-2">🖥️ Getting Started: Setting Up Your Linux Environment</h3>
+            <p class="text-lg text-gray-600 mb-6">
+                Before diving into Linux commands and projects, you’ll need a Linux system to experiment with. 
+                The easiest way to do this on a Windows computer is by using <strong>VirtualBox</strong> to run <strong>Ubuntu</strong> inside a virtual machine.
+            </p>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Your Challenge</h4>
+                    <p>
+                        Download and install VirtualBox on your Windows machine, then create a new virtual machine and install Ubuntu.
+                        There are many beginner-friendly guides and videos online to help you through the process. 
+                        Rather than following only one tutorial step by step, try to explore, experiment, and resolve issues on your own. 
+                        This is part of learning how Linux users think and solve problems.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Questions to Explore</h4>
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li>Which version of Ubuntu should I install — Desktop or Server?</li>
+                        <li>How much memory (RAM) and disk space should I allocate to my virtual machine?</li>
+                        <li>What should I do if Ubuntu doesn’t start properly the first time?</li>
+                    </ul>
+                    <p class="mt-2">
+                        Use these questions as opportunities to search online, read community forums, and test different approaches. 
+                        Developing this problem-solving habit will help you far beyond this project.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Tip</h4>
+                    <p>
+                        Once you have Ubuntu running, take a few minutes to look around — open the terminal, browse the file explorer, 
+                        and get comfortable with the environment. You’ll be using it throughout all the upcoming projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="basics" class="project-card rounded-xl p-8 shadow-sm">
+            <h3 class="text-3xl font-bold text-gray-900 mb-2">💡 Linux Fundamentals</h3>
+            <p class="text-lg text-gray-600 mb-6">Before you start, it's helpful to understand a few key concepts that form the basis of a Linux system.</p>
+            <div class="space-y-8 text-gray-700">
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">What is Linux?</h4>
+                    <p>At its heart, <b>Linux</b> is an operating system, just like Windows or macOS. It's the software that manages all the hardware and resources on your 
+                        computer. Linux is a powerful and flexible system used in everything from smartphones and servers to supercomputers.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">The Command Line, Terminal & Bash</h4>
+                    <p>Instead of clicking icons, you use a <b>command line</b> to tell the computer what to do. The <b>terminal</b> is the program that gives you a window to the 
+                        command line. When you type a command into the terminal, a program called a <b>shell</b> processes it. <b>Bash</b> (Bourne Again SHell) is the most common shell 
+                        on Linux. In simple terms: you use the <b>terminal</b> to access the <b>command line</b>, which is interpreted by the <b>Bash</b> shell.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">The File System Hierarchy</h4>
+                    <p>Linux organizes all files and directories in a single tree-like structure, starting from the <b>root</b> directory, which is represented by a single forward slash 
+                        (<code>/</code>). This structure is consistent across all Linux systems, making it easy to navigate.</p>
+                    <div class="bg-gray-100 p-4 rounded-lg my-4 max-w-lg mx-auto">
+                        <h5 class="font-semibold text-center mb-2">Linux Directory Tree (Simplified)</h5>
+                        <div class="overflow-x-auto">
+                            <pre class="text-sm min-w-[400px]"><code>
+/ (root) – The top-level directory of the Linux filesystem
+├── bin – Essential user binaries (commands like ls, cp, mv)
+├── boot – Boot loader files, kernel, etc
+├── dev – Device files (representing disks, USBs, etc.)
+├── etc – System configuration files and scripts
+├── home – User home directories
+│   ├── user1
+│   │   ├── Desktop
+│   │   ├── Documents
+│   │   ├── Downloads
+│   │   └── Pictures
+│   └── user2
+│       ├── Desktop
+│       ├── Documents
+│       ├── Downloads
+│       └── Pictures
+├── lib – Libraries and kernel modules for essential programs
+├── media – Mount points for removable media (USB drives, CDs, etc)
+├── opt – Optional or third-party software packages
+├── root – Home directory of the root (administrator) user
+├── run – Runtime data (process IDs, sockets, temporary files)
+├── sbin – Essential system binaries (for administration)
+├── srv – Data for system services (e.g., web or FTP servers)
+├── sys – Virtual filesystem with information about devices/drivers
+├── tmp – Temporary files (often cleared on reboot)
+├── usr – User programs, libraries, documentation, and utilities
+│   ├── bin – Non-essential user binaries
+│   ├── lib – Libraries for user programs
+│   └── share – Shared resources like docs, icons, etc.
+└── var – Variable data (logs, mail, caches, databases, spool)
+                        </code></pre>
+                        </div>
+                    </div>
+
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Linux vs Windows File Systems</h4>
+                    <p>Unlike Linux, which uses a single <b>root</b> directory (<code>/</code>) for everything, Windows organizes files into separate <b>drives</b> (such as <code>C:\</code>, 
+                        <code>D:\</code>, etc.). <b>Each drive has its own root</b>, and directories are separated with a backslash (<code>\</code>) instead of a forward slash (<code>/</code>).
+                        <br> 
+                        For example, your documents might be stored under <code>C:\Users\YourName\Documents</code> in Windows, whereas on Linux they would be under <code>/home/yourname/Documents</code>.</p>
+                    <p>Another difference is that in Linux, <b>everything is treated as a file</b> (even hardware devices like USBs or disks), while in Windows, devices are 
+                        usually represented with drive letters. This unified design in Linux makes scripting, automation, and system management more consistent.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="sandbox" class="project-card rounded-xl p-8 shadow-sm">
+            <h3 class="text-3xl font-bold text-gray-900 mb-2">🚀 The Linux Command Line Sandbox</h3>
+            <p class="text-lg text-gray-600 mb-6">Before diving into the projects, let's get you comfortable with the most fundamental commands. Think of your home directory as a safe place to play and experiment. You can't break anything important here! 😉</p>
+            <div class="space-y-6 text-gray-700">
+                
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Step 1: Where are you?</h4>
+                    <p>First, let's find out your current location in the file system and who you are. This is a common first step for any task.
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li><code>pwd</code>: "Print Working Directory." It shows your exact location. It should be something like <code>/home/your_username</code>.</li>
+                        <li><code>whoami</code>: Shows your current username.</li>
+                    </ul>
+                    <div class="overflow-x-auto">
+                        <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>pwd
+whoami</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                    </div>
+                    <p class="mt-2 text-sm text-gray-500">Run these commands. What do you see? This is your base camp!</p>
+                </div>
+
+                <div>
+    <h4 class="text-xl font-semibold text-gray-800 mb-2">Step 2: Looking around</h4>
+    <p>The <code>ls</code> command is your flashlight in the dark. It lists the contents of a directory.</p>
+    <ul class="list-disc list-inside mt-2 text-gray-700">
+        <li><code>ls</code>: Lists the files and folders in your current directory.</li>
+        <li><code>ls -l</code>: Lists contents in a "long" format, showing more details like permissions, owner, size, and date.</li>
+        <li><code>ls -a</code>: Shows all files, including hidden ones (which start with a dot, like <code>.bashrc</code>).</li>
+        <li><code>ls -R</code>: Lists contents <em>recursively</em>, meaning it shows all files and subdirectories inside folders.</li>
+        <li><code>ls -lh</code>: Long format with sizes in "human-readable" form (e.g., KB, MB).</li>
+        <li><code>ls -lt</code>: Long format sorted by modification time (newest files first).</li>
+    </ul>
+    <div class="overflow-x-auto">
+        <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>ls
+ls -l
+ls -a
+ls -R
+ls -lh
+ls -lt</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+    </div>
+    <p class="mt-2 text-sm text-gray-500">
+        Practice using these flags and notice the differences:
+        <br>- The first character in <code>ls -l</code> output shows <code>d</code> for directories and <code>-</code> for files.  
+        <br>- Try <code>ls -R</code> in a folder with subdirectories. What happens?  
+        <br>- How does <code>ls -lt</code> help you find recently modified files?  
+    </p>
+</div>
+
+
+                <div>
+    <h4 class="text-xl font-semibold text-gray-800 mb-2">Step 3: Creating and moving things</h4>
+    <p>Now, let's build something. You'll create a folder and then some files inside it, and practice moving them around.</p>
+    <ul class="list-disc list-inside mt-2 text-gray-700">
+        <li><code>mkdir</code>: "Make directory." Creates a new folder.</li>
+        <li><code>cd</code>: "Change directory." Moves you into a different folder.</li>
+        <li><code>touch</code>: Creates a new, empty file.</li>
+        <li><code>mv</code>: "Move." Moves files or directories to another location. It can also be used to <b>rename</b> files or folders.</li>
+    </ul>
+    <div class="overflow-x-auto">
+        <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code># Create a practice folder and move into it
+mkdir my_practice
+cd my_practice
+
+# Create two files
+touch file1.txt file2.txt
+ls
+
+# Move file1.txt into a new folder
+mkdir subfolder
+mv file1.txt subfolder/
+ls
+ls subfolder
+
+# Rename file2.txt to renamed.txt
+mv file2.txt renamed.txt
+ls</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+    </div>
+    <p class="mt-2 text-sm text-gray-500">
+        Try it out:
+        <br>- What happened to <code>file1.txt</code> after using <code>mv file1.txt subfolder/</code>?  
+        <br>- Notice that <code>mv</code> is also used for renaming. How does it differ from moving?  
+        <br>- Can you create another file and move it into <code>subfolder</code> as practice?  
+    </p>
+</div>
+
+                
+                <div>
+    <h4 class="text-xl font-semibold text-gray-800 mb-2">Step 4: Cleaning up</h4>
+    <p>When you're done experimenting, you can remove files and directories.</p>
+    <ul class="list-disc list-inside mt-2 text-gray-700">
+        <li><code>rm</code>: "Remove." Deletes a file.</li>
+        <li><code>rmdir</code>: "Remove directory." Deletes an empty folder.</li>
+        <li><code>rm -r</code>: "Remove recursively." Deletes a directory <em>and</em> everything inside it (all files and subdirectories).</li>
+    </ul>
+    <div class="overflow-x-auto">
+        <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>rm file1.txt
+ls
+cd ..
+rmdir my_practice
+# Example with rm -r
+rm -r my_practice</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+    </div>
+    <p class="mt-2 text-sm text-gray-500">
+        After running these commands, can you explain what happened at each step? 
+        What does <code>cd ..</code> do? 
+        What happens if you try to run <code>rmdir my_practice</code> without first deleting <code>file2.txt</code>? 
+        Why is <code>rm -r my_practice</code> able to remove the whole folder even if it still contains files?
+    </p>
+</div>
+
+                
+                <div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2">Step 5: Putting it all together</h4>
+                    <p>Now, try a quick challenge. Without looking at the previous steps, try to:</p>
+                    <ol class="list-decimal list-inside mt-2 text-gray-700">
+                        <li>Create a new directory named <code>linux_fun</code>.</li>
+                        <li>Go inside that directory.</li>
+                        <li>Create three empty files named <code>notes.md</code>, <code>report.pdf</code>, and <code>image.png</code>.</li>
+                        <li>List all the files to confirm they were created.</li>
+                        <li>Delete all the files and the directory.</li>
+                    </ol>
+                    <p class="mt-2 text-sm text-gray-500">If you can do this from memory, you're ready for the projects! You've mastered the basics. If not, don't worry—just revisit the steps above until you feel confident.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <div class="space-y-16">
+            <section id="project1" class="project-card rounded-xl p-8 shadow-sm">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">📂 Project 1: Automated File Organizer</h3>
+                <p class="text-lg text-gray-600 mb-6">Learn the fundamentals of directory and file manipulation. This project involves writing a simple script to organize files into folders based on their type.</p>
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Concepts you'll learn:</strong> <code>whoami</code> (check your current user), <code>pwd</code> (print current directory), <code>ls</code> (list files), <code>mkdir</code> (make directories), <code>touch</code> (create empty files), <code>mv</code> (move files), <code>chmod</code> (change permissions), and the basics of shell scripting.</p>
+                    
+                    <ol class="list-decimal list-inside space-y-8">
+
+                        <li>
+                            <strong>Check your environment.</strong> 
+                            Before creating files and directories, it’s useful to confirm who you are and where you are in the system. 
+                            <ul class="list-disc list-inside text-sm text-gray-600 my-2">
+                                <li><code>whoami</code>: shows your current user.</li>
+                                <li><code>pwd</code>: prints the “present working directory” (the folder you are currently in).</li>
+                                <li><code>ls</code>: lists the files and folders in your current location.</li>
+                            </ul>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>whoami
+pwd
+ls</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="text-sm text-gray-500">This helps you verify your current user, the folder you’re working in, and what files are there before starting.</p>
+                        </li>
+
+                        <li>
+                            <strong>Create a project directory.</strong> 
+                            Directories (or “folders”) help keep files organized. The command below shows one way to do it in a single line, and then an alternative step-by-step method.
+                            
+                            <p class="mt-2 font-medium">Method 1: One-liner with <code>&&</code></p>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>mkdir file_sorter && cd file_sorter</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="text-sm text-gray-500">Here, <code>mkdir</code> (“make directory”) creates the folder, and <code>cd</code> (“change directory”) moves into it. The <code>&&</code> means “only run the second command if the first succeeds.”</p>
+
+                            <p class="mt-4 font-medium">Method 2: Step by step</p>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>mkdir file_sorter
+cd file_sorter</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="text-sm text-gray-500">This does the same thing, but separates the steps so you can clearly see the directory being created first, then moving into it.</p>
+
+                            <p class="mt-2 text-sm text-gray-500">Tip: Run <code>pwd</code> again to confirm that you are now inside <code>file_sorter</code>.</p>
+                        </li>
+
+                        <li>
+                            <strong>Create some dummy files.</strong> 
+                            The <code>touch</code> command creates new, empty files. These act as placeholders so we can test our script later.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>touch report.doc notes.txt image.jpg data.csv archive.zip presentation.ppt</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="text-sm text-gray-500">Check your files with <code>ls</code>. You should see the six files you just created.</p>
+                        </li>
+
+                        <li>
+                            <strong>Create the script file.</strong> 
+                            Scripts are just text files containing commands to be executed in order. Use a text editor like <code>nano</code> or <code>vim</code> to create one.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>nano organize_files.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            <strong>Add the script content.</strong> 
+                            This script creates folders and moves files into them based on their extension. 
+
+                            <ul class="list-disc list-inside text-sm text-gray-600 my-2">
+                                <li><code>mkdir -p</code>: creates directories (the <code>-p</code> ensures no error if they already exist).</li>
+                                <li><code>mv</code>: moves files into the correct folder.</li>
+                                <li><code>ls -R</code>: lists files recursively, showing the new structure.</li>
+                            </ul>
+
+                            <p class="text-sm text-gray-500">Follow these steps carefully to use <code>nano</code> if you are new:</p>
+                            <ol class="list-decimal list-inside text-sm text-gray-500 mb-2">
+                                <li>After running <code>nano organize_files.sh</code>, your terminal opens a blank editor.</li>
+                                <li>Use the keyboard to type or paste the script content exactly as shown below.</li>
+                                <li>To save your work:
+                                    <ul class="list-disc list-inside">
+                                        <li>Press <code>Ctrl + O</code> (the letter O, not zero) to write out the file.</li>
+                                        <li>Press <code>Enter</code> to confirm the file name (<code>organize_files.sh</code>).</li>
+                                    </ul>
+                                </li>
+                                <li>To exit <code>nano</code>, press <code>Ctrl + X</code>. This closes the editor and returns you to the terminal.</li>
+                            </ol>
+
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code class="text-gray-800" style="white-space: pre-wrap;">#!/bin/bash
+# A simple script to organize files
+
+echo "Creating directories..."
+mkdir -p Documents Pictures Spreadsheets Archives Presentations
+
+echo "Organizing files..."
+mv *.doc *.ppt Presentations/
+mv *.txt Documents/
+mv *.jpg Pictures/
+mv *.csv Spreadsheets/
+mv *.zip Archives/
+
+echo "Done! Here is the new structure:"
+ls -R
+                            </code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-1">After saving and exiting, your script is ready to be made executable and run.</p>
+                        </li>
+
+                        <li>
+                            <strong>Make the script executable.</strong> 
+                            By default, new files are just text. To run it as a program, you need to give it “execute” permission using <code>chmod</code>.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>chmod +x organize_files.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+
+                        <li>
+                            <strong>Run your script!</strong> 
+                            Use <code>./</code> to run a script in the current folder. 
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>./organize_files.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">You should see messages as the script runs, ending with a list of your organized folders and files. Try running <code>ls</code> or <code>pwd</code> afterwards to confirm your results.</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="project2" class="project-card rounded-xl p-8 shadow-sm">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">🔐 Project 2: Permissions Manager</h3>
+                <p class="text-lg text-gray-600 mb-6">Linux permissions determine <em>who</em> can read, write, or execute files and directories. By mastering this, you’ll understand how collaboration and security are enforced in Linux systems.</p>
+                
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Concepts you'll learn:</strong> <code>useradd</code>, <code>groupadd</code>, <code>chown</code>, <code>chmod</code>, user/group ownership, octal vs. symbolic permissions. (Note: most commands here require <code>sudo</code>).</p>
+                    
+                    <ol class="list-decimal list-inside space-y-6">
+                        <li>
+                            <strong>Create a new group.</strong> This group will contain your project members.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo groupadd developers</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <strong>Create two new users.</strong> Alice (a developer) and Bob (a read-only user).
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo useradd -m -g developers -s /bin/bash alice
+sudo useradd -m -s /bin/bash bob</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <strong>Create a shared project directory.</strong>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo mkdir /srv/project_alpha</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <strong>Set ownership.</strong> Assign <code>root</code> as the owner and <code>developers</code> as the group.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo chown root:developers /srv/project_alpha</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <strong>Understand permission numbers.</strong> 
+                            Each permission is built from 3 possible rights: 
+                            <ul class="list-disc list-inside ml-4 text-sm">
+                                <li><code>r</code> (read) = 4 → view/list files</li>
+                                <li><code>w</code> (write) = 2 → modify/create/delete</li>
+                                <li><code>x</code> (execute) = 1 → run a file, or enter a directory</li>
+                            </ul>
+                            <p class="mt-2">You add these numbers together for each category:</p>
+                            
+                            <div class="overflow-x-auto">
+                                <table class="table-auto border-collapse border border-gray-300 text-sm mt-3">
+                                    <thead>
+                                        <tr class="bg-gray-100">
+                                            <th class="border border-gray-300 px-3 py-1">Value</th>
+                                            <th class="border border-gray-300 px-3 py-1">Meaning</th>
+                                            <th class="border border-gray-300 px-3 py-1">Permissions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td class="border px-3 py-1">7</td><td class="border px-3 py-1">4+2+1</td><td class="border px-3 py-1">rwx → full access</td></tr>
+                                        <tr><td class="border px-3 py-1">6</td><td class="border px-3 py-1">4+2</td><td class="border px-3 py-1">rw- → read &amp; write</td></tr>
+                                        <tr><td class="border px-3 py-1">5</td><td class="border px-3 py-1">4+1</td><td class="border px-3 py-1">r-x → read &amp; execute</td></tr>
+                                        <tr><td class="border px-3 py-1">4</td><td class="border px-3 py-1">4</td><td class="border px-3 py-1">r-- → read only</td></tr>
+                                        <tr><td class="border px-3 py-1">0</td><td class="border px-3 py-1">none</td><td class="border px-3 py-1">--- → no access</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <p class="mt-3 text-sm text-gray-500">That’s why <code>755</code> = <b>7 (owner: rwx), 5 (group: r-x), 5 (others: r-x)</b>.</p>
+                        </li>
+                        
+                        <li>
+                            <strong>Set permissions for this project.</strong> Let’s give developers write access but allow others only to read and enter:
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo chmod 775 /srv/project_alpha</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">✔ <code>775</code> = owner (rwx), group (rwx), others (r-x)<br>
+                            ✔ If we used <code>755</code>, only the owner could write — even developers would be read-only.<br>
+                            ✔ If we used <code>770</code>, others (like Bob) would have no access at all.<br>
+                            ✔ <code>700</code> is often used for private directories where only the owner should enter.</p>
+                        </li>
+                        
+                        <li>
+                            <strong>Alternative syntax (symbolic mode).</strong>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sudo chmod u=rwx,g=rwx,o=rx /srv/project_alpha</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500"><code>u</code> = user/owner, <code>g</code> = group, <code>o</code> = others. Same as <code>775</code>, but more descriptive.</p>
+                        </li>
+                        
+                        <li>
+                            <strong>Test it!</strong>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>su - alice
+cd /srv/project_alpha
+touch dev_file.txt  # should work
+
+su - bob
+cd /srv/project_alpha
+touch readonly.txt  # should fail
+cat dev_file.txt    # should work</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="project3" class="project-card rounded-xl p-8 shadow-sm">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">⏱️ Project 3: Process Control</h3>
+                <p class="text-lg text-gray-600 mb-6">Learn how to find, monitor, and manage running processes on your system—a critical skill for any Linux user.</p>
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Concepts you'll learn:</strong> <code>ps</code>, <code>grep</code>, <code>kill</code>, background processes (`&`).</p>
+                    <ol class="list-decimal list-inside space-y-6">
+                        <li>
+                            <strong>Start a simple background process.</strong> The <code>&</code> at the end tells the command to run in the background, so you get your terminal prompt back immediately.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>sleep 1000 &</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Find the process.</strong> We'll list all processes and use <code>grep</code> to filter for our "sleep" command.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>ps aux | grep sleep</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">You'll see a line of output. The second number in that line is the Process ID (PID). Note it down.</p>
+                        </li>
+                        <li>
+                            <strong>Terminate the process.</strong> Use the <code>kill</code> command with the PID you just found. Replace `[PID]` with the actual number.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>kill [PID]</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Verify it's gone.</strong> Run the find command again.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>ps aux | grep sleep</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">The original process should no longer appear in the list (you might see the `grep` process itself, which is normal).</p>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="project4" class="project-card rounded-xl p-8 shadow-sm">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">🐞 Project 4: The Log Investigator</h3>
+                <p class="text-lg text-gray-600 mb-6">Troubleshooting is a key skill. In this project, you'll run a script designed to fail, investigate the error logs, and then fix the bug.</p>
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Concepts you'll learn:</strong> Reading logs, standard error/output, I/O redirection (`>`), basic debugging.</p>
+                    <ol class="list-decimal list-inside space-y-6">
+                        <li>
+                            <strong>Create the broken script.</strong> Create a file named <code>broken_script.sh</code> using <code>nano</code>.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>nano broken_script.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Add the script content.</strong> This script tries to list the contents of a directory that doesn't exist, which will cause an error.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code class="text-gray-800" style="white-space: pre-wrap;">#!/bin/bash
+# This script has a bug!
+
+echo "Starting backup process..."
+
+# Attempt to list files in a non-existent directory
+ls /non_existent_directory
+
+echo "Backup process finished."
+                            </code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Make the script executable.</strong>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>chmod +x broken_script.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Run the script and redirect its output to a log file.</strong> This is the crucial part. <code>> script.log</code> sends the normal output (stdout) to the file, and <code>2>&1</code> sends the error output (stderr) to the same place.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>./broken_script.sh > script.log 2>&1</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Investigate the log file.</strong> Use <code>cat</code> or <code>less</code> to view the log file's contents.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>cat script.log</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                            <p class="mt-2 text-sm text-gray-500">You will see the normal "Starting..." message, followed by an error like "ls: cannot access '/non_existent_directory': No such file or directory".</p>
+                        </li>
+                        <li>
+                            <strong>Fix the bug.</strong> The error message tells you the problem. Edit the script (<code>nano broken_script.sh</code>) and change <code>/non_existent_directory</code> to a real directory, like <code>/home</code> or <code>.</code> (the current directory).
+                        </li>
+                        <li>
+                            <strong>Re-run and verify.</strong> Run the script again with redirection. This time, when you <code>cat script.log</code>, you should see no error message, only the success messages and the file listing. You've successfully debugged the script!
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+            
+            <section id="project5" class="project-card rounded-xl p-8 shadow-sm">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">⚙️ Project 5: Service Management & Automation</h3>
+                <p class="text-lg text-gray-600 mb-6">This project teaches you how to manage system services, which are programs that run in the background. It's a critical skill for understanding how servers work.</p>
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Concepts you'll learn:</strong> <code>systemctl</code>, <code>journalctl</code>, <code>cron</code>, and service status.</p>
+                    <ol class="list-decimal list-inside space-y-6">
+                        <li>
+                            <strong>Create the logging script.</strong> Use <code>nano</code> to create a new file called <code>my_service.sh</code>.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>nano my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Add script content.</strong> This script simply writes the current date and time to the system log.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code class="text-gray-800" style="white-space: pre-wrap;">#!/bin/bash
+echo "This is a log entry from my_service.sh at $(date)" | sudo tee -a /var/log/my_service.log
+                            </code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Make the script executable.</strong>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>chmod +x my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Create the cron job.</strong> The <code>crontab -e</code> command opens a file where you can schedule commands. When prompted, choose an editor like <code>nano</code>. Add the following line to the bottom of the file to run your script every minute:
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code class="text-gray-800">crontab -e
+* * * * * /home/your_username/my_service.sh</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Monitor the service.</strong> Wait a few minutes and then check your new log file and the system journal. The <code>journalctl -f</code> command shows you a live stream of the system log, which is a powerful tool for real-time debugging.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>cat /var/log/my_service.log
+journalctl -f</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Clean up.</strong> After you've confirmed it's working, remove the cron job to stop the script from running.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>crontab -r</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="project6" class="project-card rounded-xl p-8 shadow-sm">
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">📊 Project 6: Basic System Monitoring</h3>
+                <p class="text-lg text-gray-600 mb-6">Understanding how to check your system's resources is vital for troubleshooting performance issues. This project introduces you to tools for monitoring CPU, memory, and disk usage.</p>
+                <div class="space-y-4 text-gray-700">
+                    <p><strong>Concepts you'll learn:</strong> <code>top</code>, <code>htop</code>, <code>df</code>, and <code>du</code>.</p>
+                    <ol class="list-decimal list-inside space-y-6">
+                        <li>
+                            <strong>Monitor running processes.</strong> The <code>top</code> command provides a real-time overview of your system's processes. This command is a lot to take in at first, but focus on these key columns: <strong>PID</strong> (Process ID), <strong>%CPU</strong> (CPU usage), and <strong>%MEM</strong> (memory usage). Press <code>q</code> to exit. A more user-friendly alternative is <code>htop</code>, which you may need to install with <code>sudo apt-get install htop</code>.
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>top</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Check disk usage.</strong> Use <code>df</code> to see how much space is left on your disks and <code>du</code> to see how much space a specific directory is using.
+                            <ul class="list-disc list-inside mt-2 text-gray-700">
+                                <li><code>df -h</code>: The <code>-h</code> flag makes the output "human-readable," so you see sizes in GB or MB instead of bytes.</li>
+                                <li><code>du -sh /home/your_username</code>: This shows the total size of your home directory.</li>
+                            </ul>
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>df -h
+du -sh /home/your_username</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Put it all together.</strong> Open two terminals. In the first, run a command that uses a lot of resources (e.g., <code>yes > /dev/null</code>). In the second, run <code>top</code> or <code>htop</code>. Can you identify which process is consuming the most CPU?
+                            <div class="overflow-x-auto">
+                                <pre class="bg-gray-100 rounded-md p-3 my-2 text-sm relative"><code>yes > /dev/null</code><button class="copy-btn absolute top-2 right-2 px-2 py-1 text-xs rounded">Copy</button></pre>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const copyButtons = document.querySelectorAll('.copy-btn');
+            copyButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const code = button.previousElementSibling.innerText;
+                    navigator.clipboard.writeText(code).then(() => {
+                        button.textContent = 'Copied!';
+                        setTimeout(() => {
+                            button.textContent = 'Copy';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                    });
+                });
+            });
+
+            // Mobile menu toggle
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = mobileMenu.querySelectorAll('a');
+
+            const toggleMenu = () => {
+                mobileMenu.classList.toggle('hidden');
+            };
+
+            const hideMenu = () => {
+                mobileMenu.classList.add('hidden');
+            };
+
+            menuButton.addEventListener('click', toggleMenu);
+            navLinks.forEach(link => {
+                link.addEventListener('click', hideMenu);
+            });
+        });
+    </script>
+</body>
+</html>
