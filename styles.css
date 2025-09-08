@@ -374,3 +374,17 @@ footer {
   opacity: 1;
   visibility: visible;
 }
+
+/* =========================
+   ABOUT ME SECTION HYPERLINKS
+   ========================= */
+.about-section a,
+.about-section a:visited {
+  color: var(--accent-orange);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.about-section a:hover {
+  text-shadow: 0 0 6px var(--accent-orange);
+}
