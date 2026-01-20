@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon REST Academy</title>
+    <link rel="stylesheet" href="learn-rest-api.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pokémon REST Academy</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#track1">Track 1 – Web & HTTP Basics</a></li>
+                <li><a href="#track2">Track 2 – REST & Resources</a></li>
+                <li><a href="#track3">Track 3 – Bringing It All Together: The Pokémon Trainer API</a></li>
+                <li><a href="#track4">Track 4 – Mini Projects</a></li>
+                <li><a href="#toolbox">Toolbox</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>What You Will Learn</h2>
+            <p>Welcome to Pokémon REST Academy! Here, you'll learn the basics of REST APIs using the fun and engaging world of Pokémon. By the end of this course, you'll be able to:</p>
+            <ul>
+                <li>Understand what a URL and URI are, their differences, and use cases</li>
+                <li>Learn about HTTP requests and responses</li>
+                <li>Explore JSON and how it structures data</li>
+                <li>Use REST concepts to interact with APIs</li>
+                <li>Build your own Pokédex client using PokéAPI</li>
+            </ul>
+
+            <h2>Why Pokémon + APIs Are Cool</h2>
+            <p>Pokémon is a beloved franchise that has captured the hearts of millions. By using Pokémon data, we make learning about APIs fun and relatable. You'll get to explore Pokémon attributes, moves, types, and more while learning how APIs work.</p>
+        </section>
+
+        <section id="track1">
+            <h2>Track 1 – Web & HTTP Basics</h2>
+            <div class="lesson">
+                <h3>Lesson 1.1: What is a URL and URI?</h3>
+                    <p><strong>To understand the difference between a URL and a URI, let’s use a real-world analogy:</strong></p>
+                    <div class="example">
+                        <h4>The Real-World Analogy</h4>
+                        <ul>
+                            <li><strong>URI (Identifier):</strong> Like a person’s name (e.g., John Smith) or Social Security Number. It uniquely identifies someone, but doesn’t tell you where to find them.</li>
+                            <li><strong>URL (Locator):</strong> Like a home address (e.g., 123 Maple St, New York). It tells you exactly where someone is and how to get there.</li>
+                        </ul>
+                    </div>
+                    <h4>1. What is a URI?</h4>
+                    <p><strong>URI</strong> stands for <em>Uniform Resource Identifier</em>. It’s the umbrella term for anything that identifies a resource (a web page, image, document, or even an abstract concept). A URI can identify something by name, location, or both.</p>
+                    <h4>2. What is a URL?</h4>
+                    <p><strong>URL</strong> stands for <em>Uniform Resource Locator</em>. This is the most common type of URI—the one you use every day in your browser. A URL tells you how to get to a resource (the “locator” part) and always includes a protocol (like <code>http://</code> or <code>https://</code>).</p>
+                    <div class="example">
+                        <h4>Examples</h4>
+                        <ul>
+                            <li><strong>URI:</strong> <code>urn:isbn:0451450523</code> (an ISBN for a book, not a web address)</li>
+                            <li><strong>URI:</strong> <code>mailto:ash@pokemon.com</code> (an email address, not a web address)</li>
+                            <li><strong>URL:</strong> <code>https://pokeapi.co/api/v2/pokemon/pikachu</code> (a web address you can visit)</li>
+                        </ul>
+                    </div>
+                    <p><strong>Key Rule:</strong> All URLs are URIs, but not all URIs are URLs.</p>
+                    <h4>3. The Third Player: URN</h4>
+                    <p>There’s another type of URI called a <strong>URN</strong> (Uniform Resource Name). For example: <code>urn:isbn:0451450523</code> is a unique code for a specific book. It identifies the book forever, even if the website or bookstore changes. It’s a name (URI), but not a locator (URL).</p>
+                    <div class="example">
+                        <h4>Key Differences at a Glance</h4>
+                        <table style="width:100%;border-collapse:collapse;">
+                            <tr style="background:#f0f0f0;"><th>Feature</th><th>URL (Locator)</th><th>URI (Identifier)</th></tr>
+                            <tr><td>Full Name</td><td>Uniform Resource Locator</td><td>Uniform Resource Identifier</td></tr>
+                            <tr><td>Main Goal</td><td>To tell you <em>where</em> it is.</td><td>To tell you <em>what</em> it is.</td></tr>
+                            <tr><td>Components</td><td>Includes a protocol (e.g., https://)</td><td>Can be just a name or a code</td></tr>
+                            <tr><td>Common Use</td><td>Browsing the web</td><td>Internal database tracking, coding</td></tr>
+                            <tr><td>Analogy</td><td>Your home address</td><td>Your name</td></tr>
+                        </table>
+                    </div>
+                    <h4>Why do we use both?</h4>
+                    <ul>
+                        <li><strong>URLs</strong> are practical. We use them because things on the internet move. If a website moves to a new server, its address (URL) changes.</li>
+                        <li><strong>URIs</strong> (specifically URNs) are used when we need a permanent way to talk about something regardless of where it is stored.</li>
+                    </ul>
+                    <p>When you look at a website address in your browser, you’re looking at a URL. That string is made up of several distinct “building blocks,” each with a specific job.</p>
+                    <h4>The Anatomy of a URL</h4>
+                    <p>Let’s use this example: <code>https://www.example.com:443/blog/article?id=10#comments</code></p>
+                    <ol>
+                        <li><strong>The Protocol (Scheme) — <code>https://</code></strong><br>
+                            This tells the computer how to communicate.<br>
+                            <ul>
+                                <li><strong>HTTP/HTTPS:</strong> The standard for websites. The “S” stands for “Secure” (like sending your mail in a locked box).</li>
+                                <li><strong>FTP:</strong> Used for transferring files.</li>
+                                <li><strong>Mailto:</strong> Used to open your email app.</li>
+                            </ul>
+                        </li>
+                        <li><strong>The Domain (Hostname) — <code>www.example.com</code></strong><br>
+                            This is the name of the server you want to visit.<br>
+                            <ul>
+                                <li><strong>Top-Level Domain (TLD):</strong> The <code>.com</code>, <code>.org</code>, or <code>.edu</code> part.</li>
+                                <li><strong>Subdomain:</strong> The <code>www</code> or <code>blog</code> part before the main name.</li>
+                            </ul>
+                        </li>
+                        <li><strong>The Port — <code>:443</code></strong><br>
+                            You rarely see this because your browser fills it in automatically. If the domain is the “building address,” the port is the specific door you enter through.<br>
+                            <ul>
+                                <li>Websites usually use port 80 (HTTP) or 443 (HTTPS).</li>
+                            </ul>
+                        </li>
+                        <li><strong>The Path — <code>/blog/article</code></strong><br>
+                            This points to the specific file or folder on the server. It’s like the folders on your own computer.</li>
+                        <li><strong>The Query — <code>?id=10</code></strong><br>
+                            This provides extra information to the website. It always starts with a <code>?</code>.<br>
+                            <ul>
+                                <li>If you search for “shoes” on Google, the URL will have something like <code>?q=shoes</code>.</li>
+                            </ul>
+                        </li>
+                        <li><strong>The Fragment (Anchor) — <code>#comments</code></strong><br>
+                            This is a bookmark. It tells your browser to scroll to a specific part of the page (like the “Comments” section).</li>
+                    </ol>
+                    <div class="example">
+                        <h4>Summary Checklist</h4>
+                        <table style="width:100%;border-collapse:collapse;">
+                            <tr style="background:#f0f0f0;"><th>Part</th><th>What it does</th><th>Real-world equivalent</th></tr>
+                            <tr><td>Protocol</td><td>Sets the rules</td><td>Choosing FedEx vs. UPS</td></tr>
+                            <tr><td>Domain</td><td>Identifies the server</td><td>Name of the office building</td></tr>
+                            <tr><td>Path</td><td>Locates the file</td><td>Room number inside the building</td></tr>
+                            <tr><td>Query</td><td>Filters the data</td><td>Asking for a specific file from that room</td></tr>
+                            <tr><td>Fragment</td><td>Jumps to a spot</td><td>A sticky note on page 5 of that file</td></tr>
+                        </table>
+                    </div>
+                    <div class="exercise">
+                        <h4>Practice</h4>
+                        <ul>
+                            <li>Is <code>mailto:ash@pokemon.com</code> a URI, a URL, or both? Why?</li>
+                            <li>Change the Pokémon name in the URL below and see what changes in the result.</li>
+                        </ul>
+                        <div class="endpoint-example"><strong>Endpoint:</strong> <span id="pokemonEndpointExample">https://pokeapi.co/api/v2/pokemon/&lt;name&gt;</span></div>
+                        <input type="text" id="pokemonName" placeholder="Enter a Pokémon name" oninput="document.getElementById('pokemonEndpointExample').textContent = 'https://pokeapi.co/api/v2/pokemon/' + this.value">
+                        <button onclick="fetchPokemon()">Fetch Pokémon</button>
+                        <div id="pokemonResult"></div>
+                    </div>
+            </div>
+
+            <div class="lesson">
+                <h3>Lesson 1.2: What is an HTTP Request/Response?</h3>
+                <p><strong>To understand HTTP Requests and Responses, think of a restaurant:</strong></p>
+                <ul>
+                    <li><strong>You (the Client):</strong> You are the customer sitting at the table.</li>
+                    <li><strong>The Server:</strong> This is the kitchen where all the food (data) is kept.</li>
+                    <li><strong>HTTP:</strong> This is the Waiter. The waiter is the messenger who carries your order to the kitchen and brings the food back to your table.</li>
+                </ul>
+                <h4>1. The HTTP Request (Ordering your food)</h4>
+                <p>When you type a URL or click a button, your browser sends a <strong>Request</strong> message. Using the PokéAPI (a real database of Pokémon info), a request to see Pikachu's data looks like this:</p>
+                <div class="example">
+                    <h4>The Parts of a Request</h4>
+                    <ul>
+                        <li><strong>The Method (The Verb):</strong> This tells the server what action you want to take.
+                            <ul>
+                                <li><strong>GET:</strong> "Please give me this data." (Most common)</li>
+                                <li><strong>POST:</strong> "Here is new data for you to save."</li>
+                            </ul>
+                        </li>
+                        <li><strong>The Path:</strong> Where the data lives.<br>Example: <code>/api/v2/pokemon/pikachu</code></li>
+                        <li><strong>The Headers:</strong> Extra details, like "I speak English" or "I'm using a Chrome browser."</li>
+                    </ul>
+                    <pre>GET /api/v2/pokemon/pikachu HTTP/1.1
+Host: pokeapi.co
+User-Agent: Chrome/123.0
+Accept: application/json
+                    </pre>
+                </div>
+                <h4>2. The HTTP Response (The Kitchen's Reply)</h4>
+                <p>Once the server receives your request, it processes it and sends back a <strong>Response</strong>:</p>
+                <div class="example">
+                    <h4>The Parts of a Response</h4>
+                    <ul>
+                        <li><strong>Status Code:</strong> A 3-digit number telling you if the "order" was successful.
+                            <ul>
+                                <li><strong>200 OK:</strong> Everything went perfect! Here is your Pikachu.</li>
+                                <li><strong>404 Not Found:</strong> You asked for a Pokémon that doesn't exist (like "Agumon").</li>
+                            </ul>
+                        </li>
+                        <li><strong>The Body:</strong> This is the actual "food." In the tech world, this is usually JSON—a simple text format that looks like a list.</li>
+                    </ul>
+                    <pre>{
+  "name": "pikachu",
+  "height": 4,
+  "weight": 60,
+  "abilities": ["static", "lightning-rod"]
+}
+                    </pre>
+                </div>
+                <h4>3. Summary of the Handshake</h4>
+                <table style="width:100%;border-collapse:collapse;">
+                    <tr style="background:#f0f0f0;"><th>Step</th><th>Action</th><th>PokéAPI Example</th></tr>
+                    <tr><td>1. Request</td><td>The Client asks for a resource.</td><td>GET /pokemon/pikachu</td></tr>
+                    <tr><td>2. Processing</td><td>The Server looks in its database.</td><td>Finds Pikachu in the digital "Pokedex."</td></tr>
+                    <tr><td>3. Response</td><td>The Server sends back a status and data.</td><td>200 OK + Pikachu's stats.</td></tr>
+                </table>
+                <h4>Common "Status Codes" You Might See</h4>
+                <ul>
+                    <li><strong>2xx (Success):</strong> "I got it, here you go!"</li>
+                    <li><strong>3xx (Redirection):</strong> "That's not here anymore, go to this other desk."</li>
+                    <li><strong>4xx (Client Error):</strong> "You made a mistake" (e.g., a typo in the URL).</li>
+                    <li><strong>5xx (Server Error):</strong> "The kitchen is on fire!" (The server crashed).</li>
+                </ul>
+                <div class="exercise">
+                    <h4>Practice</h4>
+                    <div class="endpoint-example"><strong>Endpoint:</strong> https://pokeapi.co/api/v2/pokemon/pikachu</div>
+                    <p>Use your browser's DevTools (F12) to inspect the HTTP request and response for <code>https://pokeapi.co/api/v2/pokemon/pikachu</code>. Can you find the status code and see the JSON body?</p>
+                </div>
+            </div>
+
+            <div class="lesson">
+                <h3>Lesson 1.3: What is JSON?</h3>
+                <p>Think of <strong>JSON</strong> (JavaScript Object Notation) as a simple, digital grocery list or a standardized form for computers to share information.</p>
+                <p>Before JSON, computers had a hard time "talking" to each other because they all used different formats. JSON was created as a universal language that is easy for humans to read and easy for computers to understand.</p>
+                <h4>1. The "Key-Value" Concept</h4>
+                <p>The secret to JSON is the <strong>Key-Value Pair</strong>. Imagine you are looking at a Pokémon card for Bulbasaur:</p>
+                <ul>
+                    <li><strong>The Key:</strong> The label or category (like "Name", "Type", or "Weight").</li>
+                    <li><strong>The Value:</strong> The actual information next to the label (like "Bulbasaur", "Grass", or "15 lbs").</li>
+                </ul>
+                <p>In JSON, we write it like this: <code>"name": "bulbasaur"</code></p>
+                <h4>2. How JSON is Structured</h4>
+                <p>JSON follows a few very strict rules to keep things organized. Here’s a simplified response from the PokéAPI:</p>
+                <pre>{
+  "id": 1,
+  "name": "bulbasaur",
+  "is_legendary": false,
+  "types": ["grass", "poison"]
+}</pre>
+                <ul>
+                    <li><strong>Curly Braces { } hold Objects:</strong> Like the physical Pokémon card. Everything inside belongs to one "thing" (one Pokémon).</li>
+                    <li><strong>Square Brackets [ ] hold Lists (Arrays):</strong> If a Pokémon has more than one type, we put them in a list inside square brackets.</li>
+                    <li><strong>Colons :</strong> Separate Keys and Values. <code>"name" : "bulbasaur"</code> means "The name is Bulbasaur."</li>
+                    <li><strong>Commas ,</strong> Separate items. Like a grocery list, you use a comma to say "here is the next piece of info."</li>
+                </ul>
+                <h4>3. Data Types: What can a "Value" be?</h4>
+                <p>In the PokéAPI, the "Values" come in different flavors:</p>
+                <ul>
+                    <li><strong>String (Text):</strong> Always inside quotation marks.<br><code>"name": "bulbasaur"</code></li>
+                    <li><strong>Number:</strong> No quotes needed.<br><code>"weight": 69</code></li>
+                    <li><strong>Boolean (True/False):</strong> A simple yes/no switch.<br><code>"is_default": true</code></li>
+                    <li><strong>Array (List):</strong> Multiple values grouped together.<br><code>"abilities": ["overgrow", "chlorophyll"]</code></li>
+                </ul>
+                <h4>4. Why is JSON so popular?</h4>
+                <p>Imagine if every doctor in the world used a completely different medical form. It would be chaos to share records! JSON is the "Standard Form" of the internet. Because the PokéAPI provides data in JSON format, any programmer in the world—whether they are building a phone app, a website, or a video game—can easily "read" the Pokémon data and display it to you.</p>
+                <div class="example">
+                    <h4>Comparison: Human vs. JSON</h4>
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr style="background:#f0f0f0;"><th>Human Description</th><th>JSON Format</th></tr>
+                        <tr><td>The Pokémon's name is Squirtle.</td><td><code>"name": "squirtle"</code></td></tr>
+                        <tr><td>Its ID number is 7.</td><td><code>"id": 7</code></td></tr>
+                        <tr><td>It is not a legendary.</td><td><code>"is_legendary": false</code></td></tr>
+                        <tr><td>It has the move "Tackle".</td><td><code>"moves": ["tackle"]</code></td></tr>
+                    </table>
+                </div>
+                <div class="exercise">
+                    <h4>Practice</h4>
+                    <div class="endpoint-example"><strong>Endpoint:</strong> https://pokeapi.co/api/v2/pokemon/bulbasaur</div>
+                    <p>Look at the JSON above. Can you find Bulbasaur's types? What is its ID? Is it legendary?</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="track2">
+            <h2>Track 2 – REST & Resources</h2>
+            <div class="lesson">
+                <h3>Lesson 2.1: What is a Resource and Endpoint?</h3>
+                <p>To understand <strong>Resources</strong> and <strong>Endpoints</strong>, imagine you are visiting a massive Library.</p>
+                <h4>1. The Resource: The "Noun"</h4>
+                <p>A <strong>Resource</strong> is the actual thing or data you want to talk about. In a library, resources are the books, magazines, or DVDs. In the digital world, a resource is a piece of information like a "User Profile," an "Invoice," or a <strong>Pokémon</strong>.</p>
+                <p>In the PokéAPI, the main resources are:</p>
+                <ul>
+                    <li><strong>Pokémon</strong> (e.g., Pikachu, Bulbasaur)</li>
+                    <li><strong>Abilities</strong> (e.g., Static, Overgrow)</li>
+                    <li><strong>Items</strong> (e.g., Pokéball, Potion)</li>
+                </ul>
+                <p><strong>Key Idea:</strong> The Resource is the object itself. It's the "what."</p>
+                <h4>2. The Endpoint: The "Map Location"</h4>
+                <p>An <strong>Endpoint</strong> is the specific location or "doorway" where that resource can be found. If the Resource is a book, the Endpoint is the specific shelf and row number in the library where you go to get it.</p>
+                <p>In an API, the endpoint is a specific web address (URL).</p>
+                <div class="example">
+                    <h4>The Resource (The Thing) vs. The Endpoint (The Address)</h4>
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr style="background:#f0f0f0;"><th>Resource</th><th>Endpoint</th></tr>
+                        <tr><td>All Pokémon</td><td><code>https://pokeapi.co/api/v2/pokemon/</code></td></tr>
+                        <tr><td>Pikachu specifically</td><td><code>https://pokeapi.co/api/v2/pokemon/pikachu/</code></td></tr>
+                        <tr><td>The "Static" ability</td><td><code>https://pokeapi.co/api/v2/ability/static/</code></td></tr>
+                    </table>
+                </div>
+                <h4>3. The Relationship: How they work together</h4>
+                <p>Think of it like a <strong>Vending Machine</strong>:</p>
+                <ul>
+                    <li><strong>The Resource:</strong> The snacks inside (the chips, the soda).</li>
+                    <li><strong>The Endpoint:</strong> The button code you press (like A1 or B4).</li>
+                </ul>
+                <p>When you press the button (the Endpoint), you are telling the machine which snack (the Resource) you want it to drop down to you.</p>
+                <h4>Why do we distinguish between them?</h4>
+                <p>One resource can sometimes be reached by multiple endpoints.</p>
+                <p>Imagine you want to see your "Recent Orders" on Amazon:</p>
+                <ul>
+                    <li><strong>Endpoint A:</strong> <code>.../orders/recent</code> (Shows your orders sorted by date)</li>
+                    <li><strong>Endpoint B:</strong> <code>.../user/123/orders</code> (Shows orders belonging to your specific ID)</li>
+                </ul>
+                <p>In both cases, you are getting the same Resource (your orders), but you used two different Endpoints (paths) to find them.</p>
+                <div class="example">
+                    <h4>Summary Table</h4>
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr style="background:#f0f0f0;"><th>Concept</th><th>Simple Definition</th><th>PokéAPI Example</th></tr>
+                        <tr><td>Resource</td><td>The data itself (The "Noun").</td><td>A Pokémon (e.g., Charizard).</td></tr>
+                        <tr><td>Endpoint</td><td>The digital path to get that data.</td><td><code>.../api/v2/pokemon/6/</code></td></tr>
+                    </table>
+                </div>
+                <div class="exercise">
+                    <h4>Practice</h4>
+                    <ul>
+                        <li>List three different resources you can find in the PokéAPI and their endpoints.</li>
+                        <li>Why might you want multiple endpoints for the same resource?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="lesson">
+                <h3>Lesson 2.2: HTTP Methods (Read-Only First)</h3>
+                <p>If <strong>Resources</strong> are the "nouns" (the things) and <strong>Endpoints</strong> are the "addresses" (the locations), then <strong>HTTP Methods</strong> are the <em>verbs</em>.</p>
+                <p>They tell the server exactly what action you want to perform on a resource.</p>
+                <h4>The Restaurant Analogy (Again!)</h4>
+                <ul>
+                    <li><strong>GET:</strong> You ask the waiter, "Can I see the menu?" (You are retrieving information).</li>
+                    <li><strong>POST:</strong> You tell the waiter, "I’d like to create a new order." (You are adding something new).</li>
+                    <li><strong>PUT:</strong> You say, "I want to change my entire order to something else." (You are replacing what was there).</li>
+                    <li><strong>PATCH:</strong> You say, "Keep the burger, but change the cheese to Swiss." (You are updating a small part).</li>
+                    <li><strong>DELETE:</strong> You say, "Cancel my order." (You are removing it).</li>
+                </ul>
+                <h4>The 4 Most Common Methods</h4>
+                <ol>
+                    <li><strong>GET (The "Read" Method)</strong><br>
+                        This is what your browser does 99% of the time. It asks the server for data without changing anything.<br>
+                        <strong>PokeAPI Example:</strong> <code>GET https://pokeapi.co/api/v2/pokemon/ditto</code><br>
+                        <em>Result:</em> The server sends you Ditto’s stats. Nothing on the server changes; you just looked at it.
+                    </li>
+                    <li><strong>POST (The "Create" Method)</strong><br>
+                        This is used to send new data to a server. Think of it like "posting" a letter or a social media update.<br>
+                        <em>Example:</em> If you were playing a Pokémon game and you caught a new Pokémon, the game might send a POST request to save that new Pokémon to your collection.
+                    </li>
+                    <li><strong>PUT & PATCH (The "Update" Methods)</strong><br>
+                        These are used when you want to change data that already exists.<br>
+                        <strong>PUT (Replace):</strong> You send a whole new version of the data. "Replace my old Pikachu with this new one."<br>
+                        <strong>PATCH (Modify):</strong> You only send the specific change. "Change my Pikachu's nickname to 'Sparky', but leave everything else the same."
+                    </li>
+                    <li><strong>DELETE (The "Remove" Method)</strong><br>
+                        Exactly what it sounds like. It tells the server to get rid of a resource.<br>
+                        <em>Example:</em> If you "Release" a Pokémon back into the wild, the app sends a DELETE request to remove it from your digital backpack.
+                    </li>
+                </ol>
+                <div class="example">
+                    <h4>Summary Checklist</h4>
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr style="background:#f0f0f0;"><th>Method</th><th>Action</th><th>Real-World Action</th><th>Is it safe?</th></tr>
+                        <tr><td>GET</td><td>Read</td><td>Looking at a Pokéball</td><td>Yes (Doesn't change anything)</td></tr>
+                        <tr><td>POST</td><td>Create</td><td>Buying a new Pokéball</td><td>No (Adds a new record)</td></tr>
+                        <tr><td>PUT/PATCH</td><td>Update</td><td>Painting your Pokéball</td><td>No (Changes a record)</td></tr>
+                        <tr><td>DELETE</td><td>Remove</td><td>Throwing away a Pokéball</td><td>No (Removes a record)</td></tr>
+                    </table>
+                    <p><em>Note on "Safe":</em> In IT, "Safe" means the action doesn't change the data on the server. You can <strong>GET</strong> a page a thousand times and the website stays exactly the same. But if you <strong>POST</strong> a thousand times, you might buy 1,000 Pokéballs!</p>
+                </div>
+                <h4>Why the PokéAPI only uses GET</h4>
+                <p>If you try to use <strong>DELETE</strong> on the PokéAPI, it won't work. Why? Because the PokéAPI is a "Read-Only" library. They want you to look at their data, but they don't want you deleting Pikachu from their database for everyone else!</p>
+                <div class="exercise">
+                    <h4>Practice</h4>
+                    <ul>
+                        <li>Which HTTP method would you use to update your Pokémon's nickname? To remove a Pokémon from your collection?</li>
+                        <li>Why is it important that the PokéAPI is read-only?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="track3">
+            <h2>Track 3 – Bringing It All Together: The Pokémon Trainer API</h2>
+            <div class="lesson">
+                <h3>Lesson 3.1: How Real APIs Work (A Trainer's Journey)</h3>
+                <p>This final lesson ties everything together. We'll use a hypothetical "Pokémon Trainer" app to see how a real API operates in practice.</p>
+                <h4>1. The Request Body: The "Digital Package"</h4>
+                <p>In previous lessons, we used <strong>GET</strong> to look at data. Since we were just "reading," the URL was enough. But for <strong>POST</strong>, <strong>PUT</strong>, or <strong>PATCH</strong>, you are <em>sending</em> data. This data travels in the <strong>Request Body</strong>.</p>
+                <ul>
+                    <li>Think of the URL as the address on an envelope, and the Request Body as the letter inside.</li>
+                    <li><strong>GET:</strong> You send an empty envelope; the server puts a letter inside and sends it back (Response Body).</li>
+                    <li><strong>POST/PUT:</strong> You put a JSON "form" inside the envelope and send it to the server.</li>
+                </ul>
+                <h4>What is a Request Header?</h4>
+                <p>A <strong>Request Header</strong> is extra information you send along with your request to help the server understand what you want or who you are. Think of it as a sticky note on the outside of your envelope, giving special instructions or showing your ID badge.</p>
+                <ul>
+                    <li>Headers are not part of the main content (body), but travel with every request you make.</li>
+                    <li>Common headers include <code>Content-Type</code> (what kind of data you're sending), <code>User-Agent</code> (what browser/app you're using), and <code>Authorization</code> (your digital keycard).</li>
+                </ul>
+                <p>In a real API call, headers are sent in a special section of the request, separate from the body and the URL. For example:</p>
+                <pre>POST /trainer/me/capture HTTP/1.1
+Host: api.pokeserver.com
+Content-Type: application/json
+Authorization: Bearer abc123xyz456
+
+{"species": "Pikachu", "level": 5}
+                </pre>
+                <h4>2. Using the "Trainer API" (Hypothetical)</h4>
+                <p>While the real PokéAPI is "read-only," a real game would have a "Trainer API" where you can actually manage your team. Here are some example actions:</p>
+                <div class="example">
+                    <table style="width:100%;border-collapse:collapse;">
+                        <tr style="background:#f0f0f0;"><th>Action</th><th>HTTP Method</th><th>Endpoint (The Address)</th><th>Request Body (The Data)</th></tr>
+                        <tr><td>View your team</td><td>GET</td><td>/trainer/me/team</td><td>(None)</td></tr>
+                        <tr><td>Catch a Pokémon</td><td>POST</td><td>/trainer/me/capture</td><td>{"species": "Pikachu", "level": 5}</td></tr>
+                        <tr><td>Rename a Pokémon</td><td>PATCH</td><td>/trainer/me/pokemon/1</td><td>{"nickname": "Sparky"}</td></tr>
+                        <tr><td>Release Pokémon</td><td>DELETE</td><td>/trainer/me/pokemon/1</td><td>(None)</td></tr>
+                    </table>
+                </div>
+                <h4>3. Authentication: The "Keycard"</h4>
+                <p>Why can't anyone just delete your Pokémon? Because of <strong>Authentication</strong>. It's the process of proving who you are. Many APIs require a digital "ID Badge" (token) to let you in.</p>
+                <p><strong>The Header usually looks like this:</strong> <code>Authorization: Bearer abc123xyz456</code></p>
+                <ul>
+                    <li>When you log in, the server gives you a long string of random characters called a <strong>Token</strong>. You must include this token in the Header of every request you make. It’s like wearing a backstage pass at a concert.</li>
+                </ul>
+                <h4>4. Why Some APIs are Public and Some are Private</h4>
+                <ul>
+                    <li><strong>Public (PokéAPI):</strong> Like a public library. Anyone can walk in and read the books. No ID is needed because you aren't changing anything.</li>
+                    <li><strong>Private (Your Bank/Game Account):</strong> Like your house. You need a specific key (Token) because the information is sensitive and you have the power to "Move" or "Delete" things.</li>
+                </ul>
+                <h4>Summary: The Full API Interaction</h4>
+                <p>Imagine you want to nickname your Pikachu "Bolt":</p>
+                <ul>
+                    <li><strong>The Method:</strong> PATCH (You are modifying an existing thing).</li>
+                    <li><strong>The Endpoint:</strong> <code>https://api.pokeserver.com/v1/my-pokemon/25</code></li>
+                    <li><strong>The Header:</strong> <code>Authorization: Bearer YOUR_SECRET_TOKEN</code> (The "ID Badge").</li>
+                    <li><strong>The Body:</strong> <code>{"nickname": "Bolt"}</code> (The "Letter").</li>
+                    <li><strong>The Response:</strong> The server sends back 200 OK and a Response Body showing the updated Pikachu.</li>
+                </ul>
+                <div class="example">
+                    <h4>Final Check: Do you speak "API" now?</h4>
+                    <ul>
+                        <li><strong>URL/URI:</strong> The address.</li>
+                        <li><strong>Endpoint:</strong> The specific door at that address.</li>
+                        <li><strong>Resource:</strong> The thing behind the door (Pikachu).</li>
+                        <li><strong>Method:</strong> What you do (GET, POST, etc.).</li>
+                        <li><strong>JSON:</strong> The language you use to talk.</li>
+                        <li><strong>Body:</strong> The actual data package you send.</li>
+                        <li><strong>Auth:</strong> Your key to get through the door.</li>
+                    </ul>
+                </div>
+                <div class="exercise">
+                    <h4>Practice</h4>
+                    <ul>
+                        <li>Write a sample PATCH request to change your Bulbasaur's nickname to "Leafy". What would the endpoint, method, header, and body look like?</li>
+                        <li>Why is authentication important when changing or deleting data?</li>
+                        <li>What is the difference between a public and a private API?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="track4">
+            <h2>Track 4 – Mini Projects</h2>
+            <div class="project">
+                <h3>Project 1: Random Pokémon Viewer</h3>
+                <p><strong>Description:</strong> Build a viewer that fetches and displays a random Pokémon from the PokéAPI. This helps you practice making GET requests and handling JSON data.</p>
+                <div class="endpoint-example"><strong>Endpoint:</strong> <span id="randomPokemonEndpointExample">https://pokeapi.co/api/v2/pokemon/&lt;random_id&gt;</span></div>
+                <button onclick="fetchRandomPokemon()">Fetch Random Pokémon</button>
+                <div id="randomPokemonResult"></div>
+                <p><em>Expectation:</em> When you click the button, the app will pick a random Pokémon ID (1–898), update the endpoint above, send a GET request to the endpoint, and display the Pokémon's name, sprite, height, and weight.</p>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Type Explorer</h3>
+                <p><strong>Description:</strong> Enter a Pokémon type (like "fire" or "water") to see a list of all Pokémon of that type. This project practices dynamic endpoints and working with arrays in JSON.</p>
+                <div class="endpoint-example"><strong>Endpoint:</strong> <span id="typeEndpointExample">https://pokeapi.co/api/v2/type/</span></div>
+                <input type="text" id="typeInput" placeholder="Enter a type (e.g., fire)" oninput="document.getElementById('typeEndpointExample').textContent = 'https://pokeapi.co/api/v2/type/' + this.value">
+                <button onclick="fetchType()">Fetch Pokémon by Type</button>
+                <div id="typeResult"></div>
+                <p><em>Expectation:</em> Enter a type and click the button. The app sends a GET request to the endpoint above and lists all Pokémon of that type.</p>
+            </div>
+
+            <div class="project">
+                <h3>Project 3: Simple Pokédex Search</h3>
+                <p><strong>Description:</strong> Search for a Pokémon by name or ID. This project helps you practice using user input to build endpoints and display detailed data.</p>
+                <div class="endpoint-example"><strong>Endpoint:</strong> https://pokeapi.co/api/v2/pokemon/&lt;name_or_id&gt;</div>
+                <input type="text" id="pokedexInput" placeholder="Enter Pokémon name or ID" oninput="document.getElementById('pokedexEndpointExample').textContent = 'https://pokeapi.co/api/v2/pokemon/' + this.value">
+                <div class="endpoint-example"><strong>Endpoint:</strong> <span id="pokedexEndpointExample">https://pokeapi.co/api/v2/pokemon/</span></div>
+                <button onclick="searchPokedex()">Search Pokédex</button>
+                <div id="pokedexResult"></div>
+                <p><em>Expectation:</em> Enter a Pokémon name or ID and click the button. The app sends a GET request to the endpoint above and displays the Pokémon's details, including name, ID, types, abilities, and base experience.</p>
+            </div>
+
+            <div class="project">
+                <h3>Project 4: Evolution Viewer</h3>
+                <p><strong>Description:</strong> Enter a Pokémon name to see its evolution chain. This project demonstrates how to follow links in JSON data and make multiple requests.</p>
+                <div class="endpoint-example"><strong>Endpoint 1:</strong> <span id="evoEndpoint1">https://pokeapi.co/api/v2/pokemon/&lt;name&gt;</span></div>
+                <div class="endpoint-example"><strong>Endpoint 2:</strong> <span id="evoEndpoint2">(species.url will appear here)</span> → <strong>Endpoint 3:</strong> <span id="evoEndpoint3">(evolution_chain.url will appear here)</span></div>
+                <input type="text" id="evolutionInput" placeholder="Enter Pokémon name" oninput="updateEvolutionEndpoints(this.value)">
+                <button onclick="fetchEvolution()">Fetch Evolution Chain</button>
+                <div id="evolutionResult"></div>
+                <p><em>Expectation:</em> Enter a Pokémon name and click the button. The app will:</p>
+                <ol>
+                    <li>Send a GET request to the Pokémon endpoint to get species info (Endpoint 1).</li>
+                    <li>Send a GET request to the species endpoint to get the evolution chain URL (Endpoint 2).</li>
+                    <li>Send a GET request to the evolution chain endpoint and display the full evolution chain (Endpoint 3).</li>
+                </ol>
+            </div>
+<script>
+function updateEvolutionEndpoints(name) {
+    document.getElementById('evoEndpoint1').textContent = `https://pokeapi.co/api/v2/pokemon/${name}`;
+    document.getElementById('evoEndpoint2').textContent = '(species.url will appear here)';
+    document.getElementById('evoEndpoint3').textContent = '(evolution_chain.url will appear here)';
+}
+
+// Patch fetchEvolution to update endpoints as requests are made
+const originalFetchEvolution = window.fetchEvolution;
+window.fetchEvolution = async function() {
+    const pokemonName = document.getElementById('evolutionInput').value.toLowerCase();
+    if (!pokemonName) {
+        alert('Please enter a Pokémon name.');
+        return;
+    }
+    try {
+        // Endpoint 1
+        const endpoint1 = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+        document.getElementById('evoEndpoint1').textContent = endpoint1;
+        const response = await fetch(endpoint1);
+        if (!response.ok) throw new Error('Pokémon not found!');
+        const data = await response.json();
+        // Endpoint 2
+        const speciesUrl = data.species.url;
+        document.getElementById('evoEndpoint2').textContent = speciesUrl;
+        const speciesResponse = await fetch(speciesUrl);
+        if (!speciesResponse.ok) throw new Error('Species data not found!');
+        const speciesData = await speciesResponse.json();
+        // Endpoint 3
+        const evoChainUrl = speciesData.evolution_chain.url;
+        document.getElementById('evoEndpoint3').textContent = evoChainUrl;
+        const evolutionResponse = await fetch(evoChainUrl);
+        if (!evolutionResponse.ok) throw new Error('Evolution chain data not found!');
+        const evolutionData = await evolutionResponse.json();
+        displayEvolution(evolutionData);
+    } catch (error) {
+        document.getElementById('evolutionResult').innerHTML = `<p>Error: ${error.message}</p>`;
+    }
+}
+</script>
+        </section>
+
+        <section id="toolbox">
+            <h2>Toolbox</h2>
+            <p>Here are some tools to help you work with APIs:</p>
+            <ul>
+                <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank">Browser DevTools</a></li>
+                <li><a href="https://www.postman.com/" target="_blank">Postman</a></li>
+                <li><a href="https://insomnia.rest/" target="_blank">Insomnia</a></li>
+                <li><a href="https://curl.se/" target="_blank">cURL</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Learn with Pokémon REST Academy.</p>
+    </footer>
+
+    <script src="learn-rest-api.js"></script>
+</body>
+</html>
