@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="learnHTML.css">
+    <title>Learning HTML</title>
+</head>
+<body>
+  <div class="page">
+    <section id="introduction">
+      <h1>Welcome to Learning HTML</h1>
+      <p>This page is designed to introduce you to the basics of HTML, the foundational language of the web. Here, you will learn about the essential building blocks of a webpage, including HTML tags, structure, and how to create a simple webpage. By the end of this guide, you will have a solid understanding of how to use HTML to create structured and meaningful content for the web.</p>
+    </section>
+
+    <nav id="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#how-and-where-to-write-html">How and where to write HTML</a></li>
+        <li><a href="#the-building-blocks-of-a-web-page-html-tags">The building blocks of a web page: HTML Tags</a></li>
+        <li><a href="#how-does-an-html-tag-looks">How does an HTML Tag looks?</a></li>
+        <li><a href="#30-commonly-used-html-tags">30 commonly used HTML tags</a></li>
+        <li><a href="#about-indentation">About indentation</a></li>
+        <li><a href="#putting-it-all-together-page-structure">Putting it all together: Page Structure</a></li>
+      </ul>
+    </nav>
+
+    <h2 id="how-and-where-to-write-html">How and where to write HTML</h2>
+    <p>To follow this guide and write HTML, you can use any text editing tool. Here are some options:</p>
+    <ul>
+      <li><b>Notepad:</b> A simple text editor available on Windows. Open Notepad, write your HTML code, and save the file with a <code>.html</code> extension</li>
+      <li><b>Notepad++:</b> A free and more advanced text editor with features like syntax highlighting and line numbers</li>
+      <li><b>Visual Studio Code:</b> A powerful code editor with many features for web development, including extensions for HTML</li>
+    </ul>
+    <p>When saving your file, make sure to:</p>
+    <ul>
+      <li>Choose <b>All Files</b> as the file type (not <b>.txt</b>)</li>
+      <li>Use the <code>.html</code> extension, e.g., <code>index.html</code></li>
+    </ul>
+    <p>Once saved, you can open the file in any web browser (e.g., Chrome, Firefox, Edge) to see your HTML in action.</p>
+
+    <h2 id="the-building-blocks-of-a-web-page-html-tags">The building blocks of a web page: HTML Tags</h2>
+    <p>At its core, every webpage is constructed using <b>HTML Elements</b>.</p>
+    <p>Think of these as the fundamental building blocks of your content.</p>
+    
+    <p>In HTML, <b>everything</b> (from a simple sentence to a complex navigation bar) is wrapped inside an element.</p>
+    <p>An element, is a representation of an instruction to the browser. They tell the browser how to <b>structure</b> and <b>display</b> the content.</p>
+    <p>Without these blocks, the browser would see a giant wall of unorganized text; with them, we create the digital experiences we see every day.</p>
+
+    <p>Imagine sending this plain text (raw data) to a browser. It has no hierarchy, no emphasis, and no structure:</p>
+    <div class="demo-box">
+      Hello, World!
+
+      This is a simple webpage that I'm building to learn HTML.
+
+      I will be using HTML for structure
+      CSS for styling
+    </div>
+    
+    <p>By wrapping that same text in <b>tags</b>, we give it a specific purpose (a heading, a paragraph, or a list item) and instruct the browser on how to display it:</p>
+    <pre>&lt;h2&gt;Hello, World!&lt;/h2&gt;
+&lt;p&gt;This is a simple webpage that I'm building to learn &lt;b&gt;HTML&lt;/b&gt;.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;HTML for structure&lt;/li&gt;
+  &lt;li&gt;CSS for styling&lt;/li&gt;
+&lt;/ul&gt;</pre>
+    <p>The browser reads those tags and builds a visual interface that is easy for humans to navigate:</p>
+    <div class="demo-box">
+      <h2 style="margin-top:0;">Hello, World!</h2>
+      <p>This is a simple webpage that I'm building to learn <b>HTML</b>.</p>
+      <ul style="margin-bottom:0;">
+        <li>HTML for structure</li>
+        <li>CSS for styling</li>
+      </ul>
+    </div>
+    
+    <p>By using the right building blocks, we transform raw data into a structured digital experience.</p>
+    
+
+    <h3 id="how-does-an-html-tag-looks">How does an HTML Tag looks?</h3>
+    <p>To identify and create a tag, we use special symbols called angle brackets: <b>&lt;</b> and <b>&gt;</b>.</p>
+    <p>We use such brackets to enclose the tag name, which tells the browser what kind of element it is dealing with.</p>
+    
+    <p>For example, the tag for a paragraph is <b>&lt;p&gt;</b>. When we write <b>&lt;p&gt;</b>, we are telling the browser, "This is a paragraph."</p>
+    <p>To close the tag, we use a forward slash <b>/</b> before the tag name, like this: <b>&lt;/p&gt;</b>. This indicates the end of that element.</p>
+    <p>So, a complete paragraph element would look like this:</p>
+    <pre>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</pre>
+    <p>In this example, <b>&lt;p&gt;</b> is the opening tag, and <b>&lt;/p&gt;</b> is the closing tag. The text "This is a paragraph of text." is the content that will be displayed on the webpage.</p>
+    <p>We started with an angle bracket to open the tag (<b>&lt;</b>), followed by the tag name (<b>p</b>), and then closed it with another angle bracket (<b>&gt;</b>), for the closing bracket (<b>&lt;/p&gt;</b>) we include the forward slash (<b>/</b>).</p>
+    
+    <p>Most HTML tags require a forward slash <b>/</b> to close them, ensuring that the browser knows where the element ends. However, some tags, like <b>&lt;br&gt;</b> for line breaks or <b>&lt;img&gt;</b> for images, are self-closing and do not require a separate closing tag.</p>
+    
+    <p>Note: The tags themselves are <b>not</b> visible on the webpage; they are instructions for the browser on how to display the content.</p>
+    
+
+    <h3 id="30-commonly-used-html-tags">30 commonly used HTML tags</h3>
+    <p>Below you can see 30 very commonly used HTML tags, with a short description, their basic structure, and a small example.</p>
+
+    <h4>1. &lt;html&gt; - Root of the page</h4>
+    <p><b>Description:</b> Wraps the entire HTML document.</p>
+    <p><b>Structure:</b> <code>&lt;html&gt; ... &lt;/html&gt;</code></p>
+    <p><b>Example:</b></p>
+    <pre>&lt;html&gt;
+  &lt;head&gt;...&lt;/head&gt;
+  &lt;body&gt;...&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <h4>2. &lt;head&gt; - Document metadata</h4>
+    <p><b>Description:</b> Contains metadata, links to stylesheets, and other information not shown directly on the page.</p>
+    <p><b>Structure:</b> <code>&lt;head&gt; ... &lt;/head&gt;</code></p>
+    <pre>&lt;head&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;</pre>
+
+    <h4>3. &lt;title&gt; - Page title</h4>
+    <p><b>Description:</b> Sets the title shown in the browser tab and used by search engines.</p>
+    <p><b>Structure:</b> <code>&lt;title&gt; ... &lt;/title&gt;</code></p>
+    <pre>&lt;title&gt;Learning HTML&lt;/title&gt;</pre>
+
+    <h4>4. &lt;meta&gt; - Metadata entry</h4>
+    <p><b>Description:</b> Defines essential document parameters, such as character encoding for proper rendering and meta descriptions to influence search engine snippets. For example: Charset (Ensures text characters display correctly), Description (Provides the summary text seen in Google search results), or Viewport (Controls how the page scales on mobile devices).</p>
+    <p><b>Structure:</b> <code>&lt;meta name="..."&gt;</code></p>
+    <pre>&lt;meta charset="UTF-8"&gt;</pre>
+
+    <h4>5. &lt;link&gt; - External resources</h4>
+    <p><b>Description:</b> Links external resources such as CSS files.</p>
+    <p><b>Structure:</b> <code>&lt;link rel="..." href="..."&gt;</code></p>
+    <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+
+    <h4>6. &lt;body&gt; - Page content</h4>
+    <p><b>Description:</b> Wraps everything that is visible on the page.</p>
+    <p><b>Structure:</b> <code>&lt;body&gt; ... &lt;/body&gt;</code></p>
+    <pre>&lt;body&gt;
+  &lt;h1&gt;Hello!&lt;/h1&gt;
+&lt;/body&gt;</pre>
+
+    <h4>7. &lt;h1&gt; to &lt;h6&gt; - Headings</h4>
+    <p><b>Description:</b> Headings that define the outline of your content; &lt;h1&gt; is the most important, &lt;h6&gt; the least.</p>
+    <p><b>Structure:</b> <code>&lt;h1&gt;...&lt;/h1&gt;, &lt;h2&gt;...&lt;/h2&gt;, &lt;h3&gt;...&lt;/h3&gt;, &lt;h4&gt;...&lt;/h4&gt;, &lt;h5&gt;...&lt;/h5&gt;, &lt;h6&gt;...&lt;/h6&gt;</code></p>
+    <pre>&lt;h1&gt;Main title&lt;/h1&gt;
+&lt;h2&gt;Sub heading&lt;/h2&gt;</pre>
+
+    <h4>8. &lt;p&gt; - Paragraph</h4>
+    <p><b>Description:</b> Defines a block of text as a paragraph.</p>
+    <p><b>Structure:</b> <code>&lt;p&gt; ... &lt;/p&gt;</code></p>
+    <pre>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</pre>
+
+    <h4>9. &lt;br&gt; - Line break</h4>
+    <p><b>Description:</b> Inserts a line break inside text without starting a new paragraph.</p>
+    <p><b>Structure:</b> <code>&lt;br&gt;</code></p>
+    <pre>&lt;p&gt;Line one.&lt;br&gt;Line two.&lt;/p&gt;</pre>
+
+    <h4>10. &lt;hr&gt; - Horizontal rule</h4>
+    <p><b>Description:</b> Represents a thematic break, usually shown as a horizontal line.</p>
+    <p><b>Structure:</b> <code>&lt;hr&gt;</code></p>
+    <pre>&lt;p&gt;Section one.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Section two.&lt;/p&gt;</pre>
+
+    <h4>11. &lt;a&gt; - Link</h4>
+    <p><b>Description:</b> Creates a hyperlink to another page, section, or resource.</p>
+    <p><b>Structure:</b> <code>&lt;a href="URL"&gt;link text&lt;/a&gt;</code></p>
+    <pre>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</pre>
+
+    <h4>12. &lt;img&gt; - Image</h4>
+    <p><b>Description:</b> Embeds an image into the page.</p>
+    <p><b>Structure:</b> <code>&lt;img src="path" alt="description"&gt;</code></p>
+    <pre>&lt;img src="logo.png" alt="Site logo"&gt;</pre>
+
+    <h4>13. &lt;ul&gt; - Unordered list</h4>
+    <p><b>Description:</b> Defines a bullet-point list.</p>
+    <p><b>Structure:</b> <code>&lt;ul&gt;...&lt;/ul&gt;</code></p>
+    <pre>&lt;ul&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+&lt;/ul&gt;</pre>
+
+    <h4>14. &lt;ol&gt; - Ordered list</h4>
+    <p><b>Description:</b> Defines a numbered list.</p>
+    <p><b>Structure:</b> <code>&lt;ol&gt;...&lt;/ol&gt;</code></p>
+    <pre>&lt;ol&gt;
+  &lt;li&gt;First&lt;/li&gt;
+  &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</pre>
+
+    <h4>15. &lt;li&gt; - List item</h4>
+    <p><b>Description:</b> Represents a single item in a list. These elements are used inside &lt;ul&gt; or &lt;ol&gt; tags to define each item.</p>
+    <p><b>Structure:</b> <code>&lt;li&gt; ... &lt;/li&gt;</code></p>
+    <pre>&lt;li&gt;Item one&lt;/li&gt;</pre>
+
+    <h4>16. &lt;div&gt; - Block container</h4>
+    <p><b>Description:</b> A generic block-level container, often used for layout and to better group content.</p>
+    <p><b>Structure:</b> <code>&lt;div&gt; ... &lt;/div&gt;</code></p>
+    <pre>&lt;div&gt;
+  &lt;p&gt;Content inside a box.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+    <h4>17. &lt;span&gt; - Inline container</h4>
+    <p><b>Description:</b> A generic inline container for text or other inline content. Often used to style only a part of the text or group inline elements.</p>
+    <p><b>Structure:</b> <code>&lt;span&gt; ... &lt;/span&gt;</code></p>
+    <pre>&lt;span&gt;This is some text&lt;/span&gt;</pre>
+
+    <h4>18. &lt;strong&gt; - Strong emphasis</h4>
+    <p><b>Description:</b> Marks text as important; rendered as bold by default.</p>
+    <p><b>Structure:</b> <code>&lt;strong&gt; ... &lt;/strong&gt;</code></p>
+    <pre>&lt;p&gt;This is &lt;strong&gt;very important&lt;/strong&gt; text.&lt;/p&gt;</pre>
+
+    <h4>19. &lt;b&gt; - Bold text</h4>
+    <p><b>Description:</b> Makes text bold without adding extra meaning.</p>
+    <p><b>Structure:</b> <code>&lt;b&gt; ... &lt;/b&gt;</code></p>
+    <pre>&lt;p&gt;This word is &lt;b&gt;bold&lt;/b&gt;.&lt;/p&gt;</pre>
+
+    <h4>20. &lt;em&gt; - Emphasis</h4>
+    <p><b>Description:</b> Emphasizes text (usually shown in italics) and conveys stress in the sentence.</p>
+    <p><b>Structure:</b> <code>&lt;em&gt; ... &lt;/em&gt;</code></p>
+    <pre>&lt;p&gt;You &lt;em&gt;really&lt;/em&gt; should try this.&lt;/p&gt;</pre>
+
+    <h4>21. &lt;i&gt; - Italic text</h4>
+    <p><b>Description:</b> Renders text in italics, often for technical terms or foreign words.</p>
+    <p><b>Structure:</b> <code>&lt;i&gt; ... &lt;/i&gt;</code></p>
+    <pre>&lt;p&gt;The word &lt;i&gt;bonjour&lt;/i&gt; is French.&lt;/p&gt;</pre>
+
+    <h4>22. &lt;code&gt; - Inline code</h4>
+    <p><b>Description:</b> Represents a short fragment of computer code.</p>
+    <p><b>Structure:</b> <code>&lt;code&gt; ... &lt;/code&gt;</code></p>
+    <pre>&lt;p&gt;Use &lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; for a paragraph.&lt;/p&gt;</pre>
+
+    <h4>23. &lt;pre&gt; - Preformatted text</h4>
+    <p><b>Description:</b> Displays text exactly as written, preserving spaces and line breaks.</p>
+    <p><b>Structure:</b> <code>&lt;pre&gt; ... &lt;/pre&gt;</code></p>
+    <pre>&lt;pre&gt;
+  Line 1
+    Line 2 (indented)
+&lt;/pre&gt;</pre>
+
+    <h4>24. &lt;small&gt; - Smaller text</h4>
+    <p><b>Description:</b> Renders text in a smaller size, often for fine print or side notes.</p>
+    <p><b>Structure:</b> <code>&lt;small&gt; ... &lt;/small&gt;</code></p>
+    <pre>&lt;p&gt;Terms apply. &lt;small&gt;See full conditions.&lt;/small&gt;&lt;/p&gt;</pre>
+
+    <h4>25. &lt;header&gt; - Page or section header</h4>
+    <p><b>Description:</b> Represents introductory content or a set of navigation links for a page or section.</p>
+    <p><b>Structure:</b> <code>&lt;header&gt; ... &lt;/header&gt;</code></p>
+    <pre>&lt;header&gt;
+  &lt;h1&gt;My Site&lt;/h1&gt;
+&lt;/header&gt;</pre>
+
+    <h4>26. &lt;nav&gt; - Navigation section</h4>
+    <p><b>Description:</b> Groups a set of navigation links.</p>
+    <p><b>Structure:</b> <code>&lt;nav&gt; ... &lt;/nav&gt;</code></p>
+    <pre>&lt;nav&gt;
+  &lt;a href="#home"&gt;Home&lt;/a&gt;
+  &lt;a href="#about"&gt;About&lt;/a&gt;
+&lt;/nav&gt;</pre>
+
+    <h4>27. &lt;main&gt; - Main content</h4>
+    <p><b>Description:</b> Represents the central content of the document, unique to that page.</p>
+    <p><b>Structure:</b> <code>&lt;main&gt; ... &lt;/main&gt;</code></p>
+    <pre>&lt;main&gt;
+  &lt;h2&gt;Article title&lt;/h2&gt;
+&lt;/main&gt;</pre>
+
+    <h4>28. &lt;footer&gt; - Page or section footer</h4>
+    <p><b>Description:</b> Represents footer content such as copyright or related links.</p>
+    <p><b>Structure:</b> <code>&lt;footer&gt; ... &lt;/footer&gt;</code></p>
+    <pre>&lt;footer&gt;
+  &lt;p&gt;&amp;copy; 2026 My Site&lt;/p&gt;
+&lt;/footer&gt;</pre>
+
+    <h4>29. &lt;section&gt; - Thematic section</h4>
+    <p><b>Description:</b> Groups content into a thematic section of the page.</p>
+    <p><b>Structure:</b> <code>&lt;section&gt; ... &lt;/section&gt;</code></p>
+    <pre>&lt;section&gt;
+  &lt;h2&gt;Features&lt;/h2&gt;
+  &lt;p&gt;Some details...&lt;/p&gt;
+&lt;/section&gt;</pre>
+
+    <h4>30. &lt;article&gt; - Self-contained content</h4>
+    <p><b>Description:</b> Represents a self-contained piece of content that could stand on its own (like a blog post).</p>
+    <p><b>Structure:</b> <code>&lt;article&gt; ... &lt;/article&gt;</code></p>
+    <pre>&lt;article&gt;
+  &lt;h2&gt;Blog post title&lt;/h2&gt;
+  &lt;p&gt;Post content...&lt;/p&gt;
+&lt;/article&gt;</pre>
+
+    <h3 id="about-indentation">About indentation</h3>
+    <p>As you can see from all the examples above, proper indentation helps improve the readability and maintainability of your HTML code.</p>
+    <p>By consistently using indentation, you make your code easier to understand for yourself and others who may work on it in the future.</p>
+    <p>While the browser can read HTML even if it's all on one long line, humans will find it a bit more complicated. Proper indentation turns a "jungle of tags" into a clear, organized map.</p>
+    
+    <p>Whenever you place an element inside another, you should indent it (usually with 2 or 4 spaces). This visually shows which elements belong to which container.</p>
+    
+    <p>Example without indentation:</p>
+    <pre><code>&lt;div&gt;&lt;h1&gt;Title&lt;/h1&gt;&lt;p&gt;This is a paragraph.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Item 1&lt;/li&gt;&lt;li&gt;Item 2&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</code></pre>
+    <p>Example with proper indentation:</p>
+    <pre><code>&lt;div&gt;
+  &lt;h1&gt;Title&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+    <p>Both options are valid and the browser can interpret them and display the content correctly, but proper indentation greatly improves readability and maintainability of your HTML code.</p>
+
+    <h3 id="putting-it-all-together-page-structure">Putting it all together: Page Structure</h3>
+    <p>Now that you know individual tags, let's see how they work together to create a proper page structure for a simple website.</p>
+    <p>The key is using <b>semantic HTML5 elements</b> in a logical order: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>. Inside <code>&lt;main&gt;</code>, use <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code> to organize content thematically.</p>
+
+    <h4>Complete working example</h4>
+    <p>Here's a complete, minimal homepage template showing proper structure:</p>
+    <div class="demo-box">
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Simple Site</title>
+      </head>
+      <body>
+        <header>
+          <h1>My Site</h1>
+          <p>Brief tagline or description.</p>
+        </header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+        <main>
+          <section id="home">
+            <h2>Welcome</h2>
+            <p>This is a simple page to learn HTML structure.</p>
+          </section>
+          <section id="features">
+            <h2>Features</h2>
+            <ul>
+              <li>Semantic HTML</li>
+              <li>Accessible markup</li>
+            </ul>
+          </section>
+          <section id="about">
+            <h2>About this site</h2>
+            <article>
+              <h3>Purpose</h3>
+              <p>This article explains how to structure a page using HTML5 semantic elements.</p>
+            </article>
+          </section>
+        </main>
+        <footer>
+          <p>&copy; 2026 My Site</p>
+        </footer>
+      </body>
+      </html>
+    </div>
+
+    <h4>The code behind it</h4>
+    <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Simple Site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;My Site&lt;/h1&gt;
+    &lt;p&gt;Brief tagline or description.&lt;/p&gt;
+  &lt;/header&gt;
+
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#features"&gt;Features&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+
+  &lt;main&gt;
+    &lt;section id="home"&gt;
+      &lt;h2&gt;Welcome&lt;/h2&gt;
+      &lt;p&gt;This is a simple page to learn HTML structure.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="features"&gt;
+      &lt;h2&gt;Features&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Semantic HTML&lt;/li&gt;
+        &lt;li&gt;Accessible markup&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section id="about"&gt;
+      &lt;h2&gt;About this site&lt;/h2&gt;
+      &lt;article&gt;
+        &lt;h3&gt;Purpose&lt;/h3&gt;
+        &lt;p&gt;This article explains how to structure a page using HTML5 semantic elements.&lt;/p&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2026 My Site&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+    <p>As we can see, the basic structure of the page is there, but it is lacking styling. CSS comes to the rescue to help us style and enhance the visual appearance of the page. We will cover CSS in detail at another moment.</p>
+  </div>
+</body>
+</html>
