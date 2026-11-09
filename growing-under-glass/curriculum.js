@@ -379,6 +379,9 @@ const lessonExpansions = {
     sections: [{heading: "Choose an outcome you can observe", paragraphs: [
       "A beginner can first practice moving a purchased, clean plantlet to an appropriate fresh vessel or acclimating it to a substrate. Starting with field-grown tissue adds the separate challenge of establishment. Keep the two activities conceptually distinct when you evaluate success.",
       "Before starting, write down how many containers you have, what a healthy plantlet or new shoot will look like, and the date you will count outcomes. A realistic small batch and a backup plant keep an early setback manageable."
+    ]}, {heading: "Match the protocol to your project", paragraphs: [
+      "Check that the protocol names the same plant, or a clearly relevant cultivar or genotype, and the same starting tissue and goal as your project. A method for multiplying an existing bud is not automatically suitable for starting from a leaf, and a recipe for one species may not work for another.",
+      "Look for the complete method and its growing conditions, not just a successful photograph or a short video. If a key detail is missing, find a reliable source or choose a better-documented project rather than filling the gap with a guess. Record unknown plant identities as unknown."
     ]}],
     refs: [{id: tubes, page: 15}]
   },
@@ -386,6 +389,13 @@ const lessonExpansions = {
     sections: [{heading: "Think in zones", paragraphs: [
       "Separate preparation and washing, clean transfer, and plant growth areas as far as your space allows. Plan a path for clean supplies that avoids crossing dirty materials. Keep chemicals and equipment in their original labeled containers and out of living and food-preparation areas.",
       "A still-air box reduces air movement; a laminar-flow cabinet relies on a correctly maintained filter and airflow. Neither makes a contaminated explant clean or guarantees the result. Regular cleaning and careful work remain necessary."
+    ]}, {heading: "Choose equipment for the task", paragraphs: [
+      "A microscope is useful when a protocol requires handling very small tissue, such as isolating meristematic material, but it is not a baseline requirement for every beginner project. Start with a protocol that matches the size of the tissue you can handle and add magnification only when the work calls for it.",
+      "A laminar-flow cabinet is a specialized option, not a shortcut to clean technique. It depends on suitable, maintained filtration and airflow; a room air purifier does not provide the same controlled clean-air workspace. A still-air box can reduce drafts for small-scale work, but it does not filter air.",
+      "For media preparation, follow the equipment manufacturer's instructions and a procedure appropriate to the equipment, load and vessels. Do not assume a household pressure cooker, a pressure reading or an online cycle alone establishes effective sterilization, and never modify pressure equipment."
+    ], note: "Do not use open flames near alcohol or other flammable products. Use only equipment designed for its intended purpose, and do not improvise pressure vessels or operating cycles."}, {heading: "Rehearse before opening cultures", paragraphs: [
+      "Lay out the labeled receiving vessels, tools and other supplies in the order you will use them. Do a dry run with closed containers so you can reach everything without crossing over open vessels or searching for materials mid-transfer.",
+      "If the work area is cramped, drafty or difficult to organize, simplify the project or improve the setup before beginning. A calm, repeatable workflow is more useful than adding equipment you do not yet need."
     ]}],
     refs: [{id: book, page: 32}]
   },
@@ -421,6 +431,9 @@ const lessonExpansions = {
     sections: [{heading: "Symptoms can overlap", paragraphs: [
       "Brown tissue may follow injury, oxidation or other stresses; a translucent shoot may suggest hyperhydricity; a dead shoot tip can have several possible causes. The appearance is a starting observation, not a diagnosis.",
       "Check the relevant medium, plant, vessel, environment and transfer history together. If you compare treatments, make a small controlled change rather than altering light, medium and timing simultaneously."
+    ]}, {heading: "Keep a troubleshooting log", paragraphs: [
+      "For each vessel, note the plant or donor, explant, medium batch, transfer session, vessel closure, shelf location and date of each observation. Photograph closed vessels from a consistent angle. Record when a symptom first appears rather than relying on memory.",
+      "Compare patterns across vessels that share a donor, medium batch or work session. A cluster can suggest what to investigate next, but it cannot identify a cause by itself; keep suspect cultures closed and use a small, controlled comparison to test one plausible change."
     ]}],
     refs: [research.hyperhydricity, research.tip]
   },

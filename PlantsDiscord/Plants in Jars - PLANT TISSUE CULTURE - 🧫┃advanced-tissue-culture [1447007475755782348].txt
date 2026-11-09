@@ -1,0 +1,3057 @@
+==============================================================
+Guild: Plants in Jars
+Channel: PLANT TISSUE CULTURE / 🧫┃advanced-tissue-culture
+==============================================================
+
+[12/7/2025 12:44 AM] urbanorganisms
+First 🫨
+
+
+[12/7/2025 12:44 AM] plantsinjars
+second 🙁
+
+{Reactions}
+oof (5)
+
+[12/7/2025 12:45 AM] palustral
+Third!
+
+
+[12/7/2025 12:51 AM] plant_dude1
+Fourth
+
+
+[12/7/2025 12:57 AM] chefdecuisinart
+Cubed
+
+
+[12/7/2025 1:41 AM] xaxim.
+Brazil
+
+
+[12/7/2025 1:49 AM] hieuhuule
+Hey guys, since we now have an advanced channel, whats the longest anyone has been able to keep an explant alive in TC with the intention of just keeping a space efficient living library of genetics? 
+
+I ordered everything I think I needed and built myself a laminar flow hood to do this exact thing. Still have to buy a minifridge to store the explants though. 
+
+I grow "spicy tomatos" legally in Medellin, Colombia where they have a generous 20 plant limit. That gives you plenty to work with but once you start finding plants you like, the general wisdom is to turn it into a mother plant and just keep taking clone cuttings from it to always have those genetics available.  The downside is that the mother and all the clone cuttings count against the plant limit.
+
+So I wanna try growing more varieties of "spicy tomatoes" but I don't want to lose the varieties I like, so my answer to that is TC. I'll be taking some explants and just seeing how long I can go before I need to subculture/move the explant to fresh media.
+
+{Reactions}
+🔥
+
+[12/7/2025 1:54 AM] chefdecuisinart
+I've got flasks from Carnivero well over a year old, so at least that long. I would assume you could stretch things even further with refrigeration.
+
+{Reactions}
+👆 (2)
+
+[12/7/2025 1:55 AM] zap233
+Same to this.  They're also not even vented.  I've got an ampullaria still growing very well in one of those.
+
+
+[12/7/2025 2:00 AM] hieuhuule
+How long do you go before needing to move the explant to new media without refrigeration?
+
+
+[12/7/2025 2:01 AM] chefdecuisinart
+I've got some seed started yellow trumpet that are going on 3mos, personally. The flask from Carnivero was dated 10/11/24
+
+{Reactions}
+👍
+
+[12/7/2025 2:02 AM] tillstarsdawn
+I’m in this space and would love to know your results. Btw, doing TC helps reset the plant yields compared to cloning from cuttings so it can help you preserve the genetics without needing a new mother
+
+
+[12/7/2025 2:02 AM] zap233
+I would check on the health of the plant regularly.  If there's signs of stress, browning, releasing lots of phenolic compounds in the media, I'd replate.
+
+
+[12/7/2025 2:05 AM] hieuhuule
+For sure, happy to share anything I learn here and on my dedicated IG for "spicy tomatoes". Send me a DM and ill share IG with you.
+
+
+[12/7/2025 2:06 AM] hieuhuule
+What does "releasing lots of phenolic compounds in media" look like?
+
+That would make a good video, "When should you replate you explants?"
+
+{Reactions}
+❤️
+
+[12/7/2025 2:07 AM] zap233
+The short answer is when your media starts turning brown
+
+{Reactions}
+👍
+
+[12/7/2025 2:08 AM] zap233
+Activated carbon can help with it too
+
+
+[12/7/2025 2:10 AM] hieuhuule
+You've added activated carbon to your media when you made it? I ordered the starter kit but havent received it yet to get access to the protocol library. Is activated carbon a common additive?
+
+
+[12/7/2025 2:12 AM] zap233
+You don't want to use it with PGRs though since it will absorb them
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1447033005536444427/1206252011.jpg?ex=6af31841&is=6af1c6c1&hm=91b2ed94d5e7a58c79747ed42c02395f08e541e27bf3e8546ef826e3eee82ec1&
+
+
+[12/7/2025 2:12 AM] zap233
+Adsorb?
+
+
+[12/7/2025 2:13 AM] tillstarsdawn
+Feels like the carbon is just making it darker so you can’t see it turning brown
+
+
+[12/7/2025 2:13 AM] zap233
+Yeah adsorb, technically different mechanism
+
+
+[12/7/2025 2:16 AM] zap233
+That's one drawback
+
+
+[12/7/2025 2:16 AM] zap233
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1447034089453391994/Screenshots_2025-12-06-20-14-30.png?ex=6af31943&is=6af1c7c3&hm=de00fba19337c2840a0f701ad30682d5815f6772ff1e1cf27dd03d9583345d73&
+
+
+[12/7/2025 2:16 AM] zap233
+https://www.sciencedirect.com/science/article/abs/pii/S0734975008000864
+
+
+[12/7/2025 2:17 AM] zap233
+It's pretty commonly used and has been for decades though, there's science backing up its usage.
+
+
+[12/7/2025 2:23 AM] hieuhuule
+I'd like to read the article in its entirety. Anyone have access to Elsevier? Purchasing it for personal reading is $31
+
+
+[12/7/2025 2:24 AM] tillstarsdawn
+Uh
+
+
+[12/7/2025 2:25 AM] tillstarsdawn
+You can try posting the link on google scholar
+
+
+[12/7/2025 2:25 AM] zap233
+https://www.researchgate.net/profile/Dennis-Thomas-T/publication/223729035_The_role_of_activated_charcoal_in_plant_tissue_culture/links/5ad9c79f458515c60f5aba4b/The-role-of-activated-charcoal-in-plant-tissue-culture.pdf?origin=publication_detail&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uRG93bmxvYWQiLCJwYWdlIjoicHVibGljYXRpb25Eb3dubG9hZCIsInByZXZpb3VzUGFnZSI6InB1YmxpY2F0aW9uIn19
+
+{Reactions}
+❤️
+
+[12/7/2025 2:25 AM] zap233
+Didn't realize that wasn't the full text
+
+
+[12/7/2025 2:26 AM] velociraptrix
+have you checked scihub? that’s usually a good spot to check if researchgate doesn’t have the full thing
+
+
+[12/7/2025 3:02 AM] hieuhuule
+Thanks @Zap233 !
+
+
+[12/7/2025 4:08 AM] alexrandomkat
+and if that fails (rip papers more recent than 2020) you can ask on r/scholar, though I'm sure lots of people here also have some sort of institutional access
+
+{Reactions}
+💯 (2) ❤️
+
+[12/7/2025 6:00 AM] .megacyber
+the nexus telegram bots are pretty good as well
+
+
+[12/7/2025 6:03 AM] alexrandomkat
+huh til of nexus... nice as I primarily live on Telegram lol
+
+
+[12/7/2025 10:59 PM] zaz_dazzle
+Just joined the chat...
+
+Over two years...i used to keep a stock of soy callus that I routinely subcultured. I've heard of cryo stored calli over a decade old but I personally never cryostored my calli.
+
+
+[12/7/2025 11:01 PM] zaz_dazzle
+Would love to hear how this goes. I've been curious as to the benefits of doing TC on spicy tomatoes not just mothers and clones.
+
+
+[12/7/2025 11:21 PM] hieuhuule
+Ill definitely post here about it. How often did you subculture? Did you store in the refrigerator or at room temp?
+
+
+[12/7/2025 11:23 PM] zaz_dazzle
+Subcultured every 4 weeks, kept in a growth chamber 22-25 celcius temp.
+
+
+[12/7/2025 11:32 PM] zaz_dazzle
+There can be some disadvantages to older callus depending on what your looking for like funky phenotypes and progeny sterility.
+
+
+[12/8/2025 12:30 AM] palustral
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1447369697925533907/20251207_131855.jpg?ex=6af30052&is=6af1aed2&hm=3ccc1d029f13032d03af3745cd36c395475f2a82e5771f5eb55dede6025a97d0&
+
+{Reactions}
+🔥 (7)
+
+[12/8/2025 1:16 AM] .megacyber
+Is that the new BSC?
+
+
+[12/8/2025 4:55 AM] palustral
+Yeah.
+
+
+[12/8/2025 6:02 AM] .megacyber
+very nice
+
+
+[12/8/2025 2:29 PM] hieuhuule
+Let me get this straight, you kept an explant alive for 2 years and subcultured it every  4 weeks, keeping the same original explant alive while multiplying whatever you got while subculturing?
+
+When you subcultured, you moved the original explant to fresh media?
+
+I'm interested in hearing what disadvantages an older explant will have.
+
+Traditional methods prior to TC were to to keep a mother plant and take clone cuttings from that. Usually you can get  at least 3 rounds of harvesting for clones before the mother plant gets too funky looking and you make one of the clones the new mother.
+
+Is this the same in TC ir can you keep the original going for longer?
+
+
+[12/8/2025 2:52 PM] zaz_dazzle
+I think its going to be plant specific and since I was working from callus thats continually multiplying the original explant material (cotyledon) was not there as it either calluses or gets subcultured away within the 1st few subcultures. 
+
+I would only subculture the best of the best. If a plate had 16 clumps of calli I'd only take the most active growth with tight globular cells. Elongated structures or any decay would be removed- 1:1 ratio transferred (i had an over abundance)
+
+If you're keeping plant instead of callus in TC- things will be different too. 
+
+Disadvantages of using old callus that I saw was stunted growth, sterility (no flowers or seeds..sometimes flowers and dud pods where the seed early germinates in its pod.), and of course just the weird phenotypes where leaves or plant structure looked funky compared to other plants grown. 
+
+When working with calli the age of the stock material can be two years...then you try to turn that into a plant and add another several months to a year to get a plantlet ready for greenhouse life so then you're looking at a life cycle with multiple stress points that have created an opportunity for funky stuff.
+In the world of wanting somal clonal variations- older calli could help. 
+
+Are the spicy tomatoes going through a callus phase? Are you starting seeds in culture? I don't have experience growing these in culture but do see not in TC, the mother plant can eventually get funky too.
+
+{Reactions}
+👍
+
+[12/9/2025 9:06 AM] ebo1744
+Maybe over the top, but check into cryopreservation.  Not sure you could do it on a home budget, but I am not convinced that you have to go all the way to liquid nitrogen, but you can find some cheap freezers that will do -40C to -86C...
+
+
+[12/9/2025 9:07 AM] ebo1744
+Also, why a 20 plant limit, and what are spicy tomatoes... (I get the sense I am SERIOUSLY missing out here).
+
+
+[12/9/2025 10:23 AM] tillstarsdawn
+It’s a plant that we can’t talk about here. The joke is it has the same nutrient requirements as tomatoes so when you went to stores, you would say you’re growing “tomatoes”
+
+
+[12/9/2025 1:13 PM] velociraptrix
+think about which specific plant species is only legal to be grown and “used” in certain places (and on a state by state basis in the US), and has plant limits… and is still federally illegal (in the US) to grow or “use” and thus against discord’s ToS to talk about growing/“using”
+
+
+[12/9/2025 2:58 PM] hieuhuule
+So according to ChatGPT, I should try the Slow Growth Storage method used by Spicy plant TC labs that don't have Cryo:
+
+Temp 4 C - 15 C
+
+Shelf life is 6 months to 3+ years. 
+
+You out the explant in low salt or low sugar MS media and then add GROWTH RETARDENTS (like ABA, Paclobutrazol, somatic sugars). Then do one subculture every 6 - 12 months. 
+
+This should be doable in a homelab.
+
+This is the recipe ChatGPT wrote up:
+
+½ strength MS salts
+Sucrose: 10 g/L (reduced)
+Agar: 7 g/L
+GA3: NONE
+Optional: Paclobutrazol 0.1–0.5 mg/L OR 1–3% sorbitol (osmotic stress)
+pH: 5.75
+Store at 8–12°C, low light (5–10 µmol)
+
+
+[12/9/2025 3:18 PM] juzzy__
+Laur did a video on a lab tour where they kept some of their mothers in a dark fridge and moved them once a year or so.
+
+
+[12/9/2025 3:38 PM] kuusipalaa
+-_-
+
+
+[12/9/2025 4:04 PM] hieuhuule
+Anyone here ever try adding a growth retardent to your media?
+
+
+[12/10/2025 12:13 AM] stammlabor
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1448090193734140035/IMG_20251201_155011.jpg?ex=6af2fc56&is=6af1aad6&hm=f2bbe9e5bd7a798162b09cf90e54c26b7622c39d74cb70ab1375ada7c4bc668b&
+https://cdn.discordapp.com/attachments/1447007475755782348/1448090194136928507/IMG_20251201_155009.jpg?ex=6af2fc56&is=6af1aad6&hm=f3760171d9a69e2356a2b8d8f84867439eba3781077f01148adbf3cd93703d95&
+
+{Reactions}
+👍
+
+[12/10/2025 12:15 AM] stammlabor
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1448090647541059635/IMG_20251207_212123.jpg?ex=6af2fcc2&is=6af1ab42&hm=407555e5159ca31d3e395d8e74cbb77a4264a0ef18a57cbddb57b56d7fb1097b&
+
+
+[12/10/2025 12:18 AM] stammlabor
+Same plant as in the former Pic. Ube, lots of phenolic compounds leaking out of every petal which was cut...
+A.coal realy does Magic here.
+
+
+[12/10/2025 12:47 AM] nepsinjars
+Is anyone familiar with this penicillium fungus sp? Whatever it is, it’s the worst. I’ve been able to sterilize most other fungus but this one is a nightmare when it appears.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1448098651887894660/IMG_2323.jpg?ex=6af30436&is=6af1b2b6&hm=3cabaa4dc4a27c2f5111dfc581983cb7f064cfe36b43d939f99478d63ebf506b&
+
+
+[12/10/2025 3:49 PM] arjen83253
+Has anyone been using meta-Topolin as a cytokinin? Some researchers have quite amazing results with it it seems. I was wondering whether someone here has done some trials to compare with BAP or Kinetin?
+
+
+[12/10/2025 3:59 PM] hunter3893
+mT inhibits rooting less than BAP or Kinetin and is great for plants that seem to just callus up once you switch to rooting media.
+
+
+[12/10/2025 4:56 PM] arjen83253
+Hmm perhaps I should try mT with echinacea, I managed to get plantlets from leaf explants, but no luck rooting them...
+
+
+[12/11/2025 6:09 AM] zap233
+Does anyone here have any experience with or know of any good resources for using methylene blue to test seed viability?
+
+
+[12/15/2025 4:00 AM] garbleduser
+I am trying to get started with somatic cell nuclear transfer in plants. Any suggestions? I really need to get an old XY table, micromanipulators, and a phase contrast microscope.
+
+
+[12/15/2025 4:46 PM] ebo1744
+Ahhh... THAT Kinda Spice!  Right.  Got it.  I missed the connection.  I thought you were talking about one of the fleshy tomato-like pepper, and I was going WTF?!?!?!  Now I get it.  Sorry for being slow on the spicy-tomato bandwagon 😉
+
+
+[12/15/2025 4:47 PM] velociraptrix
+you’re good! it’s not an easy connection to make if you’re not ~~chronically online~~ used to the tiktok-ifying censoring common on the internet right now 😅
+
+
+[12/15/2025 4:48 PM] ebo1744
+Never heard of it.  Why would you want to add a growth retardant.  Maybe I am misinterpreting what you mean.
+
+
+[12/15/2025 4:49 PM] ebo1744
+Well... I am bummed.  I was Really Hoping to find a new tomato-like pepper for the garden ;-/
+
+
+[12/15/2025 6:22 PM] afieldofflowers
+im assuming because he actually wants to slow the growth of the plant to extend the amount of time between media/container replacements
+
+
+[12/15/2025 6:23 PM] afieldofflowers
+kind of like a seed bank except hes storing actual complete plants instead of dormant seeds
+
+
+[12/15/2025 7:31 PM] hieuhuule
+@a field of flowers that's exactly the reason
+
+
+[12/15/2025 8:16 PM] brave_capybara_82003
+Generate callus tissue. You can keep cell lines alive for a long time as callus tissue
+
+
+[12/15/2025 8:19 PM] brave_capybara_82003
+It can be a little difficult to get the hormones right, but once you do you will get this tumor looking lump of cells that can then be differentiated back into shoots by just transferring to new media and you can keep the tumor for quite a while in a dark cool place  like a fridge or cooler
+
+
+[12/16/2025 8:30 PM] ebo1744
+I would love to see some literature on that.  I am not needing to use that technique, but if it ever comes up it would be nice to have in the back of the brain-pan.
+
+
+[12/16/2025 8:31 PM] ebo1744
+Cool.  Another thing to put on my reading list 😉
+
+
+[12/16/2025 8:51 PM] brave_capybara_82003
+It's not super hard but is a delicate balance. Too much of one or the other will just end up producing roots or shoots.
+
+
+[12/16/2025 8:56 PM] ebo1744
+Do you have any literature on that?
+
+
+[12/16/2025 9:05 PM] brave_capybara_82003
+MM I can Google it quick.  Brb.
+
+
+[12/16/2025 9:09 PM] brave_capybara_82003
+I was using  2,4-d and rooting powder which I think contains IBA, and kinetin. The concentrations do vary a bit depending on species.
+The ai summary here generally sums it up.
+https://www.google.com/search?q=generating+plant+callus+tissue+hormone+concentrations&oq=generating+plant+callus+tissue+hormone+concentrations&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTMyOTQ0ajBqN6gCELACAfEFKiI_MliJWqvxBSoiPzJYiVqr&client=ms-android-att-us-rvc3&sourceid=chrome-mobile&ie=UTF-8
+
+{Embed}
+https://www.google.com/search?q=generating+plant+callus+tissue+hormone+concentrations&oq=generating+plant+callus+tissue+hormone+concentrations&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigAdIBCTMyOTQ0ajBqN6gCELACAfEFKiI_MliJWqvxBSoiPzJYiVqr&client=ms-android-att-us-rvc3&sourceid=chrome-mobile&ie=UTF-8
+🔎 generating plant callus tissue hormone concentrations - Google...
+https://images-ext-1.discordapp.net/external/sbgKW7eq0neqMnO7Nsd0gahW_D76mR74K0F4Lwtu16o/https/www.google.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_192dp.png
+
+{Reactions}
+👍
+
+[12/16/2025 9:20 PM] brave_capybara_82003
+I did a little more googling. This was shamelessly ripped from an ai overview. It's some books you can buy or maybe rent depending on your local library 
+For books with callus production recipes, focus on practical guides like "Plant Tissue Culture: Techniques and Experiments" (Park), "Plant Cell and Tissue Culture" (Pollard & Walker), "Plant Propagation by Tissue Culture" (George, Hall, De Klerk), and "Plant Cell Culture Protocols", as these provide hands-on protocols, media recipes (often variations of MS media with specific hormones like auxins/cytokinins for callus induction), and step-by-step instructions for beginners to advanced users. 
+Key Books to Look For:
+Plant Tissue Culture: Techniques and Experiments (by Sunghun Park): Known for classroom-tested experiments, media prep, and current techniques for regeneration and morphogenesis, ideal for practical application.
+Plant Cell and Tissue Culture (by Pollard & Walker): Praised for its step-by-step recipes and practical guidance, making it great for all experience levels.
+Plant Propagation by Tissue Culture (by George, Hall, & De Klerk): A comprehensive guide that covers fundamental aspects, including media and culture initiation.
+Plant Cell Culture Protocols (edited by Loyola-Vargas & Ochoa-Alejo): A collection of protocols that often details specific recipes and methods for various culture types, including callus.
+Plant Tissue Culture: Theory and Practice (by Bhojwani & Razdan): A classic that covers basics, media prep, and applications, great for foundational knowledge. 
+What to Expect in These Books:
+Media Recipes: Detailed lists of macronutrients, micronutrients, vitamins, sugars, and growth regulators (like 2,4-D, NAA for auxins; Kinetin, BAP for cytokinins) to induce callus.
+Hormonal Ratios: Specific auxin-to-cytokinin ratios that trigger callus formation versus shoot/root development.
+Step-by-Step Protocols: Instructions for explant preparation, sterilization, media making, and culture initiation.
+
+
+[12/16/2025 9:24 PM] brave_capybara_82003
+This should be enough to get you pointed in the right direction.
+
+
+[12/17/2025 8:37 AM] ebo1744
+Thank you.  I will look through these.  I think I have one of the references, but have not read the relevant chapter..
+
+{Reactions}
+🔥
+
+[12/18/2025 6:44 AM] urbanorganisms
+For plants grown in liquid media vs if they were in a constant position in solid agar, has anyone noticed a difference in the resulting growth as a consequence of the plant’s orientation shifting around?
+
+
+[12/19/2025 5:37 AM] hieuhuule
+Can you clone a stem cutting  in agar with growth hormones? I guess the concern would be contamination from the stem going crazy in the Agar.
+
+My previous experience cloning spicy plants had me take a clone cutting, dip it into Clone X rooting gel, and then into a moist rockwool cube or root plugs. After about 20 days the cutting will usually root.
+
+
+[12/19/2025 6:59 AM] urbanorganisms
+I’m not sure I’m understanding your question. Are you asking if you could start a plant tissue culture from a stem cutting? The answer is yes, of course you’d have to make sure the explant is sterile first though
+
+
+[12/19/2025 7:01 AM] hieuhuule
+Sorry, ill rephrase. Can you cut a small branch from a plant and straight up put it in agar with growth hormones immediately and still have it root?
+
+
+[12/19/2025 7:02 AM] urbanorganisms
+Not without prior sterilization first
+
+
+[12/19/2025 7:02 AM] urbanorganisms
+But once sterile, yeah! That’s the whole point of plant tc
+
+
+[12/19/2025 7:02 AM] hieuhuule
+Complete sterilization or just the parts that would touch the media?
+
+
+[12/19/2025 7:05 AM] urbanorganisms
+You want the whole thing to be sterile. I guess theoretically what’s important is the part touching the media, but you a) you don’t want bacteria/fungi somehow making their way down, and b) I’m not sure how (or why for that matter) you’d even go about sterilizing part of an explant. Sterilization usually involves washes of tissues in assorted sterilizing agents: bleach, hydroxide, etc, and the whole explant is submerged in those solutions during that process
+
+
+[12/19/2025 11:23 AM] kuusipalaa
+5 second rule does not exists as much as I would love for it to xD
+
+
+[12/19/2025 10:14 PM] noneya123456
+Anyone in this thread understand autoclaves? I have glass stovetop which I’ve been told is bad to use pressure cooker on. Found one of these local for cheap but not sure it would work as I don’t know what’s required.  It has preset cycles listed in specs.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1451684224435224737/IMG_1109.png?ex=6af2e08a&is=6af18f0a&hm=47c01f51667ae6c3f62567cc9718b36eb944a673449e7ff5fab6b03a09ce1f36&
+https://cdn.discordapp.com/attachments/1447007475755782348/1451684224741670962/IMG_1108.png?ex=6af2e08a&is=6af18f0a&hm=d488e9cda026d7b8eb76e55e33946811407ab453259e00c7f6971ec596da0b0f&
+https://cdn.discordapp.com/attachments/1447007475755782348/1451684225156649201/IMG_1110.png?ex=6af2e08a&is=6af18f0a&hm=c2b8457d87d358324992ab2f9c9732084ded95bc863258682e84c6e6cb60dc2a&
+
+
+[12/19/2025 10:20 PM] noneya123456
+I’m also unsure if biocoupler would fit, do you sanitize parts separately or put together?
+
+
+[12/19/2025 11:01 PM] alexrandomkat
+I dropped a tube cap inner-side-down on the floor of my wet still air box with no disinfectants...
+
+capped it on a empty agar tube figuring that's def a goner, but a week later and nothing has grown XD
+
+
+[12/19/2025 11:06 PM] alexrandomkat
+yes as far as temp goes, this will work perfectly. 121C corresponds to water boiling at 15 psi.
+
+If you're sanitizing parts separately, probably best to wrap them in something and assemble not-on-the-kitchen-counter.
+
+also idk but my pressure cooker manual says glass stoves are fine...
+
+
+[12/19/2025 11:13 PM] kuusipalaa
+You should sanitize parts separately though, especially if it has a lot of stuff to assemble. Stuff gets on the inside and it's never fully clean if not disassembled
+
+{Reactions}
+💯
+
+[12/20/2025 2:33 PM] juzzy__
+I do mine separately too because they dont fit in my pc.
+
+If you’re feeling lucky you can do your media and coupler together and the top jar beside it. When you open it immediately stick the top onto the coupler without removing it all the way out of the AC. Then spray the outside with alcohol and place it in your hood for the explant to be added.
+
+
+[12/20/2025 2:34 PM] juzzy__
+Otherwise you need to protect it in some way, aluminum foul wrap, autoclave bags, etc
+
+
+[12/21/2025 5:22 AM] zap233
+Does anyone here have any experience using antibiotics like tetracycline as pretreatment for explants?
+
+
+[12/21/2025 9:04 AM] arjen83253
+I would look further for a vertical autoclave, this one is good for medical instruments but very impractical for culture vessels, especially biocouplers probably won't fit, or if, then just one row down the middle. You can pick up a cheap gas cooker for less then a 100 from Amazon and put a vertical autoclave on it. Or buy a fully automatic vertical from Amazon or AliExpress. I'm living in Germany and found a nice stainless steel stove top autoclave, 42 litres, which I run on a big outdoor gas cooker in our conservatory. The brand name of the autoclave is Malinovka.
+
+
+[12/21/2025 11:09 PM] noneya123456
+One I’m looking at I can get for $250. Has usable height of 11” with only bottom tray. Will this fit assembled biocoupler? My order hasn’t come in and specs with jars assembled aren’t listed on site from what I can see
+
+
+[12/21/2025 11:11 PM] noneya123456
+I have seen some decent vertical ones for $6-700 USD new. Do I just need to make the jump and buy that? I have to do it indoors, and I rent so I don’t want to risk damaging the glass stove with the pressure cooker. I live in “luxury” loft building so if I break anything they’ll charge me a fortune😂
+
+
+[12/22/2025 1:18 AM] echoesofmemes
+I use it with great success!! But not w/MS Media.
+
+
+[12/22/2025 7:18 AM] arjen83253
+Can you please tell me more? Which species, and which medium? I just got some in the post yesterday, so I'll make a stock solution and run some experiments with my chrysanthemums, side-by-side with BAP, Kinetin and Trans-zeatin that I also got yesterday...
+
+
+[12/22/2025 8:16 AM] ebo1744
+do you know anyone with one similar to what you are looking at?  I give simpler things a try before purchasing up, unless there is another reason to get a fancy tool.
+
+
+[12/22/2025 9:09 AM] arjen83253
+An assembled biocoupler is 206mm in height, so that might just fit. But I'd probably splash out on a vertical autoclave.
+
+
+[12/23/2025 4:56 AM] stayrooted_
+@DaveyRobin I throw jars and couplers in sterile pouches and use 500 ml bottles for media
+
+
+[12/23/2025 8:47 AM] noneya123456
+You guys are all so helpful! Thank you everyone!
+
+{Reactions}
+💚 (2)
+
+[12/23/2025 2:28 PM] ebo1744
+Can you link to your source for sterile pouches?  I never thought about using them for jars.
+
+
+[12/23/2025 11:45 PM] juzzy__
+just look for "autoclave bags"
+
+{Reactions}
+👍
+
+[12/24/2025 7:55 AM] noneya123456
+https://a.co/d/8kckF03 search for size you need but like this
+
+{Embed}
+https://a.co/d/8kckF03
+PlastCare USA Sterilization Pouches
+Once sterilization processing is complete, leave instruments inside of the sterilization pouches and organize in a drawer or on shelves, according to procedure. Instruments remain sterilized until seal is broken. Storing sterilized instruments grouped into pouches as Procedure Instrument Tool Kit...
+https://images-ext-1.discordapp.net/external/iRdrlYiYp6PcUfe4uCm89qSTPq57ZUgVLk0o7WL56u4/https/m.media-amazon.com/images/I/81wP7LHAW6L.jpg_BO30%2C255%2C255%2C255_UF900%2C850_SR1910%2C1000%2C0%2CC_QL100_.jpg
+
+
+[12/24/2025 2:36 PM] sheikhamin_73548
+https://www.aliexpress.com/item/1005004612250853.html?spm=a2g0o.order_list.order_list_main.23.47ac1802sMnETi
+
+{Reactions}
+👍
+
+[12/24/2025 2:37 PM] sheikhamin_73548
+I bought these bags from Ali Express
+
+
+[12/24/2025 5:03 PM] stayrooted_
+@EBo  yes, if you have  access to Amazon they have alot of different sizes
+
+{Reactions}
+👍
+
+[12/26/2025 1:52 AM] henrygrasman
+gibberellins?
+
+
+[12/26/2025 11:40 AM] dougiemckeyhook
+Handy for making pasture grass longer, and enhances the rainbow community via the water supply. Gotta love that endocrine disruption yo
+
+{Reactions}
+😂
+
+[12/26/2025 4:20 PM] henrygrasman
+I chuckled🙏
+
+
+[12/27/2025 3:40 AM] ebo1744
+what about gibberellins?
+
+
+[12/27/2025 3:46 AM] henrygrasman
+I’m curious if we find any use for them, considering they’re pretty magical in ex vitro circumstances
+
+
+[12/27/2025 3:46 AM] henrygrasman
+/i’m surprised we don’t hear more about them
+
+
+[12/27/2025 3:50 AM] .megacyber
+i use ga3 in some of my shooting media
+
+
+[12/27/2025 4:20 AM] chefdecuisinart
+I haven't personally, but I have heard of ga3 being used to help sprout older seed in TC.
+
+
+[12/27/2025 9:53 AM] arjen83253
+It seems the GA3 stock solution has a very short shelf life (even frozen), so it's extra hassle to make stock solution regularly, I guess that's why I don't tend to use it a lot unless really needed
+
+{Reactions}
+👍
+
+[12/27/2025 5:55 PM] ebo1744
+I am sure there are a lot of people here that can comment on them.  As far as I can tell they are a standard PGR (Plant Growth Regulator), and any time you see someone talking about a protocol that talk about GA3 or Gibberellins, they are likely using them.  I ordered some for a project just before I got really sick, and still have some sitting unused in the refrigerator.  I need to find out how long they last in a cold/dry place before they should be pitched.  So, please ask away -- lots of us can take advantage of these questions.  Thank you for asking.
+
+{Reactions}
+💯
+
+[1/8/2026 2:36 AM] craftcultivar
+I just got a nice 120VAC vertical pressure cooker / autoclave off Alibaba for $150,  It is 24L  17 inches tall and 11 inches wide.  Kicks ass and worth the 30 day wait.
+
+
+[1/8/2026 2:36 AM] craftcultivar
+https://www.alibaba.com/product-detail/Stainless-Steel-Autoclave-Pressure-Steam-Sterilizer_1601363304097.html?spm=a2756.trade-list-buyer.0.0.63b076e9TZV02B
+
+
+[1/8/2026 3:46 PM] arjen83253
+Questions about meta-Topolin: I made 1mg/ml stock solution in 100%DMSO (no water). I managed to filter sterilise about 25ml, then I gave up (passes hardly through the 0.22 μm syringe filter). Dissolved fine, but how do I store that? Normally I would freeze 1ml sterile aliquots, but the DMSO label says "crystallises below 18C/66F". Or is meta-Topolin heat stabile and can be autoclaved together with the media?
+
+
+[1/8/2026 3:47 PM] arjen83253
+Or store at room temperature?
+
+
+[1/8/2026 4:08 PM] nyoksol
+DMSO crystalizes but it won't expand like water, so it won't crack or anything
+
+
+[1/8/2026 4:18 PM] ascpete_25859
+https://media.discordapp.net/attachments/1447011355759742996/1447046484322287738/image.png
+
+According to the Table; Solvent is KOH (or NaOH), Stock Solution is stored Frozen, and it can be autoclaved (with medium) or filtered
+
+{Embed}
+https://media.discordapp.net/attachments/1447011355759742996/1447046484322287738/image.png
+https://media.discordapp.net/attachments/1447011355759742996/1447046484322287738/image.png?ex=6af324ce&is=6af1d34e&hm=f1ee3c9faf1cfeaf745816478ef90175200831abd870ce24d79ca8a1b6b103ae&
+
+
+[1/8/2026 6:21 PM] arjen83253
+Thanks, good to know! But would it impact on the solubility of the meta-Topolin?
+
+
+[1/8/2026 6:24 PM] arjen83253
+Thanks, I'll try that with the next stock solution. And I'm glad it can be co-autoclaved, that saves a lot of hassle. It's amazing how similar the molecular structure is to BAP, like kinetin as well, but seems to have different properties again... Unfortunately not much info to be found.
+
+
+[1/8/2026 6:25 PM] arjen83253
+So I'll have to experiment
+
+
+[1/8/2026 6:25 PM] arjen83253
+Which is always fun 🤣
+
+
+[1/8/2026 6:31 PM] nyoksol
+Theoretically could but it'll redissolve once it comes back up to room temperature
+
+{Reactions}
+👍
+
+[1/11/2026 3:54 AM] ebo1744
+@ascpete, can you PM the original link to the GPR tables?  When I try to save it to so I can print it out, discord is converting it to a .webp and not playing nicely...
+
+
+[1/11/2026 5:08 AM] ascpete_25859
+The PGR Document is attached, 
+Lots of other Info and Documents;  https://phytotechlab.com/technical-info
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1459760760056975411/PlantGrowthRegulators.pdf?ex=6af34166&is=6af1efe6&hm=452f1899f58163565eefe3dd8c8b3b292f3217767d71f6514266b8e0931b0fcf&
+
+{Embed}
+https://phytotechlab.com/technical-info
+Technical Info
+MSDS’s, COA’s, Product Info Sheets, FAQs, Videos, and other plant tissue culture documentation.
+
+{Reactions}
+💯 💚
+
+[1/11/2026 11:43 AM] ebo1744
+Thanks.  This is perfect!
+
+{Reactions}
+👌
+
+[1/19/2026 5:53 PM] doxatek
+We use it in certain genotypes that have trouble elongating during shooting at 0.1 mg/L
+
+
+[1/28/2026 7:28 PM] phototroph
+I've seen 2 pressure cookers destroyed on glass top stoves and then that burner went out and cost us a lot to have fixed.
+
+{Reactions}
+😮
+
+[1/28/2026 7:29 PM] phototroph
+Yes that is a good autoclave and if you can get it and you are committed .. you should.
+I ended up buying a single burner for my PC but then recently switched to a Tattooist steralizer that someone gave me.
+
+
+[1/28/2026 11:20 PM] honestyfades
+dare i ask what destroyed means for a pressure cooker?
+
+
+[1/29/2026 1:34 AM] phototroph
+The bottom ballooned out on both of them. . . no tragic explosions. sorry. 🫣
+
+
+[1/29/2026 1:35 AM] phototroph
+Also, after this I also switched that out for an induction unit and an induction ready one.
+
+
+[1/29/2026 1:58 AM] honestyfades
+well that’s reassuring at least 😅 that’s scary though!
+
+
+[1/29/2026 2:08 AM] phototroph
+It was! Those rarely explode... unless somebody replaced the pressure relief plug or it's just old. (damaged etc) 
+Here is the one I'm using right now... Built in heating element and a sleeve inside to keep things dry. 2kW and works fast! (and occasionally throws a breaker)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1466238592979435835/20260128_190525.jpg?ex=6af31759&is=6af1c5d9&hm=b7d4bf1cc9f0f3f3f09fd8fb729734f6fe942695056865944e57a580eee3b6ed&
+
+
+[1/29/2026 3:12 AM] erwin_myco
+A bottom bulging usually is a sign of it overheating due to boiling dry, can happen on any heat source, but then you will get the entire weight concentrated on a small place on the glass. At that point there is also no pressure anymore since there is no water boiling, no explosions but it does ruin the pressure cooker.
+
+{Reactions}
+💯 🤔
+
+[1/29/2026 8:29 AM] honestyfades
+would the solution to this issue just be, add more water before you start, then?
+
+
+[1/29/2026 8:32 AM] honestyfades
+but i see the issue as far as the shape of the base not appropriately contacting the heating element surface anymore, which for the glass type is pretty important i guess
+
+
+[1/29/2026 8:49 AM] erwin_myco
+Yes, just add a lot of water, raise that trivet if needed. Especially when starting out, to get a feel how much water is lost during a sterilization cycle.
+
+
+[1/29/2026 2:33 PM] zap233
+The manual should say how much you should add
+
+
+[1/29/2026 9:13 PM] erwin_myco
+All depends on which manual though, most pressure cookers are only meant for food, not even canning. People also read the manual, add that amount of water, and then start sterilizing mushroom substrate/spawn for 3 hours, resulting in a dry and ruined pressure cooker. Most plant tissue culture work is only short cycles, so that's safer luckily.
+
+
+[1/29/2026 9:20 PM] zap233
+I guess I've been lucky that mine only uses a small fraction of the recommended water for 3 hour runs.  T-Fal at least documented it properly.
+
+{Reactions}
+♥️
+
+[1/29/2026 9:22 PM] zap233
+Iirc cookers usually have a minimum fill amount too, they just tell you to fill it with soup/stews etc instead
+
+
+[2/3/2026 6:34 PM] nyoksol
+So, I have some seedlings on 2,4-D with a dash of BAP. They seem to be forming a callus or at least some kind of thick growth at the transition point between the stem and root, which is great. 
+If I want to keep the callus growing, can I just keep subculturing it on the same hormone mix indefinitely? Or should I be switching it to "callus maintenance" eventually after the "callus induction" is done? Long-term I want embryogenic callus, maybe in liquid culture, but I want to expand it out so I have a lot of tissue to work with for some mutagenesis experiments
+
+
+[2/3/2026 8:06 PM] doxatek
+If you see some nice embryos to form after induction with 2,4-D I would put on a low hormone development media as you say for at least two weeks for good development. Otherwise they'll be not good.
+
+I've never kept embryogenic callus around for extended periods of time like this though. To me they usually go bad but I'm sure species matters here and it's not always the case
+
+
+[2/3/2026 10:43 PM] nyoksol
+What would a low hormone development media look like, something like 1:1 auxin to cytokinin just at low levels (1mg/L? Less)? 
+And when you say they go bad, what does that look like
+
+
+[2/3/2026 10:48 PM] doxatek
+If it stays on high hormone too long the embryos will all elongate or to start doing roots and weird stuff. They won't regenerate very well after that.
+
+
+[2/3/2026 10:51 PM] doxatek
+What is the concentration of 2,4 D at the moment? If you're getting good induction cut it by a quarter and check the development again in a week or so.
+
+This is me spit balling though because I have no idea the species and media or what's best for induction for it. 
+
+I've only done crops with embryo induction
+
+
+[2/3/2026 11:01 PM] nyoksol
+2 mg/L, they're coming up on 2 weeks. Capsicum annuum
+
+
+[2/3/2026 11:02 PM] nyoksol
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1468365955561291930/rn_image_picker_lib_temp_5b7e75b4-cd00-4b42-8425-341c86b71536.jpg?ex=6af2eb9c&is=6af19a1c&hm=ca4da71be3907058ed77dafaaff66c88ab0ddcf8438b17dc4eaf79c0175b5f0e&
+
+{Reactions}
+💚
+
+[2/3/2026 11:07 PM] nyoksol
+Okay I've seen this happen with some eggplant leaf culture I've tried... The callus stopped growing after a while and then after even more time went on it just started growing roots out of the leaves. That's good to know why that happened
+
+
+[2/4/2026 1:08 AM] doxatek
+Oh you're starting from seed what I recommend is germinating these in vitro after sterilizing them then take the cotyledons as well as the hypocotyl chop them up and then put those on the induction media
+
+
+[2/4/2026 1:09 AM] doxatek
+You can cut the cotyledons into 4 or  5 pieces each and discard the tip
+
+
+[2/4/2026 1:09 AM] doxatek
+I actually have done peppers before
+
+
+[2/4/2026 1:10 AM] doxatek
+Hormone too high for too long can make callus really watery too sometimes
+
+
+[2/4/2026 4:19 AM] nyoksol
+i started them on a no-hormone mix and then just threw them on here after they had germinated. easier to sterilize the seeds with h2o2 and not have to deal with as much oxidative stress on the actual plant material.  chopping them up is a good idea, though, ill try that next time. or maybe even just when i subculture. its working a lot better than the leaf segments i tried in the past did, at least
+
+have you ever tried to get friable callus? thats really my ultimate goal. although i guess its not super important, so long as i can still regenerate. but i sort of just assumed that a looser callus would be easier to work with mutagenesis, because of better penetration and easier handling
+
+
+[2/10/2026 9:05 AM] _the_manta_ray
+This is about preserving biodiversity and medical potential that the system is actively erasing. If anyone is willing to share knowledge, troubleshoot, or collaborate - I would be deeply grateful.
+
+This community represents, to me, what science should be: curious, collaborative, and driven by passion instead of proft. My own organisation is blocked from taking profit in any form by its articles of association. Our work is strictly about preservation. 
+
+@Moderator - self reporting myself as I know this topic is not allowed. However, these restrictions are exactly what will worsen the issue; someone has to do this work, and I'm hoping the appeal can remain up, not to facilitate discussion here, but to allow like minded individuals to connect
+
+
+[2/10/2026 9:05 AM] _the_manta_ray
+Annnnnnd the original message was blocked, so now I sound like a crazy person, perfection
+
+
+[2/10/2026 9:09 AM] _the_manta_ray
+Can y'all see and review the appeal posted/blocked above? Or did I do all that typing for no reason? 🤣
+
+
+[2/10/2026 12:13 PM] laozishimogu
+well, I can see this one
+
+
+[2/10/2026 12:14 PM] laozishimogu
+idk if you have other messages tho
+
+
+[2/14/2026 2:00 AM] juzzy__
+Anyone tried a 0.2-0.5mm meristem TC on something like a Ranuculus? Do you need a backlight microscope?
+
+
+[2/14/2026 2:01 AM] chefdecuisinart
+Could use a loupe
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1472035093835944067/20260213_190136.jpg?ex=6af315c3&is=6af1c443&hm=67e3de334596f4e757dc71bd84515084950407cc2f6a814151a6cbf26e4e8b79&
+
+
+[2/14/2026 2:02 AM] chefdecuisinart
+Or a simple eye held one, if you're good with a loupe
+
+
+[2/14/2026 2:09 AM] juzzy__
+I have a handheld one, good call
+
+
+[2/14/2026 2:09 AM] juzzy__
+hands free would be better
+
+
+[2/14/2026 2:46 AM] juzzy__
+https://a.co/d/0b6BwMV9 overkill?
+
+{Embed}
+https://a.co/d/0b6BwMV9
+Trinocular Microscope 40X-5000X Magnification by Woehrsh
+Compound Trinocular Microscope 40X-5000X Magnification, Microscope for Adults, Laboratory Grade with LED Illuminated Dual Mechanical Stage and HD USB Camera Microscope
+https://images-ext-1.discordapp.net/external/SmhCnYijjPF__Z_kT2aNtUOr3UBo3zpClfqJFy5U26Y/https/m.media-amazon.com/images/I/71bSxb7qC5L.jpg_BO30%2C255%2C255%2C255_UF750%2C750_SR1910%2C1000%2C0%2CC_QL100_.jpg
+
+
+[2/14/2026 2:56 AM] chefdecuisinart
+I've been wanting an excuse to get one because you can see pollen viability with a strong enough microscope, lol
+
+
+[2/14/2026 2:57 AM] chefdecuisinart
+I absolutely *need* to know if the mass produced nepenthes are actually sterile, or if it's just bs spread by old growers
+
+
+[2/14/2026 3:05 AM] juzzy__
+makes sense. crazy how cheap these are now. $280 is a couple dinners
+
+
+[2/14/2026 3:06 PM] erwin_myco
+Keep in mind anything over a 1000x magnification is basically just marketing, it can give a bigger picture, but more vague. For meristem I would get a stereo microscope though, to be able to work under it
+
+
+[2/14/2026 4:56 PM] juzzy__
+Yeah, good point.
+
+
+[2/14/2026 9:23 PM] doxatek
+Top light.
+
+
+[2/14/2026 9:24 PM] doxatek
+Doesn't take too much mag for a lot of pollen which is nice. I feel like any half decent thing you could get would be more than fine
+
+
+[2/14/2026 9:25 PM] doxatek
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1472327931174060247/IMG00014.jpg?ex=6af2d4fd&is=6af1837d&hm=9daa335cd9fa643150dfd24dd3f6f958bdbc0a70b86dc5eb9bf77ebad7978640&
+
+
+[2/14/2026 9:25 PM] doxatek
+Here's some pollen
+
+
+[2/14/2026 9:26 PM] doxatek
+Sunflower. You can tell it likes to be insect pollinated because the pollen is spiky
+
+
+[2/14/2026 9:28 PM] doxatek
+I also checked for pollen germination which you can see easily at this mag
+
+
+[2/14/2026 9:30 PM] doxatek
+Lot of them can have genetic profile making them sterile. But idk what that is for everything.
+
+
+[2/15/2026 1:00 AM] .megacyber
+You could try a tetrazolium test
+
+
+[2/15/2026 1:30 AM] doxatek
+The seeds are like suuper tiny though is this still effective? I've never run this test
+
+
+[2/15/2026 1:31 AM] doxatek
+But if the plants are nonviable due to not being able to cross you might not get seed dev anyway.
+
+
+[2/15/2026 1:31 AM] chefdecuisinart
+I think you'd notice if the pollen turns pink/red or blue/green.
+
+
+[2/15/2026 1:32 AM] doxatek
+Pollen germination test is what I've done. I thought this tetrazolium test was for seed
+
+
+[2/15/2026 1:32 AM] doxatek
+But just because the pollen germs or turns red doesn't necessarily mean viable cross
+
+
+[2/15/2026 1:32 AM] doxatek
+I guess it depends what is going on exactly with the plants
+
+
+[2/15/2026 1:32 AM] chefdecuisinart
+https://link.springer.com/chapter/10.1007/978-3-642-77306-8_5
+
+{Embed}
+https://link.springer.com/chapter/10.1007/978-3-642-77306-8_5
+Tests for Pollen Viability
+Viability means ability to live; but pollen viability connotes the ability of pollen to complete post-pollination events and to effect fertilization. In the old literature the terms pollen viability and pollen sterility were often used interchangeably.
+https://images-ext-1.discordapp.net/external/3KWORM6-7Og4_--A1NMmLQycIKVYiajfc-0Ldfv0gj0/https/static-content.springer.com/cover/book/978-3-642-77306-8.jpg
+
+
+[2/15/2026 1:33 AM] doxatek
+I saw online with these that it was a question of ploidy
+
+
+[2/15/2026 1:33 AM] chefdecuisinart
+that's what I mean by grower bs
+
+
+[2/15/2026 1:33 AM] doxatek
+Ploidy isn't bs tho
+
+
+[2/15/2026 1:33 AM] doxatek
+They use polyploid plants because they are more vigorous
+
+
+[2/15/2026 1:33 AM] doxatek
+If they are polyploid from breeding then you can have crossing troubles or sterility
+
+
+[2/15/2026 1:34 AM] doxatek
+You can send them for ploidy analysis if you want to spend some money I do this with other plants regularly lol
+
+
+[2/15/2026 1:34 AM] chefdecuisinart
+And I'm saying these arent polyploids, growers just say they are because they're mass market plants that most will fail to grow properly anyways.
+
+
+[2/15/2026 1:34 AM] chefdecuisinart
+The average nep grower doesn't even see a flower, lol
+
+
+[2/15/2026 1:34 AM] doxatek
+True enough
+
+
+[2/15/2026 1:35 AM] doxatek
+They make plenty of basals for me already
+
+
+[2/15/2026 1:36 AM] chefdecuisinart
+I plan to try backcrossing Miranda with a wavy leaf maxima.
+
+
+[2/15/2026 1:36 AM] chefdecuisinart
+Supposedly there are female Mirandas out there, from the original Deroose release
+
+
+[2/15/2026 1:37 AM] doxatek
+Oh  I see Miranda's triploid
+
+
+[2/15/2026 1:37 AM] doxatek
+But Max isn't
+
+
+[2/15/2026 1:37 AM] doxatek
+Gotcha
+
+
+[2/15/2026 1:37 AM] chefdecuisinart
+Some dutch grower on an old forum said there were originally 8 plants in the release, and 3 are female. Only a male is available in TC now.
+
+
+[2/15/2026 1:37 AM] chefdecuisinart
+And those females were viable, allegedly.
+
+
+[2/22/2026 10:09 PM] nathantheelohim_94207
+can you grow a suspension culture into a singular giant callus puck via growing them to max size and or stopping the spinning?
+
+
+[2/23/2026 1:03 AM] nyoksol
+Yeah they'll start adhering once the agitation is gone
+
+
+[2/23/2026 1:04 AM] nyoksol
+I would just pellet
+
+
+[2/23/2026 2:01 AM] nathantheelohim_94207
+"It would"? and you mean it makes a many clump pellets and not a puck?
+
+
+[2/23/2026 2:01 AM] nathantheelohim_94207
+my dream is a loaf of callus I can cut into made in a big vat
+
+
+[2/23/2026 2:03 AM] nyoksol
+oh thats going to be harder
+
+
+[2/23/2026 2:03 AM] nyoksol
+callus doesnt naturally grow like that and you start to get hormone gradients that differentiate into tissue once it gets bigger
+
+
+[2/23/2026 2:04 AM] nathantheelohim_94207
+makes sense but will it be one fused lump?
+
+
+[2/23/2026 2:04 AM] nyoksol
+from suspension culture, not really
+
+
+[2/23/2026 2:05 AM] nathantheelohim_94207
+is it like a sponge or is it like cubed meat that doesn't rebind
+
+
+[2/23/2026 2:05 AM] nyoksol
+suspension culture is weakly adherent so it tends to just crumble when you work with it
+
+
+[2/23/2026 2:05 AM] nyoksol
+think feta cheese
+
+
+[2/23/2026 2:05 AM] nathantheelohim_94207
+makes sense
+
+
+[2/23/2026 2:05 AM] nyoksol
+if its growing on a solid media then yeah its really thick and hard
+
+
+[3/2/2026 6:25 AM] nathantheelohim_94207
+https://www.sciencedirect.com/science/article/pii/S0167779925004111#bb0050 does anyone know about this and can Laur teach me how to do this in a SAB?
+
+
+[3/2/2026 6:26 AM] nathantheelohim_94207
+Cultured fruit, but requires special genetic techniques
+
+
+[3/2/2026 7:50 AM] palustral
+I read that article and that seems like something we would do during space travel, but I would guess the sugars required would far outweigh the fruit produced.  There seems like there is a big energy loss with this, much like power storage in a battery.  Taking the carb production of plants out of fruit production seems like a waste in my humble opinion.  That is the secret sauce of plants: photosynthesis.  Seems like there would be a better system that would convert waste products into a consumable food....😉.... that is what we do with mushrooms....  You could do this cultured fruit with any still air box or hood or cabinet, but other than the novelty of it, I do not see the benefit.  Please convince me otherwise.  100.00 worth of time and materials for 5.00 worth of fruit seems counterproductive.  Just because it can be done does not mean it is worth doing.  Is there an ultra high value fruit that may make this worthwhile that I am not thinking about?
+
+
+[3/2/2026 4:08 PM] nathantheelohim_94207
+I was interested in it for breeding, and just producing one off rare fruits for myself to try without having to grow out the whole plant.
+
+
+[3/2/2026 4:09 PM] nathantheelohim_94207
+I don't know how representative the cultured fruits are compared to the fruit that plant would produce if repotted or not GMO.
+
+
+[3/2/2026 4:10 PM] nathantheelohim_94207
+another idea I wanted to try was inducing flowering in kavas, which don't flower and are clonal.
+
+
+[3/2/2026 4:30 PM] nathantheelohim_94207
+I wasn't worried much about how the sugar gets there, from walmart for me, but I am looking at experimental methods now and maybe something changes in the future. https://www.nature.com/articles/s43016-022-00530-x
+
+{Embed}
+https://www.nature.com/articles/s43016-022-00530-x
+A hybrid inorganic–biological artificial photosynthesis system fo...
+Nature Food - Coupling a two-step electrochemical system that converts CO2 to acetate with photovoltaics increases solar-to-food energy conversion efficiency, providing an alternative route to...
+https://images-ext-1.discordapp.net/external/wVXX1P8piMRLxVKudsLd-b47uuxaCd6r9hZBiFfzQc8/https/media.springernature.com/m685/springer-static/image/art%253A10.1038%252Fs43016-022-00530-x/MediaObjects/43016_2022_530_Fig1_HTML.png
+
+
+[3/2/2026 5:09 PM] zap233
+If you get to the point of doing complicated genetic engineering work, you'll probably have a full lab and will be well beyond a SAB.
+
+{Reactions}
+👆 💯
+
+[3/2/2026 5:10 PM] zap233
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1478062034473193584/Screenshots_2026-03-02-10-54-50.jpg?ex=6af3420a&is=6af1f08a&hm=82967b1d949591f16b83d7da0923f6d711d46d443af31aeeb4b713adae06a830&
+
+
+[3/2/2026 5:11 PM] zap233
+Interesting they acknowledge that this is a solution for a currently mythical situation.
+
+
+[3/2/2026 5:12 PM] zap233
+I wonder how we would get a sugar supply without farming of some sort.
+
+
+[3/2/2026 5:12 PM] nathantheelohim_94207
+thats one of my questions, how complicated is it? can I just buy the genes from a supplier in some vector and put it in a vial with the plant tissue?
+
+
+[3/2/2026 5:13 PM] zap233
+Unfathomably
+
+
+[3/2/2026 5:13 PM] zap233
+This is not the sort of thing you do casually at home.
+
+
+[3/2/2026 5:14 PM] zap233
+Our crude TC is nothing close to this sort of lab work.
+
+
+[3/2/2026 5:15 PM] zap233
+https://www.the-odin.com/
+
+This is probably the closest entry level stuff any of us will get into
+
+{Embed}
+https://www.the-odin.com/
+The ODIN
+Making Science and Genetic Engineering Accessible and Affordable
+
+
+[3/2/2026 8:00 PM] palustral
+I bought a biological safety cabinet, last year, finally, for genetic work.  Safety first and no new growths for me, please.  PPE is worth real investments.  The paper shared did capture my attention, thank you, Nathan, for sharing.  Quickly breeding plants is a valid arguement that I can see using this method of fruit production.
+
+{Reactions}
+upvote
+
+[3/2/2026 9:19 PM] zap233
+It would be really interesting to see a dwarfing gene that we could toggle on in vitro with a hormone trigger or something to quickly get an estimate of what the commercial fruit looks like.
+
+
+[3/2/2026 9:19 PM] zap233
+Also +1 for safety.
+
+
+[3/2/2026 11:36 PM] nathantheelohim_94207
+https://www.sciencedirect.com/science/article/pii/S0254629922004471#:~:text=Alternatively%2C%20%27foam%20disk%27%20is%20cheaper%20against%20agar,in%20plant%20tissue%20culture%20as%20agar%20alternative.
+
+
+[3/2/2026 11:37 PM] nathantheelohim_94207
+does anyone know about alternatives to jelly based media? like foam or coir soaked in liquid media?
+
+
+[3/2/2026 11:37 PM] nathantheelohim_94207
+I'd love to be able to not reroot during acclimation by using the same media just rinsed of the liquid
+
+
+[3/2/2026 11:41 PM] nathantheelohim_94207
+the linked article is orchid specific but I mean more generally and has general examples cited
+
+
+[3/2/2026 11:43 PM] nathantheelohim_94207
+redosing the liquid media without having to subculture is a point made in the article that seems pretty useful
+
+
+[3/2/2026 11:48 PM] nathantheelohim_94207
+I found an account that a certain plants TC shoots can go right into rockwool, separate from the liquid media talk.
+
+
+[3/3/2026 12:18 AM] nathantheelohim_94207
+another idea I had was coir with a pocket to pour a drop of starter agar that can be removed but prove better starting conditions till its removed, without harming the plant roots if possible, during acclamation
+
+
+[3/3/2026 12:28 AM] palustral
+Interesting thoughts.   Many times the plants grow a new set of roots when acclimating.  There have been growers, here, that have used cotton in place of agar.  You could sterilize anything to try to use as a foundation for the plants, but research what you are thinking about using.  Coir seems to have concentrations of various salts, bark may mess with the media pH in time, rockwool could be adjusted and may work, too.  Anything can be used.
+
+
+[3/3/2026 1:18 AM] nathantheelohim_94207
+I found Laur saying to cut off the roots sad, I am fine with it being standard practice but even if it wastes time I would want to avoid it. Do you know much about why that happens and if plants with surviving roots are farther ahead? My speculation not yet finding an answer is the environment produces weaker roots or that the jelly removal process, though needed and how almost all of its done, causes the damage.
+
+
+[3/3/2026 1:19 AM] nathantheelohim_94207
+for environment I was thinking the coir and changing nutrient concentration might produce good roots, in that the old nutrients will deplete and produce a more standard coir environment for it to establish in.
+
+
+[3/3/2026 2:12 AM] ascpete_25859
+> *"**Photo-autotrophic micro-propagation (PAM) **is a technique that allows plants to grow in a sugar-free medium by relying on photosynthesis for their energy needs. In this method, multiplication, rooting and acclimatization stages are (sometimes) combined, promoting healthy plant-let development under controlled environmental conditions."*
+
+BTW, Horticultural Coco Coir (aka coco-peat) should be used for plants not other readily available grades (e.g., 'Bedding').
+
+https://www.researchgate.net/publication/260223927_Developing_a_Photoautotrophic_Micropropagation_System_for_Woody_Plants
+https://www.researchgate.net/publication/257922720_An_Efficient_Ex_Vitro_Rooting_and_Acclimatization_Method_for_Horticultural_Plants_Using_Float_Hydroculture
+https://ipps.org/wp-content/uploads/2025/03/52_143.pdf
+https://pmc.ncbi.nlm.nih.gov/articles/PMC6660493/pdf/11240_2019_Article_1635.pdf
+https://www.mdpi.com/2079-7737/14/6/706
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1478198285901627462/StagesPTC.png?ex=6af3182e&is=6af1c6ae&hm=3ede3128e13559183c3a3628c1d75cede6e0183ccce8169d80b8d2aca114cbdf&
+
+
+[3/3/2026 2:50 AM] nathantheelohim_94207
+great topic looking into it found this https://journals.ashs.org/hort/hort/published/rest/pdf-watermark/v1/journals/hortsci/36/1/article-p49.pdf/watermark-pdf/ which mentions 100L vessel citation I can't find, but like why not grow a whole plant sterile?
+
+
+[3/3/2026 2:50 AM] nathantheelohim_94207
+also Another advantage of PAM is enhanced
+photosynthesis and growth of the plantlets.
+Kozai (1991) observed that photoautotrophi-
+cally micropropagated plantlets of many spe-
+cies had higher net photosynthetic rates than
+did photomixotrophically micropropagated
+ones when cultured under high photosyn-
+thetic photon flux (PPF) and high CO 2 con-
+centration. Low photosynthetic ability of in
+vitro plantlets is considered to be the cause of
+the low survival and growth rates in the
+acclimatization stage (Grout, 1978; Grout
+and Aston, 1978; Preece and Sutter, 1991)
+
+
+[3/3/2026 2:52 AM] nathantheelohim_94207
+seems like a problem with acclimation could be the plant are diabetic and don't have the stuff to make there own sugar yet and that if a staged system works you could start sugar then go photoautotrophic still sterile then acclimate.
+
+
+[3/3/2026 3:33 AM] nathantheelohim_94207
+I am meaning in the same vessel
+
+
+[3/3/2026 3:33 AM] nathantheelohim_94207
+I am trying to reduce swaps and how much I handle things.
+
+
+[3/3/2026 3:35 AM] nathantheelohim_94207
+like that you go straight from a chunk of callus to it being induced to shoot in the same substrate that the plant will finish in
+
+
+[3/3/2026 4:14 AM] ascpete_25859
+Utilizing PAM requires at least two (2) stages to produce well rooted plant-lets. 
+Many Indoor Farms and Greenhouses utilize these PAM methods, similar to that in the linked paper where rooted plant-lets are grow out into mature plants.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1478229023489527981/image.png?ex=6af334cf&is=6af1e34f&hm=1d2e5a97889f494707f9393a15ab5d0bba066b5e82843493a0f5e99e666de8ff&
+
+
+[3/3/2026 11:23 PM] nathantheelohim_94207
+I see the need for 2 stages but I think you could do them at once from callus via internal staging or what I just found of some plants being fine doing both at the same time. https://www.researchgate.net/publication/342344511_In-vitro_Organogenesis_and_Simultaneous_Formation_of_Shoots_and_Roots_from_Callus_in_Dendrocalamus_asper
+
+
+[3/3/2026 11:24 PM] nathantheelohim_94207
+In D.asper, organogenesis via callus takes place when 2,4-D is used in combination with BAP, IAA, NAA and IBA. There is simultaneous development of shoots and roots from callus in low concentrations of growth hormones. Che et al. (2008) have reported that callus follow three basic developmental programs – somatic embryo development, shoot organ differentiation and mixed development pathway with both somatic embryogenesis and shoot organogenesis. Probably, a fourth developmental program exists wherein both shoots and roots develop simultaneously from the callus as has been seen in our present work in D. asper.
+
+
+[3/3/2026 11:25 PM] nathantheelohim_94207
+for the solid media with a liquid you could simply swap liquids
+
+{Reactions}
+❤️
+
+[3/3/2026 11:28 PM] nathantheelohim_94207
+another idea I have is delayed release hormones mixed into the agar, so that after the callus shoots and starts to deplete the shooting hormones a rooting ratio will come about.
+
+
+[3/3/2026 11:31 PM] nathantheelohim_94207
+this could then be combine with a layer of agar on coir to swap to PAM in container
+
+
+[3/4/2026 1:41 AM] nathantheelohim_94207
+https://www.sciencedirect.com/science/article/abs/pii/S235294072400458X
+
+
+[3/4/2026 1:42 AM] nathantheelohim_94207
+slow release hormones in Calcium carbonate
+
+
+[3/4/2026 2:07 AM] nathantheelohim_94207
+Pulsatile Drug Delivery
+
+
+[3/4/2026 5:42 AM] nathantheelohim_94207
+lol got a stupid solution that works for me, grow in a mushroom grow bag and pour 2 agar pockets, shoot the callus on one, then with the bag still closed grab the plant with the plastic and transfer it.
+
+
+[3/4/2026 5:43 AM] nathantheelohim_94207
+4th wall break tek
+
+
+[3/4/2026 5:52 AM] nathantheelohim_94207
+maybe leaching from the agar will be an issue
+
+
+[3/4/2026 5:53 AM] nathantheelohim_94207
+but you can just put jars in bags
+
+
+[3/4/2026 5:54 AM] nathantheelohim_94207
+2 jars in the bag for the transfers then place it right into the coir in the same bag
+
+
+[3/4/2026 5:55 AM] nathantheelohim_94207
+seems like it might even be economical if you can pay a less skilled person to do that and just the lab do 1 step per plant with a small bit of callus
+
+
+[3/4/2026 6:18 AM] nathantheelohim_94207
+pretty much all I need, I'll go test with my needle transfer idea poking through the bag to inoculate
+
+
+[3/7/2026 1:48 AM] mace_in_space
+That's a great idea and it's actually already a thing scientists are working on. There are several genes you can edit to induce early flowering. So early you could potentially see it in culture, though the fruit quality will likely be different from wildtype
+
+
+[3/7/2026 4:09 AM] doxatek
+Definitely. I've actually seen this before. Dwarf plants are in research a lot
+
+
+[3/7/2026 4:13 AM] doxatek
+I used to work with dwarf sunflowers because of faster flowering times for crossing generations and better space usage
+
+{Reactions}
+❤️
+
+[3/7/2026 4:19 AM] doxatek
+Dwarf corn is a huge one as well
+
+
+[3/7/2026 5:03 PM] mace_in_space
+Yeah short corn is a big money maker for sure
+
+
+[3/14/2026 1:23 AM] nyoksol
+so, ive had this thought for a while, but i cant find *anything* on it online. furanocoumarins, which are found in things like apiaceae sap and citrus rinds, are UV activated mutagens. linear furanocoumarins tend to cause breaks and structural mutations, angular furanocoumarins tend to induce point mutations by forming GC-adducts.
+
+
+[3/14/2026 1:24 AM] nyoksol
+i have a UV chamber, and i would love to start experimenting with treating seeds and seeing what fun and exotic mutations i get
+
+
+[3/14/2026 1:27 AM] nyoksol
+does anyone know anything that might be helpful? im mainly thinking through two things:
+1. sourcing furanocoumarins (parsley dip? lime rinds? extracting them?)
+2. dosing appropriately. i imagine theres probably little to no information on any of this, so i would just have to do trial and error 🫠
+
+
+[3/14/2026 4:59 AM] rrr_6
+To what degree of purity would you want those to be after the extraction? I could ask a few very good chemists I know
+
+
+[3/14/2026 5:22 AM] nyoksol
+Well just good enough to work. I can't imagine the treatment would be more than a few mM... Kinda hope just doing an ethanol extraction on some rinds might be enough. No reason I couldn't use a soxhlet to get a better extraction
+
+
+[3/14/2026 5:23 AM] nyoksol
+I'm running totally blind other than a hunch this could be a really accessible and far safer way to do mutagenesis at home
+
+
+[3/14/2026 5:45 AM] nyoksol
+Okay so here's something to go off of. Parsnip root can get levels as high as 9 mg/g when induced by harmless (to it) fungus
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1482238172829057216/Screenshot_20260314-004343_MuPDF_mini.jpg?ex=6af34a1f&is=6af1f89f&hm=65544d363df52d1313ffb3c5ce33ad9a8520444203d0df3c8f2a794f8a7b1f5c&
+
+
+[3/14/2026 5:45 AM] nyoksol
+That definitely seems viable for an extraction. Now to find the fungus....
+
+
+[3/14/2026 6:59 PM] .megacyber
+I'm guessing you would extract with a soxhlet, then do some kind of chromatography for purification?
+
+
+[3/14/2026 7:02 PM] .megacyber
+Actually those look like they wouldn't like getting heated, maybe you have to do some sort of acid base purification
+
+
+[3/14/2026 7:42 PM] nyoksol
+i dont necessarily need super high purity. i like to imagine that mutagens are mutagens and if theres any other things around they cant be causing more damage than the dna breaks.
+
+
+[3/14/2026 7:42 PM] nyoksol
+im not seeing any decomposition temperatures but the melting point is 171C and the boiling point is 362 so probably a solvent extraction and then rotovap (or equivalent) to concentrate down the fluid?
+
+
+[3/14/2026 10:00 PM] .megacyber
+If the melting point is 171 just let it crystallize out of the solvent on a watch glass or something
+
+{Reactions}
+👍
+
+[3/15/2026 3:21 PM] doxatek
+@nyoksol why do you need to extract this to use UV mutagenesis on your seeds
+
+
+[3/15/2026 3:39 PM] nyoksol
+As opposed to other things? Its way safer than ems, and I'm interested in mutagenic breeding
+
+
+[3/15/2026 3:40 PM] nyoksol
+Oh I guess the UV is also mutagenic itself. But that tends to create linear breaks which scramble DNA, more than point mutations which are more likely to lead to functional differences and lower mutational load
+
+
+[3/15/2026 3:40 PM] nyoksol
+Specifically for angular furanocoumarins
+
+
+[3/15/2026 4:07 PM] doxatek
+But won't you be coating hypothetically with your coumarins then hitting with uv anyway
+
+
+[3/15/2026 7:31 PM] nyoksol
+Yeah it would amplify the UV damage for sure
+
+
+[3/16/2026 10:09 AM] pongascreaj
+Wait you can actually separate substances in usable amounts with chromatography?
+
+{Reactions}
+👍 (2)
+
+[3/16/2026 10:10 AM] pigwarlock
+yes gfp can be extracted using sephacryl
+
+
+[3/16/2026 10:10 AM] pongascreaj
+I tjought it was like electrophoresis for chemicals damn
+
+
+[3/16/2026 10:10 AM] pongascreaj
+I need to study more
+
+
+[3/16/2026 10:13 AM] pongascreaj
+Btw they cause hellish chemical burns, not sure if they're safer than mutagens or radiation
+
+
+[3/16/2026 10:13 AM] pongascreaj
+I would wear sunscreen for a while just to be sure lol
+
+
+[3/16/2026 10:14 AM] pigwarlock
+lol
+
+
+[3/16/2026 1:52 PM] nyoksol
+Oh I am well aware of the burns. But the alternative is EMS which has a maximum safe exposure level of 15 uL (yes MICROliters). At least psoralen and co are only dangerous under UV light
+
+
+[3/16/2026 1:53 PM] nyoksol
+Plus I'm basically a vampire (including being an ethnic transylvanian) so I'm not worried about the sun exposure lol
+
+
+[3/16/2026 5:35 PM] .megacyber
+yeah, you would do some kind of ion exchange column probably
+
+
+[3/25/2026 1:33 AM] porcelaingiant
+Have you looked into the mycena family? Specifically mycena pura. It's what I'm using in my experiments https://nph.onlinelibrary.wiley.com/doi/epdf/10.1111/nph.16545
+
+
+[4/2/2026 6:30 PM] nyoksol
+i have not. they suggested one that tends to infect wheat and cause root-rot, so ive got some plants growing in the hopes of an incidental infection lol
+
+{Reactions}
+nikaList
+
+[4/2/2026 6:31 PM] nyoksol
+so, following up on a discussion in plant-talk with diddy.... but does anyone know anything about using fluorescein to track living tissue? seems to be relatively non-toxic. the idea would be to briefly soak embryos in it for 15 mins or so, and then shine a uv light on them and see if i get a response.
+
+
+[4/2/2026 6:32 PM] nyoksol
+i dont have a fluorescent microscope, but i do have a uv lamp. it would be really helpful if i could check on my seed viability before i threw them into culture... and in theory i could even repeat it after a month or two if the seed hasnt grown to see if its dead or just needs more time/hormones
+
+
+[4/2/2026 8:00 PM] apteronotus5947
+My pfp is from messing around with highlighter and UV light, used a regular microscope.
+
+
+[4/2/2026 8:01 PM] apteronotus5947
+Not sure how embryos would absorb or not, I stuck stems into water/highlighter mix and let it wick.
+
+
+[4/2/2026 8:05 PM] apteronotus5947
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1489324963658731735/IMG_6932.jpg?ex=6af35cf5&is=6af20b75&hm=2adfab9e80c13a5e402b66d4ea325459346447cae1bb998c78f8d62a7591dec7&
+
+
+[4/2/2026 9:18 PM] nyoksol
+how long did you leave it for to wick that far?
+
+
+[4/2/2026 10:01 PM] apteronotus5947
+Overnight, not sure if it would need that long though.
+
+
+[4/11/2026 2:57 AM] microplastics.enjoyer
+Do I have to wait for anthers to produce callus to determine if my anther culture worked? Cuz they don't seem to be doing much. Some turned brown and died but not all in the same flask
+
+
+[4/17/2026 1:36 PM] vultus._.
+Not like a professional in any way but it sounds a lot like you didn’t rinse the plant tissue enough and they are reacting to whatever disinfectant you used
+
+
+[4/17/2026 2:10 PM] microplastics.enjoyer
+Probably, I used a pretty gentle solution of nadcc iirc. I just checked them and they're all browning, I don't think I pushed them in well enough to make contact with the gel.
+
+I did learn though that the pistils seem to be free of contamination, or mostly free. Compared to leaf chunks on the same media, they haven't contaminated and could be a good source for explants if you can keep em alive
+
+
+[4/17/2026 2:45 PM] vultus._.
+Have you tried dipping in high concentration ethanol for around 30 seconds?
+
+
+[4/17/2026 2:46 PM] vultus._.
+I’ve heard it is a good option maybe as a second treatment after the initial wash
+
+
+[4/17/2026 2:46 PM] vultus._.
+I haven’t tried myself but I think it would be worth a try
+
+
+[4/17/2026 2:46 PM] vultus._.
+Talking about like 80% ethanol
+
+
+[4/17/2026 2:47 PM] vultus._.
+You’d have to rinse afterwards if it’s rubbing alcohol with a gelling agent that’s for sure
+
+
+[4/17/2026 2:53 PM] microplastics.enjoyer
+Hm, tough to get in California. I specifically tried to use just nadcc according to the protocol that gets reposted here occasionally. I think I will try a combo or ethanol washed off with dilute nadcc.
+
+I put it on un-autoclaved media, sanitized/sterilized with nadcc, and sprayed the explants with a more concentrated nadcc solution. I think some explants also were only sprayed, not soaked or washed. Most of them contaminated, but some have not! The contamination also grew on the surface of the explant, but only rarely extended down into the media. The sarracenia anthers did not contaminate, and looked white, fresh, and alive for weeks.
+
+So I think combining nadcc with a surfactant wash, ethanol, and another dilute nadcc wash would probably go a long way. Is bleach used before or after an alcohol wash?
+
+
+[4/17/2026 2:54 PM] microplastics.enjoyer
+Could I use hand sanitizer?
+
+
+[4/17/2026 2:54 PM] vultus._.
+Rubbing alcohol is referring to hand sanitizer
+
+
+[4/17/2026 2:54 PM] vultus._.
+You could test it out for sure
+
+
+[4/17/2026 2:55 PM] microplastics.enjoyer
+I think for anther culture I'm going to try using a liquid solution, should be easier to keep sanitized with nadcc
+
+
+[4/17/2026 2:56 PM] vultus._.
+I was going to also mention if you are having problems with pushing plant tissue deep enough into media you could try doing liquid culture or using a lower concentration of agar which gives you softer agar
+
+
+[4/17/2026 3:10 PM] vultus._.
+Also about the bleach, I’m not sure honestly, but I’d say bleach first
+
+
+[4/17/2026 3:12 PM] microplastics.enjoyer
+Saves on agar too
+
+
+[4/17/2026 3:14 PM] microplastics.enjoyer
+I'm planning to try anther culture again with nasturtium, but I haven't really been able to examine pollen development without the appropriate stains
+
+
+[4/17/2026 3:47 PM] vultus._.
+@Apteronotus sorry did you say something? I think your message disappeared
+
+{Reactions}
+🤷‍♂️
+
+[4/17/2026 3:47 PM] vultus._.
+Or was that zap maybe
+
+
+[4/17/2026 3:47 PM] vultus._.
+I’m not sure
+
+
+[4/17/2026 3:47 PM] zap233
+The stuff I've seen is ethyl alcohol not IPA based, although I'm sure they're similar in sterilization duration.  I feel like the glycerin might have an impact.
+
+
+[4/17/2026 3:47 PM] zap233
+Sorry, I deleted to rephrase it
+
+
+[4/17/2026 3:47 PM] vultus._.
+Why didn’t you just edit the message?
+
+{Reactions}
+shrug
+
+[4/17/2026 3:48 PM] zap233
+Retyped the whole thing, idk
+
+
+[4/17/2026 3:51 PM] vultus._.
+The hand sanitizer I have is a mixture of ethanol with a smaller portion of isopropanol
+
+
+[4/17/2026 3:54 PM] zap233
+70% eth for the stuff in front of me.
+
+
+[4/17/2026 3:56 PM] zap233
+I normally consider rubbing alcohol a synonym for IPA, since it's by far the most common one, although I guess the definition includes any alcohol used for a skin disinfectant.
+
+
+[4/17/2026 3:57 PM] vultus._.
+Rubbing alcohol is more of a synonym for the gelling or thickening agent used in the alcohol to make it stay on your skin for longer
+
+
+[4/17/2026 3:57 PM] zap233
+Other way around
+
+
+[4/17/2026 3:58 PM] zap233
+A bottle of rubbing alcohol in the US at least doesn't have any gelling agents.
+
+
+[4/17/2026 3:58 PM] zap233
+Whereas hand sanitizer usually has all that extra stuff.
+
+
+[4/17/2026 4:00 PM] vultus._.
+Hand sanitizer and rubbing alcohol aren’t really differing terms in Sweden at least
+
+
+[4/17/2026 4:00 PM] vultus._.
+They are interchangeable
+
+
+[4/17/2026 4:00 PM] zap233
+Oh interesting
+
+
+[4/17/2026 4:00 PM] zap233
+It's neat to learn the regional differences.
+
+
+[4/17/2026 4:01 PM] zap233
+In the US, rubbing alcohol is almost always 70 or 91% isopropyl with water and a bitterant added.
+
+
+[4/18/2026 1:57 AM] unheardhealer
+it can be quite funny what becomes the normal differences.  I moved to Sweden from Australia for a few years and it took me longer than it should to realise they don't always have antiperspirant in their deodorant spray cans... I had never seen just the smell part sold separately before or ever again since moving back haha
+
+
+[4/18/2026 2:08 AM] desmarais96
+i just drive 30 mins to next state and get 99% ethanol (yes its made for drinking lol)
+
+
+[4/18/2026 2:10 AM] desmarais96
+is 99% ethanol rare in Europe?
+
+
+[4/18/2026 2:10 AM] desmarais96
+like 198 proof (idk if proof is even used over there)
+
+
+[4/18/2026 3:10 AM] microplastics.enjoyer
+Driving to the next state is like 6-8 hrs one way for me lol
+
+
+[4/18/2026 4:21 AM] juzzy__
+There’s alot of data supporting the health risks of antiperspirant. It’s aluminum based and it works by clogging your pores which has its own negative impact
+
+
+[4/18/2026 4:22 AM] juzzy__
+Just fyi. Nothing to do with TC
+
+
+[4/18/2026 4:03 PM] nyoksol
+ive been having mixed results with my embryo excisions, and im trying to figure out if the problem is my sterilization or just bad starting seeds (dubiously sourced). 
+ive been excising under non-sterile conditions and then swirling the embryo in 0.3% h2o2 for 24 hours. this has worked pretty well for fresh passionflower embryos, but pretty much everything else is just refusing to germinate, or germinating at low rates. im wondering if it might be the case that this is too harsh on the embryos?
+
+
+[4/18/2026 4:07 PM] nyoksol
+a bunch of the older passionflowers i opened up had brown embryos, so at least there it definitely seems to be more of an issue with starting material. but the musas all had pasty-white embryos and they just refuse to do anything in vitro
+
+
+[4/18/2026 9:19 PM] nyoksol
+I ended up getting some Janus green so I can at least do some viability testing if I have a couple spare embryos I can sacrifice.
+
+
+[4/19/2026 1:45 AM] vultus._.
+I mean there’s a chance a lot of the seeds you worked with were infertile
+
+
+[4/19/2026 1:46 AM] vultus._.
+For various reasons
+
+
+[4/19/2026 1:47 AM] vultus._.
+At least I think
+
+
+[4/19/2026 1:47 AM] vultus._.
+Try working with bigger seeds like almonds and peanuts
+
+
+[4/19/2026 1:47 AM] vultus._.
+Peanuts especially
+
+
+[4/19/2026 2:01 AM] nyoksol
+what would those reasons be? just so i know what to look out for
+
+my understanding is that if the seed is mature and filled out, there's an (at least potentially viable) embryo inside. if the seed is orthodox, it should store pretty well for at least a few years, if not.... anything which isn't fresh is going to be a crap shoot
+
+
+[4/19/2026 2:34 AM] vultus._.
+There’s a chance the embryo for example just happens to already come with a virus
+
+
+[4/19/2026 2:34 AM] vultus._.
+Vertical transmission
+
+
+[4/19/2026 2:35 AM] vultus._.
+Dangerous mutations that just makes the embryo not develop properly
+
+
+[4/19/2026 2:36 AM] vultus._.
+Could also just be that the sterilization method used is too strong, or you didn’t rinse enough after sterilization
+
+
+[4/19/2026 3:35 PM] nyoksol
+Hmm good to know
+
+
+[4/19/2026 3:36 PM] nyoksol
+I havent been rinsing since its peroxide. Thats one of the things I find appealing about it tbh.
+
+
+[4/19/2026 3:36 PM] nyoksol
+But maybe I'm just paying for my laziness
+
+{Reactions}
+🤝
+
+[4/21/2026 10:44 AM] vultus._.
+Anyone doing any tc experiments? I’ve heard of chimeras and stuff
+
+
+[5/4/2026 3:30 PM] karuus95
+Hello, I work with meristem culture on dahlias. I’ve also built a thermotherapy box where I place dahlia nodes in tissue culture, allowing them to grow before I excise the meristem.
+What I’ve noticed is that the shoots often turn white during this process. Does anyone know if this affects the survival rate of the meristem?
+
+
+[5/4/2026 5:50 PM] nyoksol
+if it's lack of light, white makes sense and should be harmless. it could also indicate stress, especially oxidative stress, which definitely would kill off or weaken the meristem
+
+
+[5/4/2026 5:59 PM] vultus._.
+By the way check out what I’m asking about in #🧬┃plant-science if you can
+
+
+[5/6/2026 10:48 AM] arjen83253
+Very interesting! Could you post pictures / more info on your thermotherapy box? I'd like to get started with dahlia virus cleaning as well, but am still a bit caught up in other projects
+
+
+[5/6/2026 10:49 AM] arjen83253
+Do you think they turn white because of the high temperature? What temperature do you use?
+
+
+[5/6/2026 10:51 AM] arjen83253
+One researcher working with chrysanthemum told me she used low temperatures (5C for 6 months!) before excising the meristem and it was very successful in virus elimination
+
+
+[5/6/2026 6:04 PM] karuus95
+@BanjoPlants I use a Styrofoam box where I place a heat mat with a thermostat at the bottom, underneath a plastic container. Inside the plastic container, I have a container of water, two small fans, and a shallow plastic box that I place the tissue culture jars on. I put the thermometer inside a jar containing only water and agar to measure the actual temperature in the medium.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1501615615394320444/IMG20260506185811.jpg?ex=6af34085&is=6af1ef05&hm=9f8979a5876934d6c220f9b98165825c6b66f0d4e0e651fedfa49b027b5339cb&
+https://cdn.discordapp.com/attachments/1447007475755782348/1501615615977459812/IMG20260506185831.jpg?ex=6af34085&is=6af1ef05&hm=f6f3f39932d213bbd5ecb1f6cb412cdc7188f3e748e26869901057147df13f2a&
+
+
+[5/6/2026 6:05 PM] nyoksol
+What temperature is everything at? Ive just been reading up on how you can use high temperatures to slowly kill of endophytes, and I'd love to try this with my kava one day once it recovers enough to snip
+
+
+[5/6/2026 6:11 PM] karuus95
+I had it on 38°c for 3 weeks. First week I slowly increased the temperature 2°c every day until I came up to 38°c
+
+
+[5/6/2026 6:45 PM] arjen83253
+Wow, that looks very neat! So the box is normally closed and dark within? That would explain the with shoots. And the fans are for internal air circulation? To have even temperatures all around? Very neat everything. Perhaps a small grow light would take care of the white shoots, just make sure it doesn't cause the whole think to overheat.
+
+
+[5/6/2026 6:46 PM] arjen83253
+That's the way to do it! And have you had good results so far?
+
+
+[5/6/2026 7:31 PM] karuus95
+No I have a plastic lid on the plastic box.
+
+
+[5/6/2026 7:33 PM] karuus95
+I’ve only tried one batch so far. Don't know if it really worked yet. But hope so.
+
+
+[5/6/2026 7:50 PM] nyoksol
+on a related note. anyone have experience with using antibiotics? i have a kava shoot thats on its way out and i'm open to experimenting with maybe trying to get it back on its feet in-vitro
+
+
+[5/7/2026 7:52 AM] urbanorganisms
+was not successful based on very limited experimentation of getting rid of endophytes with a 24 hour soak in them pre-sterilization. didnt try mixing in the media
+
+
+[5/9/2026 5:02 AM] doxatek
+It's not endophytes as often as everyone thinks it's endophytes
+
+
+[5/9/2026 5:04 AM] doxatek
+I have used antibiotics quite a bit. Of course you can try but I give low odds of success based on my experience. What ones do you have available to you. Cefotaxime I would suggest.
+
+Is it large?
+
+
+[5/9/2026 5:08 AM] nyoksol
+no, its a single node at this point. probably too late to do anything with this one. but at least in the future, i have some more that im growing, and i've heard that they have notoriously high endophyte load
+
+
+[5/9/2026 5:09 AM] nyoksol
+kava has only been asexually propagated for.... 1500 years? give or take a few hundred. but this is one of the few cases where it definitely has a lot of stuff inside of it
+
+
+[5/9/2026 5:10 AM] nyoksol
+i have doxycycline, which ive heard tends to be more phytotoxic, and cephalexin, but i can get more for the future
+
+
+[5/9/2026 5:22 AM] doxatek
+If you prop in tissue culture from meristem you won't get the endophytes. They recover plants this way
+
+
+[5/24/2026 5:49 PM] tx_sapphere
+So I once read that if your pouches are wet than the will not remain sterial.  I have yet to get pouches out of a pressure cooker that are not moist at best.  I am not having contamination issues but I am wondering if I should be doing something I am not and just getting lucky.
+
+
+[5/24/2026 7:28 PM] erwin_myco
+Make sure they don't touch eachother or anything else inside the pressure cooker. Something like a wire rack would be good to place them in. That should help a lot with pressure cookers/autoclaves without drying cycle
+
+
+[5/26/2026 2:39 AM] andreysh4684
+How you store your hormones? Look like my 6-Benzylaminopurine (bap) is spoiled. I store it in close bag in fridge, but after half a year, media that I make with it looks very “weak” - look like I have 2-3 times less bap than I add. Brand new BAP doesn’t have those problems- so this is problem with storage. How you store it and how often you buy new?
+
+
+[5/26/2026 4:43 AM] nyoksol
+Is it powder or liquid?
+
+
+[5/26/2026 4:44 AM] nyoksol
+Powder usually lasts longer, years.
+
+
+[5/26/2026 4:44 AM] andreysh4684
+Powder
+
+
+[5/26/2026 5:03 AM] nyoksol
+It really shouldn't degrade. I'm surprised youre having issues
+
+
+[5/26/2026 5:03 AM] nyoksol
+Even in water you lose maybe 10-20% over a year
+
+{Reactions}
+👀
+
+[5/26/2026 6:06 PM] .megacyber
+see if your solution is fully dissolved, that's more likely to be the issue here. bap is super stable
+
+
+[5/26/2026 6:06 PM] .megacyber
+also, how are you determining that your bap is breaking down anyway? if its plant response to your media, there's a lot of other stuff that could be going on there
+
+
+[5/27/2026 4:03 AM] andreysh4684
+I have same problem a year ago, and new bap solve it. Problems plans looks like they grow on callus medium- they grow callus and new shoots at same ratio (I have 0,5 bap and 0,1 iaa, but response looks like 0,2 and 0,1 - too much callus). Hmm, may be I really don’t dissolve hormones properly- Ill try new media with same hormone, let’s see what happens.
+
+
+[5/28/2026 8:39 PM] sofiag_27636
+Does anyone add anti-fungal to the agar before pouring it?
+
+
+[5/28/2026 9:36 PM] sofiag_27636
+and has anyone tried cryopreserving plant tissue??
+
+
+[6/3/2026 4:52 AM] ebo1744
+I would be interested also.  I'm planning to work with ultra-low temp freezers for farm-scale seed-banking.  It would be interesting to look into tissue preservation as well.  I just did some looking around, and there are freezers that can go as low as -100 C without going all the way to liquid nitrogen.
+
+
+[6/3/2026 4:06 PM] sofiag_27636
+Yeah that would be the ultimate way to keep inventory! But I guess people just keep the plant in agar and that can last up to 6 months to a year? But you risk the mold. 
+
+But I looked into the process and it’s very difficult because plants are mostly water (even more compared to human tissue which I have experience with freezing) so the risk of damaging the tissues is higher so there’s so many steps to gently dehydrate- that’s my summary from  what I read about the process on AI lol. I guess corms can at least be frozen? Similar to seeds? I didn’t think about that!
+
+
+[6/3/2026 4:08 PM] sofiag_27636
+I saw that Liquid nitrogen tanks can be rented, idk if that would be helpful
+
+
+[6/3/2026 6:50 PM] afieldofflowers
+there are liquid nitrogen tanks specifically built for long term storage of biological samples
+
+
+[6/3/2026 6:50 PM] afieldofflowers
+they just need constant refilling of nitrogen to replace the stuff that boils off over time
+
+
+[6/3/2026 8:14 PM] .megacyber
+You can get a little one, I got mine used for like 900. Look into the stirling ULT-25NEU. Its kinda a piece of crap as far as -80 freezers go, but they're cheap and they work
+
+
+[6/3/2026 8:16 PM] .megacyber
+Its also a lot safer than working with pressurized LN2, but you're probably going to want a little dewar that you can get filled up to flash freeze stuff. Fwiw, I've never tried vitrifying and freezing plant tissue, I use mine for bacteria
+
+
+[6/3/2026 9:36 PM] ehmoose.
+Just be aware that the biggest hidden cost with these fridges is the electricity bill. At least in my experience, maybe newer ones are more efficient idk.
+
+
+[6/4/2026 1:23 AM] unheardhealer
+I can't remember where I heard this, but remember hearing that 1, -80 freezer (the larger ones used in labs) consume about as much electricity as a house every year. Newer ones are probably better.
+
+
+[6/6/2026 6:41 PM] nyoksol
+I did some preliminary research with claude and landed on an interesting chemistry for removing contam in a container (swirl and dump) once it germinates: silver ion activated peroxide with potassium bicarbonate and a touch of EDTA. Breaks down biofilms, intensifies fenton-reaction kill of peroxide, bicarbonate selectively breaks down fungal cell walls, and peroxide + carbonate forms peroxymonocarbonate which is an even more potent ROS than peroxide itself, which lets you lower dose of everything to reduce collateral.
+Definitely speculative but I want to tune it and try it out. Will report back what I find 🫡
+
+{Reactions}
+👍🏻
+
+[6/6/2026 7:32 PM] urbanorganisms
+Very interesting stuff! Please do report back
+
+
+[6/11/2026 4:25 AM] iamthedoctor314
+Does anyone know of a solid hormone concentration for callus induction of leaf/petiole anthurium papillilaminum/hybrids? My best guess is either 1mg/L BAP + 0.1mg/L 2,4-D or 3mg/L BAP + 0.5mg/L NAA.
+
+
+[6/11/2026 5:18 AM] urbanorganisms
+Presumably you’d want high auxin low cytokinin which is the opposite of what you have listed
+
+
+[6/11/2026 5:03 PM] iamthedoctor314
+You’re probably right. I couldn’t find any literature so I resorted to AI and it gave me this answer.
+
+
+[6/11/2026 5:50 PM] iamthedoctor314
+I’ve looked at some of the literature for A. Andraeanum and have seen 2.5mg/L BAP + 0.2mg/L 2,4-D induce 85% callus while 0.6mg/L 2,4-D induced callus at 82.9%. Since I’m not dealing with this species of anthurium, it’s going to be different, but nothing really clear.
+
+
+[6/12/2026 5:23 AM] ebo1744
+I will be very interested in hearing your experience.
+
+
+[6/12/2026 5:30 AM] ebo1744
+My initial work will focus on much warmer storage (-20 to -40).  I'll have to get an idea of operational costs.  Yea, if it cost to much to operate, then that could easily kill my ability to do.  Thanks for pointing that out though.
+
+
+[6/12/2026 5:46 AM] juzzy__
+if you're curious ask AI to quote their sources then go read it to verify
+
+
+[6/12/2026 5:40 PM] urbanorganisms
+Anyone have experience with infiltration/vacuum sterilization in explants?
+
+
+[6/12/2026 5:41 PM] chefdecuisinart
+Like a chamber sealer? Won't work.
+
+
+[6/12/2026 5:41 PM] chefdecuisinart
+Cells burst, we used them for compressing microgreens.
+
+
+[6/12/2026 5:42 PM] urbanorganisms
+Yeah, with any sort of device that can pull a vacuum
+
+
+[6/12/2026 5:42 PM] urbanorganisms
+I mean it’s a technique that’s established in the literature
+
+
+[6/12/2026 5:42 PM] urbanorganisms
+Surely it can cause damage too but at the right pressure/duration it can work
+
+
+[6/12/2026 5:42 PM] chefdecuisinart
+Just from my personal experience, it doesn't work if you pull a full vacuum.
+
+
+[6/12/2026 5:43 PM] urbanorganisms
+Ah yeah it’s usually not a full full vacuum. Just enough to suck out air bubbles from stomata
+
+
+[6/12/2026 5:43 PM] chefdecuisinart
+You'll have to play around with partial vacuums, I feel like ultrasonic would do a better job.
+
+
+[6/12/2026 5:44 PM] urbanorganisms
+The most cited vacuum pressure used is 100mbar
+
+
+[6/12/2026 5:44 PM] urbanorganisms
+There’s a paper on PPM infiltration in apple shoots I believe? That they used to get rid of endogenous contamination
+
+
+[6/12/2026 5:45 PM] urbanorganisms
+But as with anything I’m sure sensitivity to cell damage will vary greatly between explant source/species
+
+
+[6/12/2026 5:56 PM] chefdecuisinart
+That's pretty woody tho
+
+
+[6/12/2026 5:56 PM] chefdecuisinart
+I think vac would work for woody stuff, but I don't see it being great for say succulents
+
+
+[6/12/2026 6:18 PM] urbanorganisms
+A lot of literature on arabidopsis which isn’t woody
+
+
+[6/12/2026 6:19 PM] urbanorganisms
+Tbh I doubt any plant likes it, but it just has to survive long enough to callus/shoot out
+
+
+[6/12/2026 6:19 PM] urbanorganisms
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1515027829086228490/IMG_5437.jpg?ex=6af3441e&is=6af1f29e&hm=8d381cec6b950aea36965ad192460a6e3d26c5b7248057f087d7172cff8eba3c&
+
+
+[6/12/2026 6:19 PM] chefdecuisinart
+Give it a try. My gut says it's going to be a more difficult method tho.
+
+
+[6/12/2026 6:19 PM] urbanorganisms
+Here a small trial I did with a privet Leaf yesterday. Right half was infiltrated
+
+
+[6/12/2026 6:20 PM] chefdecuisinart
+If you can do it without bursting too many cells, I suppose.
+
+
+[6/12/2026 6:20 PM] urbanorganisms
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1515028008111439982/IMG_5438.jpg?ex=6af34448&is=6af1f2c8&hm=7c20a3cb7681d70b4a520a04b8f67773d281203288f75f124b712f94588933e5&
+
+
+[6/12/2026 6:20 PM] chefdecuisinart
+The idea is to force PPM/whatever into the air pockets without bursting anything.
+
+
+[6/12/2026 6:20 PM] urbanorganisms
+This was with a piece of a cherry leaf. Some sections absorbed more water than other
+
+{Reactions}
+❤️
+
+[6/12/2026 6:20 PM] urbanorganisms
+Exactly
+
+
+[6/12/2026 6:21 PM] urbanorganisms
+I think releasing pressure slowly would be important too
+
+
+[6/12/2026 6:21 PM] chefdecuisinart
+I think a low partial vacuum for an extended period, but I dunno.
+
+
+[6/12/2026 6:21 PM] chefdecuisinart
+Definitely
+
+
+[6/12/2026 11:12 PM] ebo1744
+besides reading some in the literature to see if someone had published this, and they likely would have also reported the pressures used, then you can use a simple hand pump and a guage to do set up the same conditions.  If you cannot find any published results, then set up a small experiment (say 5 leaves/explants per pressure rating, and start with 3 to 5 different pressure levles to start).  Se how they do and then pick a level where it seams to work the best.
+
+{Reactions}
+💯
+
+[6/14/2026 12:00 AM] doxatek
+I really don't think this will work. Better to spend effort to explore a different avenue.
+
+Is the goal to clone the privet?
+
+
+[6/14/2026 5:19 AM] chefdecuisinart
+I think it *could* work well for some things, but it's going to be a much more finicky process than an ultrasonic bath or orbital shaker, etc.
+
+
+[6/20/2026 2:45 AM] ebo1744
+fair enough.  But I am into experimenting and seeing if thngs will work.  I also remember the video where the guy was getting an agrobacteria with a floresent geen into the xplants by pulling down a vacuum...
+
+
+[6/24/2026 3:16 AM] .megacyber
+People do vacuum infiltration with a syringe like the pic urban organisms posted. The idea is to gently pull back the plunger until you see air bubbles exiting the leaf, those bubbles are air thats in between the cells, and you can get plant pathogens hanging around in there
+
+
+[7/2/2026 1:52 PM] ebo1744
+I am going to hae to try some of this.
+
+
+[7/3/2026 1:26 AM] palustral
+Pull a gentle vacuum....
+
+
+[7/3/2026 4:05 AM] ebo1744
+Yep. but my ealy question is "how much of a vacuum".  The sirynge/air-bubbles was a good suggestion.  I was planning to put it in a small vacuum chanber and hit it with *something*
+
+
+[7/6/2026 10:17 AM] wytanaka99
+Is anyone here doing any sort of species-specific media optimization (ie. Changing the salt concentrations etc)?
+
+
+[7/6/2026 10:19 AM] urbanorganisms
+@Palustral
+
+
+[7/6/2026 1:55 PM] nyoksol
+Yes, I bought salts and mix my own as well
+
+{Reactions}
+❤️
+
+[7/6/2026 2:22 PM] nyoksol
+In my case, I was having a combination of ammonium toxicity and decreased trace mineral availability which was affecting my passionflowers growth, so I put together a custom mix with higher micros and a lower ammonium to nitrate ratio than MS
+
+
+[7/6/2026 6:53 PM] wytanaka99
+What calcium and iron source are you using? You want to try calcium nitrate and iron EDDHA to avoid high levels of chloride and precipitation/photooxidation of ironNaEDTA respectively
+
+
+[7/6/2026 10:02 PM] nyoksol
+My iron comes from a stock of iron sulfate and sodium EDTA, which compounds into iron chelate when mixed
+
+
+[7/6/2026 10:03 PM] nyoksol
+Calcium i use calcium nitrate
+
+
+[7/6/2026 10:03 PM] nyoksol
+Separate from my phosphorous source obvs
+
+
+[7/7/2026 8:21 PM] wytanaka99
+it says that you need to boil the solution in order to generate the complex, they also use a 3:1 molar ratio of NaEDTA to FeSo4, theres another paper out thee that uses a 2:1 ratio instead
+
+
+[7/7/2026 8:58 PM] nyoksol
+yeah i boil it
+
+
+[7/7/2026 8:58 PM] nyoksol
+plus it gets autoclaved
+
+
+[7/9/2026 11:15 AM] andreysh4684
+You can easily buy premade Fe-dtpa. Or any other chelates.
+
+
+[7/9/2026 12:33 PM] andreysh4684
+This is 25L of 14% Cmit/Mit. this is enough to make 1923 liters of PPM™ (with few extra ingredients to make it autoclave resistant)
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1524725105681498112/IMG_6309.jpg?ex=6af2f2e9&is=6af1a169&hm=bd82f13c10e4d34369fce575c466b9a36a256f9f2d5d8a024849da1a9198d877&
+
+{Reactions}
+POGGIES (2)
+
+[7/9/2026 6:35 PM] palustral
+Are you going to run through 9 million flasks!?
+
+
+[7/9/2026 6:38 PM] andreysh4684
+This is just minimal amount that I can buy😆 . 70$.
+
+
+[7/9/2026 6:39 PM] palustral
+If I do 20 flasks a day on a slow day, that would be a 1200 year supply for me.
+
+
+[7/9/2026 6:41 PM] nyoksol
+I wish I could find someone in the states willing to sell it to me 😭
+
+
+[7/9/2026 6:42 PM] palustral
+I do not think I would need that much.....lol.
+
+
+[7/9/2026 6:43 PM] andreysh4684
+Somehow plant nursery from neighboring town found me, and ask to teach them TS. They have a lab, laminar and other, but no experience. So they ask me to teach them how to clone their plants.
+
+
+[7/9/2026 6:43 PM] nyoksol
+I mean I'll take a lifetime supply. I dont even use it anymore I just want the option for heavy endophyte plant initiation
+
+
+[7/9/2026 6:43 PM] andreysh4684
+Also I buy this Cmit with their legal entity
+
+
+[7/9/2026 6:45 PM] palustral
+Those other ingredients must be expensive....lol
+
+
+[7/9/2026 6:45 PM] andreysh4684
+three hours by train there, three hours back😫
+
+
+[7/9/2026 6:46 PM] andreysh4684
+Magnesium nitrate and potassium sorbate?
+
+
+[7/9/2026 8:54 PM] ebo1744
+That is planning ahead a litt 😉  As for all the extra, see if there are others near you that would like pint, and have them drp by 😉
+
+
+[7/9/2026 8:56 PM] ebo1744
+Is it used in heavy endophyte plant initiation?  Can you point me to any info?
+
+
+[7/9/2026 9:00 PM] nyoksol
+tends to suppress growth more than remove it https://www.mdpi.com/2223-7747/11/19/2624
+but one thing that people will do is repeat culturing of the growing tip until eventually its clean and you try moving it onto non-ppm media https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.11489
+
+
+[7/9/2026 9:02 PM] ebo1744
+Ah... I have some possible work where I need to make sure it has the endophyte.
+
+
+[7/9/2026 9:05 PM] nyoksol
+orchid co-culturing, or what?
+
+
+[7/9/2026 9:32 PM] ebo1744
+chesnut, ginko
+
+{Reactions}
+👍
+
+[7/18/2026 11:25 PM] nyoksol
+Tractor supply carries benzalkonium chloride solution for 12 bucks. Just an FYI 🙂
+
+{Reactions}
+🔥
+
+[7/19/2026 1:56 AM] raptor87_
+is that what ppm is made out of?
+
+
+[7/19/2026 2:45 AM] juzzy__
+5-Chloro-2-methyl-3(2H)-isothiazolone (~0.13%)
+2-Methyl-3(2H)-isothiazolone (~0.05%)
+Inert Ingredients (~99.82%)
+
+
+[7/19/2026 5:17 AM] nyoksol
+Benzalkonium is a surfactant that also has antibacterial and antifungal properties
+
+
+[7/19/2026 5:18 AM] nyoksol
+I think incompatible with bleach? But makes a good pre-rinse
+
+
+[7/27/2026 6:43 PM] zap233
+@Taco :> 
+
+Oryzalin treatment of garlic
+https://scialert.net/fulltext/?doi=ajps.2023.665.674
+
+{Embed}
+https://scialert.net/fulltext/?doi=ajps.2023.665.674
+Artificial Polyploid Plant Induction of Local North Sumatra Garlic ...
+Artificial Polyploid Plant Induction of Local North Sumatra Garlic (Allium sativum L.) with Oryzalin Treatment in M1 Generation
+https://images-ext-1.discordapp.net/external/wKSqv721O3aXicnwOQ0bbu4f4PZBU6_2jrBW3vvAnr8/https/scialert.net/images/logo_icon.jpg
+
+{Reactions}
+❤️
+
+[7/27/2026 6:44 PM] zap233
+I assume you've read this one but figured it's worth posting here for the great Allium information 
+https://www.sciencedirect.com/science/article/pii/S258900422600297X
+
+{Reactions}
+❤️
+
+[7/28/2026 8:15 PM] palustral
+A whole lotta love for the Oryzalin.
+
+
+[8/1/2026 2:04 AM] wytanaka99
+I attempted a polyploid induction on some Pinguicula with oryzalin. Now I just need to find someone with a flow cytometer to confirm
+
+{Reactions}
+😮 (2)
+
+[8/1/2026 2:14 AM] zap233
+Which ping did you try it on?
+
+
+[8/2/2026 7:46 AM] wytanaka99
+I’m trying it on cyclosecta and it’s hybrids. So far only a few survivors
+
+
+[8/3/2026 1:12 AM] urbanorganisms
+has anyone specifically experimented with cutting off vs keeping roots on plants when replating? ive heard conflicting opinions/anecdotes when it comes to this
+
+
+[8/3/2026 1:12 AM] urbanorganisms
+ranging from they represent a waste of energy and should be cut off to they enhance nutrients uptake and should be kept on
+
+
+[8/3/2026 1:16 AM] chefdecuisinart
+I cut off the roots from all the sarrs I just replated, so I'll let you know if they're particularly slow
+
+{Reactions}
+❤️ 👍
+
+[8/3/2026 7:49 AM] doxatek
+It just depends what the goal of the replate is. However if I'm not trying to root it then it needs to be a cut. It'll lower response to multiplication if that's what you're doing
+
+
+[8/3/2026 2:10 PM] urbanorganisms
+What about just growing stuff out on PGR free media?
+
+
+[8/5/2026 10:05 PM] urbanorganisms
+bump 👀
+
+
+[8/9/2026 5:54 AM] juzzy__
+if you want to encourage more shoots, then chop the roots, encourage it to put effort into shoots - my 2 cents
+
+
+[8/9/2026 6:03 AM] urbanorganisms
+I’m just looking for the plants to put on size on pgr free media atm
+
+{Reactions}
+👍
+
+[8/10/2026 5:31 PM] desmarais96
+crazy question:::
+
+
+[8/10/2026 5:32 PM] desmarais96
+would it be possible to introduce a mychorizzal fungi to a TC'd plant?
+
+
+[8/10/2026 5:33 PM] ekatsim01
+I was about to experiment with that.
+
+{Reactions}
+❤️
+
+[8/10/2026 5:34 PM] desmarais96
+great minds think alike
+
+{Reactions}
+😲 👍
+
+[8/10/2026 5:36 PM] .megacyber
+i think some of the orchid guys in this server are experimenting with that
+
+
+[8/10/2026 6:20 PM] zap233
+Don't do it
+
+
+[8/10/2026 6:21 PM] zap233
+I did trichoderma as a science fair project almost 20 years ago, it was unwise.
+
+
+[8/10/2026 6:22 PM] zap233
+The main issue is most fungi will overrun a plant in those sorts of conditions.
+
+
+[8/10/2026 6:22 PM] ekatsim01
+what about like right before it comes out of TC?
+
+
+[8/10/2026 6:22 PM] zap233
+If you drop down the sucrose to next to nothing, it might be possible, but then you lose a huge advantage of TC
+
+
+[8/10/2026 6:23 PM] ekatsim01
+Ok, good to know.
+
+
+[8/10/2026 6:24 PM] zap233
+And I think when it comes to symbiotic relationships between fungi and plants, you usually want them colonizing the roots, which generally you won't have reliable roots until the later end of acclimation.
+
+
+[8/10/2026 6:24 PM] ekatsim01
+I had not thought about that.
+
+
+[8/10/2026 6:25 PM] zap233
+TLDR I still think it's really interesting, just at odds with how TC normally works so I doubt it would be advantageous.
+
+
+[8/10/2026 6:26 PM] ekatsim01
+I wonder though, what about plants that are parasitic to fungi?
+
+
+[8/10/2026 6:28 PM] zap233
+I have ghost pipe seeds on the way :peepoStand:
+
+
+[8/10/2026 6:46 PM] desmarais96
+this isnt something i know much if anything about, but are there any compounds able to significantly slow down the fungi growth while allowing roots to grow at a normal pace? create a balance of sorts that lines everything up optimally
+
+
+[8/10/2026 6:48 PM] desmarais96
+id assume it's almost a guaranteed possibility, just no known mechanisms to make it happen at the moment
+
+
+[8/10/2026 6:48 PM] zap233
+You could play around with NaDCC, fungicides, PPM, just be careful, and expect it to require a lot of experimentation.
+
+
+[8/10/2026 6:51 PM] apteronotus5947
+Not sure if I shared this photo already but it shows how zap is right. I put some lions mane mushroom mycelia in with some moss tc to battle them and the non pathogenic fungi won 🏆 the fight easily.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1536416738667794534/IMG_1525.jpg?ex=6af34b97&is=6af1fa17&hm=72d2cfec8d4e3d122c270d068b3be802ce58fe7b7d3245c49ab93eb3b218e536&
+
+
+[8/10/2026 7:04 PM] ekatsim01
+Interesting. Fungi are in hulk mode.
+
+
+[8/10/2026 8:22 PM] zap233
+I view it kind of like a spectrum from lowly bacteria to larger, more complicated organisms.  It's easier for them to multiply in optimal conditions.
+
+
+[8/10/2026 8:39 PM] palustral
+Lions mane for the win!
+
+
+[8/10/2026 9:56 PM] ekatsim01
+https://klipy.com/gifs/lion-roar-14
+
+{Embed}
+https://klipy.com/gifs/lion-roar-14
+Majestic Lion on Rocky Hill
+https://images-ext-1.discordapp.net/external/BsKcNWkWkk6CRSbFiF9YXNG4q8yKjMBvn7HzFBCuCfk/https/static.klipy.com/ii/35ccce3d852f7995dd2da910f2abd795/23/48/vLhdhcjw.webp
+
+
+[8/10/2026 9:56 PM] ekatsim01
+Aslan fungus.
+
+
+[8/10/2026 10:26 PM] doxatek
+In that setting the non pathogenic becomes the pathogenic.
+
+As for culturing the plants with the mycorrhizae idk if I see the point. Doesn't need it
+
+
+[8/11/2026 1:05 AM] desmarais96
+i guess my idea was to introduce fungi that are fully dependent on the host
+
+
+[8/11/2026 1:06 AM] desmarais96
+but i suppose itd still take decades for any fruitbodies to emerge once transferred outside
+
+
+[8/11/2026 1:34 AM] doxatek
+If they're fully dependant on host sounds like a pathogen
+
+
+[8/11/2026 1:34 AM] doxatek
+They'll be a resource draw on the plant and do worse than one without it
+
+
+[8/11/2026 6:43 AM] palustral
+I have orchid myco fungi fruit in pots from time to time.  Definately did not take decades to fruit.  More like a season.  I will watch a little closer and try to catch one to culture for you.
+
+{Reactions}
+😳
+
+[8/12/2026 4:39 AM] pessimisticmisanthrope
+I wonder if fungi have hormones that induce fruiting?
+
+
+[8/12/2026 4:40 AM] pessimisticmisanthrope
+Like florin for plants
+
+
+[8/12/2026 4:46 AM] pessimisticmisanthrope
+Also parasitic plants do not need fungi when tissue cultured. I am fairly certain they can absorb it through the ways regular plants do
+
+
+[8/12/2026 4:46 AM] pessimisticmisanthrope
+It as in nutrients
+
+
+[8/12/2026 4:55 AM] palustral
+There is a way to induce fruiting with most mushrooms....increase  oxygen levels (while maintaining humidity).  We grow them in bags that concentrate the carbon dioxide levels and as soon as you slit the bag and let oxygen hit the mycelium mats, they pin and fruit.  This is pretty over simplified.  Light, temperature, and many other factors influence fruiting, too.
+
+All the exudates release by the mushrooms as they grow have caught my attention.  I know that I need to study more about that liquid.
+
+
+[8/12/2026 7:22 AM] pessimisticmisanthrope
+Oh yes thats cool. Ive heard of people growing mushrooms in clay pots
+
+{Reactions}
+🤩
+
+[8/12/2026 7:22 AM] pessimisticmisanthrope
+The exudates are interesting , protein based i heard
+
+
+[8/12/2026 3:59 PM] ekatsim01
+Mushrooms are great for trapping pesky, thieving hobbits.
+
+
+[8/12/2026 5:13 PM] urbanorganisms
+When you have a callus such as this one that formed on .5 bap, what’s the best way to drive shoot formation? Keep on the same PGR and just wait, drop hormone levels, or move to completely PGR free media?
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1537116838838796399/IMG_6692.jpg?ex=6af3349c&is=6af1e31c&hm=127b0ca448f975263db93795c69fb4bfd197d9e3a7ca951c061101f3e8f159b2&
+
+
+[8/12/2026 10:20 PM] doxatek
+It probably doesn't matter what you do if that's a capensis. They multiply in tap water
+
+
+[8/12/2026 10:21 PM] doxatek
+Do you mean you want to multiply or to improve the quality of the shoot you already have
+
+
+[8/12/2026 10:25 PM] doxatek
+If the latter and it already has good enough meristem organization as I'd say this definitely has backing off from the hormone helps give the most regular development. 0.5 isn't incredibly strong though so I don't think it's too bad for him to sit there
+
+
+[8/12/2026 10:27 PM] urbanorganisms
+It’s a regia. Been on bap for about. 3-4 weeks and the main plant hasn’t done much, just the callus growing so looking to drive it to actually differentiate now
+
+
+[8/12/2026 10:28 PM] doxatek
+Ah. Maybe hit it a bit harder with the hormone for a bit if it's not responding
+
+
+[8/12/2026 10:28 PM] urbanorganisms
+
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1537196147125395466/IMG_6101.jpg?ex=6af2d5b9&is=6af18439&hm=40976b3f3a521e0e4515729ae95cb194b46ce64ebd3f248313da67a883ecc8f4&
+
+
+[8/12/2026 10:28 PM] urbanorganisms
+Looked like this when it went in
+
+
+[8/12/2026 10:29 PM] urbanorganisms
+I would think more bap would only cause more callus, no?
+
+
+[8/12/2026 10:29 PM] urbanorganisms
+I suspect (which matches @Zap233 ‘s advice) since CPs are generally pretty hormone sensitive, what it would want is less pgr to be able to differentiate
+
+
+[8/12/2026 10:35 PM] doxatek
+What was your starting materia
+
+
+[8/12/2026 10:35 PM] doxatek
+Seed?
+
+
+[8/12/2026 10:38 PM] doxatek
+You should probably remove and cut those leaves and lay on the medium. They'll shoot from them
+
+
+[8/12/2026 10:39 PM] doxatek
+And you can essentially do that on no pgr at all. So 0.5 should be fine
+
+
+[8/12/2026 11:51 PM] chefdecuisinart
+Anyone experimented with adding GA3 for seed germination? Thinking for harder/longer to germinate stuff like drosophyllum, byblis, etc. that respond to GA3 treatments for seed.
+
+
+[8/13/2026 12:37 AM] doxatek
+I tried it with my sarracenia seeds to shorten germ time since I didn't stratify them because I was lazy. Didn't work though
+
+Open to tips for if I try again
+
+
+[8/13/2026 12:37 AM] doxatek
+Maybe I'll do that this week I have free time
+
+
+[8/13/2026 1:02 AM] urbanorganisms
+Yes
+
+
+[8/13/2026 1:03 AM] urbanorganisms
+I haven’t used it myself but have been recommended 1000 PPM for 72 hrs for tricky to germinate drosera
+
+
+[8/13/2026 1:03 AM] urbanorganisms
+Not sure if the same concentration would be appropriate for breaking stratification requirement it stuff like sarrs
+
+
+[8/13/2026 1:05 AM] chefdecuisinart
+I'm thinking neps. Someone may send me pure aristo, and I'd like to maximize germ rates. I have succeeded with nep seed, but closer to 70-80% would be nice, instead of around 30-40%
+
+
+[8/13/2026 1:05 AM] urbanorganisms
+Ah interesting! Don’t have any knowledge on that but I’ll ask around
+
+
+[8/13/2026 1:07 AM] chefdecuisinart
+I may also have some roridula seeds on the way, and I understand those may(?) benefit from GA3
+
+
+[8/13/2026 1:17 AM] doxatek
+Maybe I didn't do long enough I soaked them in it overnight then plated
+
+
+[8/13/2026 1:17 AM] doxatek
+I'll extend
+
+
+[8/13/2026 1:18 AM] doxatek
+I only have experience using it in media
+
+
+[8/13/2026 1:18 AM] doxatek
+For shoot elongation
+
+
+[8/13/2026 1:09 PM] desmarais96
+it can work but seems to specie specific
+
+
+[8/13/2026 1:10 PM] desmarais96
+should be able to find relevant literature, or if you wanna let me know what youd like to attempt id be happy to search
+
+
+[8/13/2026 1:11 PM] desmarais96
+ah i see, drosophyllum, byblis, anything else?
+
+
+[8/19/2026 7:19 PM] nandhu9218
+Does anyone have the protocol of Tacca integrifolia
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1539685195198894090/Screenshot_20260819_224744.jpg?ex=6af35214&is=6af20094&hm=841aa637eef8c91ef2919923728a8b38673e3a9fb7fb3ff95235a288d070b0f0&
+
+
+[8/20/2026 8:02 AM] nkvamaks
+You may download source pdf here: https://theses.cz/id/bxwv7l/?lang=sk
+
+Dry residue from the thesis (extracted and summarized with ai):
+
+Starting material: Established aseptic shoots, ~0.5 cm high, without leaves, roots, or adventitious shoots.
+
+Multiplication: Full-strength MS + 30 g/L sucrose + 100 mg/L myo-inositol + 8 g/L agar + 1.0 mg/L BAP; pH 5.7; 25/23°C; 16 h light/8 h dark; ~36 µmol m⁻² s⁻¹; culture for 8 weeks.
+
+Rooting: Transfer ~0.5 cm shoots to MS + 30 g/L sucrose + 100 mg/L myo-inositol + 8 g/L agar + 0.1 mg/L NAA; 25/23°C; 16/8 h photoperiod; ~35 µmol m⁻² s⁻¹; 8 weeks.
+
+Ex-vitro transfer: Select plantlets with ≥3 roots longer than 1.5 cm; wash medium from roots; plant in sterile perlite:garden substrate (1:1); maintain initially in a tightly closed high-humidity greenhouse and begin opening after a few days. Survival after 8 weeks was 86.2%.
+
+
+[8/28/2026 6:00 PM] mr.j5203
+Yoyo everyone, id be curious if anyone here has some experience in propagating hibiscus via tissue culture. Im trying to optimize the culture medium and growth speed, because we need to do virus elimination on the the strains and having enough material as soon as possible is the goal
+
+
+[8/28/2026 6:00 PM] mr.j5203
+So far weve identified iron and calcium as major factors, aswell as the presence of a cytokinin
+
+
+[8/28/2026 6:00 PM] mr.j5203
+Would be interested to hear if anyone has some experience with hibiscus
+
+{Reactions}
+📝 (2)
+
+[8/28/2026 8:08 PM] nyoksol
+General principles are that increasing iron and calcium is helpful. Double check whether hibiscus likes low or high ammonium, thats the other big one. There should be optimized media recipes in the literature that fine tune the nutrients; MS can be okay for some plants, but you can typically do quite a bit better
+
+
+[8/28/2026 8:28 PM] mr.j5203
+Yea we been trialling wpm aswell as ms at different concentrations, there is some literature, but information is quite sparse, thanks for the tip with ammonium. They also tend to like a little more sugar in the medium
+
+
+[9/1/2026 3:21 PM] juzzy__
+Debating on doing an experiment with UV Light. I would take 4 samples with different light exposures early in the process (immediatly after sealing)
+The setup: 10 containers, 2 of each: All containers prepared the same but left open in the air for 10 minutes before sealing.
+```
+1a, 1b. control, not explosed to UV
+2a. 5 minute exposure once
+3a. 15 minute exposure once
+4a. 30 minute exposure once
+5a. 1 hour exposure once
+2-5b repeat on day 3```
+Anyone have any thoughts?
+
+
+[9/1/2026 3:24 PM] juzzy__
+probably need some lab UVC light gear to measure intensity. I think my Hyperspectral camera can do it but I'm not sure how to translate HSI intensity to any other scientific readings like  lux/candela/nits/etc
+
+
+[9/1/2026 4:12 PM] zap233
+If you've got the time, that would make for a good whitepaper
+
+
+[9/1/2026 4:15 PM] juzzy__
+the trick is the sweet spot to kill/disrupt spores but not damage the explant / plant tissue
+
+
+[9/1/2026 4:17 PM] chefdecuisinart
+I think you'll want to do smaller time gaps. UVC damages plant tissue in 5-10min
+
+{Reactions}
+👍
+
+[9/1/2026 4:21 PM] zap233
+I'm thinking enclosed, reflective exposure chamber for 360 coverage.
+
+
+[9/1/2026 4:22 PM] zap233
+Also, wasn't sure if the goal was sterilization or mutagenesis.
+
+
+[9/1/2026 4:22 PM] zap233
+Also, containers with the most amount of glass and least plastic would probably be best.
+
+
+[9/1/2026 4:32 PM] juzzy__
+I'm curious the cheap UVC bulb off amazon + distance vs PP lids. YMMV
+
+
+[9/1/2026 4:32 PM] chefdecuisinart
+yeah, without knowing bulb strength, distance, etc.
+
+
+[9/1/2026 4:32 PM] juzzy__
+I would love a "home lab" repeatable process for budget friendly people - that's the goal
+
+
+[9/1/2026 4:32 PM] chefdecuisinart
+but if you're using a decent bulb and it's close, I'd say 30min would be my upper limit
+
+{Reactions}
+👍
+
+[9/1/2026 4:33 PM] juzzy__
+good call.
+
+
+[9/1/2026 4:33 PM] chefdecuisinart
+my guess is the sweet spot is somewhere between 3 and 15min
+
+
+[9/1/2026 4:33 PM] juzzy__
+as cheap as it is. Agar + sugar in deli cups
+
+
+[9/1/2026 4:33 PM] juzzy__
+i can do 200 experiments
+
+
+[9/1/2026 4:34 PM] juzzy__
+wasnt going to use MS/PGRs since mold just wants carbs
+
+
+[9/1/2026 4:34 PM] juzzy__
+and really i just want the minimum to keep the spores from germinating
+
+
+[9/1/2026 4:35 PM] juzzy__
+I was actually thinking of a foil lined cardboard box
+
+
+[9/1/2026 4:50 PM] zap233
+I like it
+
+
+[9/1/2026 4:50 PM] zap233
+Definitely excited to see the results
+
+
+[9/4/2026 12:21 AM] fitolab
+Has anyone tried using fertilizer instead of ms?
+
+
+[9/4/2026 12:21 AM] fitolab
+I know vitamins are also important.
+
+
+[9/4/2026 12:22 AM] fitolab
+Just as an experiment:
+
+
+[9/4/2026 12:24 AM] fitolab
+either by adding coconut water or sugarcane juice as a supplement, which I also read something about.
+
+
+[9/4/2026 3:52 AM] juzzy__
+Read the history of MS, there’s alternatives but that recipe is tried and true
+
+
+[9/4/2026 4:56 AM] fitolab
+I've already read
+
+
+[9/4/2026 4:56 AM] fitolab
+If it provides acceptable growth at a much lower cost, then it's a success to me.
+
+
+[9/4/2026 4:53 PM] nyoksol
+If you want lower cost buy all the salts you need and mix your own MS
+
+
+[9/4/2026 4:54 PM] nyoksol
+Any other consumer endpoint will be at best marginally cheaper in comparison and probably more expensive when scaled for growth
+
+
+[9/4/2026 9:08 PM] palustral
+MS is cheaper for a long time before you cover the cost of a good scale to mix your own.  Just a thought.
+
+
+[9/5/2026 12:08 AM] nyoksol
+I got an accurate enough scale for <$50 USD iirc. Miligram, with a spread of j think 2-3 mg, when total weight is over 20mg. Measures up to 20g total
+
+
+[9/5/2026 12:09 AM] nyoksol
+Most salts I'm using anywhere from 50 mg to 4g per liter of mix, so the only things I need to dilute are cobalt and molybdenum, or something like that. Which is easy enough to do in a stock solution
+
+
+[9/5/2026 12:09 AM] nyoksol
+Bonus is that I can make non-MS mixes which is pretty important for things that dont respond well otherwise (looking at you passionflowers)
+
+
+[9/5/2026 6:58 PM] urbanorganisms
+Anyone here punch holes in their PP containers and add filter patches?
+
+
+[9/5/2026 7:52 PM] chefdecuisinart
+Yeah
+
+
+[9/5/2026 7:53 PM] chefdecuisinart
+I use a screw/leather punch
+
+
+[9/5/2026 9:07 PM] juzzy__
+i just drill mine in stacks of 3-4
+
+
+[9/5/2026 9:07 PM] juzzy__
+against a scrap board
+
+
+[9/5/2026 10:07 PM] palustral
+Yep.  I use a leather punch, also.
+
+
+[9/11/2026 2:08 PM] nyoksol
+Hole puncher for me, works fine
+
+
+[9/11/2026 2:09 PM] nyoksol
+Ive used a drill bit before too
+
+
+[9/23/2026 2:50 AM] ghostgirldxv3
+Idk if this belongs in advanced, but I’m wondering if anyone here has tried mechanical flipping like a biotilt system vs air driven temporary immersion? 
+
+I’m in the middle of testing air system and it has been kind of a pain plus replacing the parts is more expensive long term (due to frequency and filters) vs like maybe a 3d printed flip system. I want to eventually 3d print a single biotilt like system too. I’m generally interested in automation so I’m happy to try multiple things. 
+
+I’m going to keep trying for funsies on the air system but been leaning towards mechanical lately and curious about other’s experiences. 😊
+
+
+[9/23/2026 6:46 PM] ebo1744
+There are entire discussion if you search through the different subchannels.  IIRC #🔧┃diy-equipment is a good place to look.
+
+
+[9/23/2026 10:19 PM] ghostgirldxv3
+Ah yeah I’ve looked thru that a bit
+
+
+[9/23/2026 10:20 PM] ghostgirldxv3
+I’ll look again thank you
+
+
+[9/23/2026 10:21 PM] ghostgirldxv3
+Actually I haven’t looked up bio tilt I’ve mostly looked up Rita
+
+
+[9/23/2026 10:44 PM] ghostgirldxv3
+Oh the we vitro system is also interesting
+
+
+[9/24/2026 12:50 PM] ebo1744
+Huh...  I have not seen the "we vitro system" discussed.  Yea, the bio-tilt is the one that most people have discussed + a DIY version of the bio-tilt.
+
+
+[9/28/2026 1:59 PM] ghostgirldxv3
+I think it's because the rocker for it never went to production and there are some studies that say the bio coupler is potentially better... cuz the plant is more fully submerged/aerated mechanically or physically vs having a pool of liquid culture consistently at the bottom... but I also work with aquatics so I feel like both would work.
+
+{Reactions}
+👍
+
+[10/8/2026 7:57 PM] ebo1744
+While reboxing a bunch of my wife's slides and reprints, I found a couple of seed packets for radishes and string beans, and the packages were labeled in 1998.  To make matters harder on the poor little guys, the boxes where stored in a mezzanine that would routinely get over 120F...  I am thinking of maybe using these to experiment with germinating old seeds.  Has anyone developed protocols here for germinating older seeds?  I have read in places that people sometimes add sugar to give it a bit of a leg up, and the Judea Palm germination protocol also included gibberellins IIRC.  Anyway, it seamed like a decent thing to experiment on, and I thought I would ask around.
+
+
+[10/8/2026 8:11 PM] zap233
+I would say there's a chance if it weren't for the temperature.
+
+
+[10/8/2026 8:11 PM] zap233
+If you get any germination that'd be impresssive.
+
+
+[10/8/2026 8:12 PM] zap233
+I've heard of adding a bit of sugar during the wash/soak/sterilizing steps
+
+
+[10/8/2026 8:13 PM] zap233
+I'd be worried about sugar for anything ex vitro though causing mold or bacterial growth.
+
+
+[10/8/2026 9:11 PM] ebo1744
+I agree.  That is why it would be an experiment, and not expecting them to germinate.  I do not like string beans, so I am not germinating them this late in the year to plant a garden... Just say'n...  I do however like Asian Yard Long Beans (no strings!).
+
+But the thing that got be curious was the ancient seed germination (for like the Judean Date Palm -- 2,000 years old).
+
+
+[10/8/2026 10:10 PM] zap233
+Same
+
+
+[10/8/2026 10:39 PM] ascpete_25859
+You could try a wash / soak with 1:19 mix 3% H2O2 : Water 
+and or NaDCC 50 ppm solution with sugar.
+
+{Attachments}
+https://cdn.discordapp.com/attachments/1447007475755782348/1557855020156715119/controlofbacteri115maro_NaDCCCutFlowers.pdf?ex=6af2d84c&is=6af186cc&hm=d1918e2d7b7c330497eb7a5a90fca067c1b6d9415abfe4bdfc6e16e46cacb02a&
+
+
+[10/9/2026 12:41 AM] nyoksol
+Janus green iirc is a stain you can use on a sacrificial seed to check if the tissue is even still alive... Might be worth doing a small sample before you even bother trying to germinate them
+
+
+[11/5/2026 10:07 PM] sromes2
+actually ga has https://journaljabb.com/index.php/JABB/article/view/2779
+
+
+==============================================================
+Exported 656 message(s)
+==============================================================

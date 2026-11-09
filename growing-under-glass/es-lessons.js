@@ -139,6 +139,10 @@ const esLessons = {
       {heading: "Elige un resultado observable", paragraphs: [
         "Una persona principiante puede practicar primero el traslado de una plántula limpia comprada a un recipiente adecuado con medio fresco, o su aclimatación a un sustrato. Empezar con tejido cultivado al aire libre añade el reto independiente del establecimiento. Al evaluar el éxito, distingue ambas actividades.",
         "Antes de empezar, anota cuántos recipientes tienes, cómo identificarás una plántula sana o un brote nuevo y en qué fecha contarás los resultados. Un lote pequeño y una planta de reserva ayudan a manejar un primer contratiempo."
+      ]},
+      {heading: "Adapta el protocolo a tu proyecto", paragraphs: [
+        "Comprueba que el protocolo indique la misma planta —o un cultivar o genotipo claramente pertinente— y el mismo tejido inicial y objetivo que tu proyecto. Un método para multiplicar una yema existente no sirve automáticamente para iniciar un cultivo desde una hoja, y una receta para una especie puede no funcionar en otra.",
+        "Busca el método completo y sus condiciones de cultivo, no solo una fotografía de éxito o un vídeo breve. Si falta un dato importante, consulta una fuente fiable o elige un proyecto mejor documentado en lugar de adivinarlo. Si no conoces la identidad de la planta, anótala como desconocida."
       ]}
     ]
   },
@@ -161,6 +165,15 @@ const esLessons = {
       {heading: "Organiza el espacio por zonas", paragraphs: [
         "Separa, en la medida que permita tu espacio, las zonas de preparación y lavado, transferencia limpia y crecimiento. Planifica el recorrido de los materiales limpios para que no se crucen con los sucios. Mantén los productos químicos y equipos en sus envases originales etiquetados, fuera de las zonas de convivencia y preparación de alimentos.",
         "Una caja de aire quieto reduce el movimiento del aire; una cabina de flujo laminar depende de un filtro y un flujo de aire bien mantenidos. Ninguna limpia un explanto contaminado ni garantiza el resultado. Siguen siendo necesarios la limpieza regular y el trabajo cuidadoso."
+      ]},
+      {heading: "Elige el equipo según la tarea", paragraphs: [
+        "Un microscopio es útil cuando un protocolo requiere manipular tejidos muy pequeños, como al aislar material meristemático, pero no es imprescindible para todos los proyectos de principiantes. Empieza con un protocolo que corresponda al tamaño del tejido que puedes manipular y añade aumento solo cuando el trabajo lo requiera.",
+        "Una cabina de flujo laminar es una opción especializada, no un atajo para trabajar limpiamente. Depende de una filtración y un flujo de aire adecuados y bien mantenidos; un purificador de aire para una habitación no ofrece el mismo espacio de trabajo controlado. Una caja de aire quieto puede reducir las corrientes en trabajos pequeños, pero no filtra el aire.",
+        "Para preparar medios, sigue las instrucciones del fabricante y un procedimiento adecuado para el equipo, la carga y los recipientes. No des por hecho que una olla a presión doméstica, una lectura de presión o un ciclo encontrado en internet garantizan una esterilización eficaz, y nunca modifiques equipos a presión."
+      ], note: "No utilices llamas cerca del alcohol ni de otros productos inflamables. Utiliza únicamente equipos diseñados para su propósito y no improvises recipientes ni ciclos de presión."},
+      {heading: "Ensaya antes de abrir los cultivos", paragraphs: [
+        "Coloca los recipientes receptores etiquetados, las herramientas y los demás materiales en el orden en que los usarás. Haz un ensayo con recipientes cerrados para poder alcanzar todo sin pasar por encima de recipientes abiertos ni buscar materiales durante la transferencia.",
+        "Si el espacio de trabajo es estrecho, tiene corrientes de aire o es difícil de organizar, simplifica el proyecto o mejora la preparación antes de empezar. Un flujo de trabajo tranquilo y repetible resulta más útil que añadir equipo que todavía no necesitas."
       ]}
     ]
   },
@@ -366,6 +379,10 @@ Object.assign(esLessons, {
       {heading: "Los síntomas pueden confundirse", paragraphs: [
         "El tejido marrón puede aparecer tras una lesión, oxidación u otras situaciones de estrés; un brote translúcido puede sugerir hiperhidricidad; la muerte del ápice puede tener varias causas. El aspecto es una observación inicial, no un diagnóstico.",
         "Revisa conjuntamente el medio, la planta, el recipiente, el entorno y la historia de transferencias. Si comparas tratamientos, realiza un pequeño cambio controlado en lugar de modificar la luz, el medio y los tiempos a la vez."
+      ]},
+      {heading: "Lleva un registro para investigar problemas", paragraphs: [
+        "En cada recipiente, anota la planta o donante, el explanto, el lote de medio, la sesión de transferencia, el cierre del recipiente, su ubicación en la estantería y la fecha de cada observación. Fotografía los recipientes cerrados desde un ángulo constante. Registra cuándo aparece por primera vez un síntoma en lugar de confiar en la memoria.",
+        "Compara patrones entre recipientes que comparten planta donante, lote de medio o sesión de trabajo. Un patrón puede sugerir qué investigar, pero no identifica por sí solo la causa; mantén cerrados los cultivos sospechosos y utiliza una comparación pequeña y controlada para probar un cambio plausible."
       ]}
     ]
   },

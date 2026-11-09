@@ -6,6 +6,8 @@ It includes the learning path, glossary, practical workflow, observation journal
 
 Lesson citations link to the corresponding public video or book-search listing. Catalog notes are short orientation summaries based on resource metadata, not reviews or validated protocols. Availability and prices on third-party sites may change.
 
+Community discussions inform the guide's practical questions, but their informal suggestions are not treated as validated protocols. The public lessons are editorial guidance rather than a republication of chat messages; verify plant-specific methods and equipment requirements against appropriate references and manufacturer instructions.
+
 The app is static and can be previewed from the MictlanMe site at `/growing-under-glass/`. Progress and observation entries are stored only in the visitor's browser.
 
 The practical studio also provides blank CSV templates for culture registration, observations and transfers, with fictional examples in English and Spanish. These downloads are separate from the browser journal: filling in a template does not update the journal or its comparisons.
