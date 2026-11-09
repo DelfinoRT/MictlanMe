@@ -77,6 +77,23 @@ function observationsCsv(records, labels) {
   return "\uFEFF" + rows.map(row => row.map(csvCell).join(",")).join("\r\n");
 }
 
+function trackingSheets() {
+  const text = trackingText[language];
+  return `<section class="practical-section" id="tracking-sheets"><h2>${escapeHTML(text.title)}</h2><p>${escapeHTML(text.intro)}</p>
+    <div class="tracking-sheets">${text.sheets.map(sheet => {
+      const csv = "\uFEFF" + sheet.columns.map(csvCell).join(",") + "\r\n";
+      return `<article class="tracking-sheet">
+        <h3>${escapeHTML(sheet.title)}</h3><p>${escapeHTML(sheet.description)}</p>
+        <div class="tracking-table-wrap"><table class="tracking-table"><caption>${escapeHTML(text.example)}: ${escapeHTML(sheet.title)}</caption>
+          <thead><tr>${sheet.columns.map(column => `<th scope="col">${escapeHTML(column)}</th>`).join("")}</tr></thead>
+          <tbody>${sheet.rows.map(row => `<tr>${row.map(cell => `<td>${escapeHTML(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+        </table></div>
+        <p class="tracking-reasoning"><strong>${escapeHTML(text.reasoning)}</strong> ${escapeHTML(sheet.reasoning)}</p>
+        <a class="button button-dark" href="data:text/csv;charset=utf-8,${encodeURIComponent(csv)}" download="${sheet.id}.csv">${escapeHTML(text.download)} <span aria-hidden="true">↓</span><span class="sr-only">: ${escapeHTML(sheet.title)}</span></a>
+      </article>`;
+    }).join("")}</div></section>`;
+}
+
 function practicalPage() {
   const p = practicalText[language];
   const options = (keys, labels, selected) => keys.map(key => `<option value="${key}"${key === selected ? " selected" : ""}>${escapeHTML(labels[key])}</option>`).join("");
@@ -88,6 +105,7 @@ function practicalPage() {
     <section class="practical-section"><h2>${p.stepsTitle}</h2><p>${p.stepsIntro}</p><ol class="culture-timeline">${p.steps.map(step => `<li><span class="timeline-dot" aria-hidden="true"></span><div><h3>${step.title}</h3><span class="step-time">${step.time}</span><p>${step.text}</p></div></li>`).join("")}</ol>
     <div class="note-panel"><strong>${p.timingTitle}</strong><p>${p.timing}</p></div></section>
     <section class="practical-section"><h2>${p.observationsTitle}</h2><div class="observation-grid">${p.observations.map(([title, detail], i) => `<article class="observation-card"><span class="observation-icon observation-icon-${i}" aria-hidden="true">${["○", "◉", "◐", "✳"][i]}</span><h3>${title}</h3><p>${detail}</p></article>`).join("")}</div>${illustration("culture-observation-comparison")}</section>
+    ${trackingSheets()}
     <section class="practical-section" id="journal"><h2>${p.journalTitle}</h2><p>${p.journalIntro}</p>
       ${journalReadError ? `<div class="storage-warning" role="alert">${p.corruptWarning}</div>` : journalStorageError ? `<div class="storage-warning" role="status">${p.storageWarning}</div>` : ""}
       <form id="observation-form" class="journal-form"><fieldset ${journalReadError ? "disabled" : ""}>

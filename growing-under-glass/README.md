@@ -8,6 +8,8 @@ Lesson citations link to the corresponding public video or book-search listing. 
 
 The app is static and can be previewed from the MictlanMe site at `/growing-under-glass/`. Progress and observation entries are stored only in the visitor's browser.
 
+The practical studio also provides blank CSV templates for culture registration, observations and transfers, with fictional examples in English and Spanish. These downloads are separate from the browser journal: filling in a template does not update the journal or its comparisons.
+
 ## Subdomain hosting
 
 A directory in the existing MictlanMe repository creates a path on `mictlan.me`; it does not create a subdomain. To serve this app at a subdomain such as `grow.mictlan.me`, publish this directory as its own site (for example, from a separate GitHub Pages repository) and configure the subdomain's DNS record and custom domain with that host. The DNS provider is not configured in this repository.
