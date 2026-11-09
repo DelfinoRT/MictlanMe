@@ -2,7 +2,9 @@
 
 This is the public edition of the plant tissue culture guide integrated into the MictlanMe site.
 
-It includes the learning path, glossary, practical workflow, observation journal and illustrations. It intentionally excludes the local book and transcript collection, its extracted full-text index, OCR cache, and source files. Lesson references to that private collection are omitted; links to external references remain where available.
+It includes the learning path, glossary, practical workflow, observation journal, illustrations, and a searchable catalog of bibliographic titles and editorial notes. The catalog links to the original YouTube videos and to external searches for books and documents. It does not include local books, PDFs, transcripts, the extracted full-text index, OCR cache, excerpts, or transcript text. Catalog search covers titles and notes only; it is not full-text search.
+
+Lesson citations link to the corresponding public video or book-search listing. Catalog notes are short orientation summaries based on resource metadata, not reviews or validated protocols. Availability and prices on third-party sites may change.
 
 The app is static and can be previewed from the MictlanMe site at `/growing-under-glass/`. Progress and observation entries are stored only in the visitor's browser.
 

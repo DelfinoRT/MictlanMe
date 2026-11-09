@@ -2,13 +2,10 @@
 
 const content = document.querySelector("#content");
 const topLabel = document.querySelector("#top-label");
-const publicEdition = true;
 const storageKey = "growing-under-glass-progress-v1";
 const languageKey = "growing-under-glass-language-v1";
 let language = "en";
 let completed = [];
-let index = null;
-let indexError = "";
 let libraryQuery = "";
 let libraryKind = "all";
 let storageError = false;
@@ -33,7 +30,7 @@ const escapeHTML = value => String(value).replace(/[&<>"']/g, char => ({
 })[char]);
 const pad = number => String(number).padStart(2, "0");
 const timeLabel = seconds => `${pad(Math.floor(seconds / 60))}:${pad(seconds % 60)}`;
-const sourceById = id => index?.sources.find(source => source.id === id);
+const resourceById = id => resources.find(resource => resource.id === id);
 const t = () => messages[language];
 const localizedLesson = lesson => language === "es"
   ? {...lesson, ...esLessons[lesson.id], category: esCategories[lesson.category], time: t().readTime(lesson.time.match(/^\d+/)[0])}
@@ -49,35 +46,19 @@ const referenceDetail = detail => {
   };
   return parts.length > 1 ? parts.map(part => labels[part] || part).join(" · ") : t().external;
 };
-const issueText = issue => {
-  if (language === "en") return escapeHTML(issue);
-  let match;
-  if ((match = issue.match(/^The PDF extractor reported (\d+) encoding or parsing warnings; check the original for text accuracy\.$/)))
-    return `El extractor del PDF informó de ${match[1]} avisos de codificación o análisis; comprueba la exactitud del texto en el original.`;
-  if ((match = issue.match(/^(\d+) of (\d+) pages have fewer than 100 extracted characters; they may be blank, image-based, or poorly extracted\.$/)))
-    return `${match[1]} de ${match[2]} páginas tienen menos de 100 caracteres extraídos; pueden estar en blanco, ser imágenes o haberse extraído incorrectamente.`;
-  if ((match = issue.match(/^OCR was attempted on (\d+) pages\. OCR may contain errors; verify against the original\.$/)))
-    return `Se intentó aplicar OCR a ${match[1]} páginas. El OCR puede contener errores; comprueba el original.`;
-  if (issue === "Most pages have little extractable text. OCR or manual review is needed; no OCR was performed.")
-    return "La mayoría de las páginas tienen poco texto extraíble. Se necesita OCR o revisión manual; no se aplicó OCR.";
-  if ((match = issue.match(/^Page (\d+) extraction failed: (.*)$/)))
-    return `Falló la extracción de la página ${match[1]}. ${t().errorOriginal}: <span lang="en">${escapeHTML(match[2])}</span>`;
-  if ((match = issue.match(/^Source extraction failed: (.*)$/)))
-    return `Falló la extracción de la fuente. ${t().errorOriginal}: <span lang="en">${escapeHTML(match[1])}</span>`;
-  return `${t().errorOriginal}: <span lang="en">${escapeHTML(issue)}</span>`;
+const resourceSearchLink = resource => {
+  const query = `"${resource.title}"${resource.isbn ? ` ${resource.isbn}` : ""}`;
+  return `https://books.google.com/books?q=${encodeURIComponent(query)}`;
 };
-const sourceLink = (source, location = {}) => source.kind === "video" && source.url
-  ? `${source.url}${location.at !== undefined ? `&t=${location.at}s` : ""}`
-  : `../${encodeURIComponent(source.id)}${location.page ? `#page=${location.page}` : ""}`;
 const reference = ref => {
   if (ref.url) return `<li><a href="${escapeHTML(ref.url)}" target="_blank" rel="noopener noreferrer"><span lang="en">${escapeHTML(ref.title)}</span><span>${escapeHTML(referenceDetail(ref.detail))} ↗</span></a></li>`;
-  if (publicEdition) return "";
-  const source = sourceById(ref.id);
-  if (!index && !indexError) return `<li>${t().sourceLoading}</li>`;
-  if (!index) return `<li class="reference-missing">${t().sourceUnavailable}: ${escapeHTML(ref.id)}</li>`;
-  if (!source) return `<li class="reference-missing">${t().sourceMissing}: ${escapeHTML(ref.id)}</li>`;
-  const place = ref.page ? t().pdfPage(ref.page) : ref.at !== undefined ? timeLabel(ref.at) : source.kind === "text" ? t().textSource : t().source;
-  return `<li><a href="${escapeHTML(sourceLink(source, ref))}" target="_blank" rel="noopener noreferrer"><span lang="en">${escapeHTML(source.title)}</span><span>${place} ↗</span></a></li>`;
+  const resource = resourceById(ref.id);
+  if (!resource) return `<li class="reference-missing">${t().referenceUnavailable}</li>`;
+  const href = resource.kind === "video" && ref.at !== undefined
+    ? `${resource.url}&t=${Math.floor(ref.at)}s`
+    : resource.kind === "video" ? resource.url : resourceSearchLink(resource);
+  const place = ref.page ? t().pdfPage(ref.page) : ref.at !== undefined ? timeLabel(ref.at) : t().resourceLinkLabel;
+  return `<li><a href="${escapeHTML(href)}" target="_blank" rel="noopener noreferrer"><span lang="en">${escapeHTML(resource.title)}</span><span>${place} ↗</span></a></li>`;
 };
 const lessonCard = (original, position) => {
   const lesson = localizedLesson(original);
@@ -138,7 +119,7 @@ function learn() {
 function lessonPage(original) {
   const number = lessons.indexOf(original);
   const lesson = localizedLesson(original);
-  const publicReferences = original.refs.filter(ref => ref.url);
+  const publicReferences = original.refs.filter(ref => ref.url || resourceById(ref.id));
   return `<div class="content-wrap lesson-layout"><article>
     <a class="back-link" href="#learn">← ${t().allLessons}</a>
     <div class="lesson-header"><span class="section-kicker">${t().lesson} ${pad(number + 1)} &nbsp; / &nbsp; ${lesson.category} &nbsp; / &nbsp; ${lesson.time}</span><h1>${lesson.title}<span class="heading-dot">.</span></h1><p>${lesson.intro}</p></div>
@@ -152,38 +133,24 @@ function lessonPage(original) {
 function renderLibraryResults() {
   const results = document.querySelector("#library-results");
   if (!results) return;
-  if (!index) {
-    results.innerHTML = indexError ? `<div class="empty-state"><strong>${t().loadFailed}</strong><p>${t().errorOriginal}: <span lang="en">${escapeHTML(indexError)}</span>. ${t().loadHint}</p></div>` : `<p class="muted">${t().loading}</p>`;
-    return;
-  }
   const query = libraryQuery.trim().toLocaleLowerCase();
-  const filtered = index.sources.filter(source => libraryKind === "all" || source.kind === libraryKind);
-  if (!query) {
-    results.innerHTML = `<div class="result-heading"><strong>${t().sourceCount(filtered.length)}</strong><span>${t().browseHint}</span></div><div class="source-list">${filtered.map(source => `
-      <article class="source-row"><div class="source-icon">${source.kind === "pdf" ? "▤" : source.kind === "text" ? "≡" : "▷"}</div><div><span class="source-type">${source.kind === "pdf" ? `PDF · ${t().pages(source.pages ?? "?")}` : source.kind === "text" ? t().textSource : t().transcript}</span><h3 lang="en">${escapeHTML(source.title)}</h3><p>${t().indexed(source.segments.length, source.kind)}${source.issues.length ? ` · ${t().issues(source.issues.length)}` : ""}</p>${source.issues.length ? `<details><summary>${t().extraction}</summary>${source.issues.map(issue => `<p>${issueText(issue)}</p>`).join("")}</details>` : ""}</div><a class="source-open" href="${escapeHTML(sourceLink(source))}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHTML(t().open(source.title))}">↗</a></article>`).join("")}</div>`;
-    return;
-  }
-  const matches = [];
-  for (const source of filtered) {
-    for (const segment of source.segments) {
-      const position = segment.text.toLocaleLowerCase().indexOf(query);
-      if (position !== -1) matches.push({source, segment, position});
-    }
-  }
-  results.innerHTML = `<div class="result-heading"><strong>${t().matches(matches.length)}</strong><span>${matches.length > 50 ? t().first50 : t().localSources}</span></div>${matches.length ? `<div class="source-list">${matches.slice(0, 50).map(({source, segment, position}) => {
-    const start = Math.max(0, position - 100);
-    const end = Math.min(segment.text.length, position + query.length + 150);
-    const snippet = `${start ? "…" : ""}${segment.text.slice(start, end)}${end < segment.text.length ? "…" : ""}`;
-    const location = source.kind === "text" ? t().textPart(segment.part) : segment.page ? `${t().pdfResult(segment.page)}${segment.ocr ? ` · ${t().ocrText}` : ""}` : `${t().videoResult} · ${timeLabel(segment.at)}`;
-    return `<article class="search-result"><div class="source-type">${location}</div><h3 lang="en">${escapeHTML(source.title)}</h3><p lang="en">${escapeHTML(snippet)}</p><a href="${escapeHTML(sourceLink(source, segment))}" target="_blank" rel="noopener noreferrer">${t().openOriginal} ↗</a></article>`;
-  }).join("")}</div>` : `<div class="empty-state"><strong>${t().noPassages}</strong><p>${t().trySearch}</p></div>`}`;
+  const filtered = resources.filter(resource =>
+    (libraryKind === "all" || resource.kind === libraryKind) &&
+    `${resource.title} ${resource.note} ${resource.noteEs} ${resource.isbn || ""}`.toLocaleLowerCase().includes(query)
+  );
+  results.innerHTML = filtered.length
+    ? `<div class="result-heading"><strong>${t().resourceCount(filtered.length)}</strong><span>${t().catalogSearchNote}</span></div><div class="resource-grid">${filtered.map(resource => `
+      <article class="resource-card"><span class="source-type">${resource.kind === "video" ? t().videoLabel : t().bookLabel}${resource.pages ? ` · ${t().pageCount(resource.pages)}` : ""}</span><h2 lang="en">${escapeHTML(resource.title)}</h2><p>${escapeHTML(language === "es" ? resource.noteEs : resource.note)}</p><div class="resource-actions">${resource.kind === "video"
+        ? `<a href="${escapeHTML(resource.url)}" target="_blank" rel="noopener noreferrer">${t().watchVideo} ↗</a>`
+        : `<a href="${escapeHTML(resourceSearchLink(resource))}" target="_blank" rel="noopener noreferrer">${t().findBook} ↗</a>`}</div></article>`).join("")}</div>`
+    : `<div class="empty-state"><strong>${t().noResources}</strong><p>${t().tryResourceSearch}</p></div>`;
 }
 
 function library() {
-  if (publicEdition) return `<div class="content-wrap inner-page"><div class="page-heading"><span class="section-kicker">${t().libraryKicker}</span><h1>${t().libraryOne} <em>${t().libraryTwo}</em></h1><p>${t().libraryIntro}</p></div><div class="note-panel">${t().publicLibraryNote}</div><a class="button button-dark" href="#learn">${t().viewAll} <span>↗</span></a></div>`;
   return `<div class="content-wrap inner-page"><div class="page-heading"><span class="section-kicker">${t().libraryKicker}</span><h1>${t().libraryOne} <em>${t().libraryTwo}</em></h1><p>${t().libraryIntro}</p></div>
-    <div class="library-tools"><label for="source-search">${t().searchLabel}</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="source-search" type="search" value="${escapeHTML(libraryQuery)}" placeholder="${escapeHTML(t().searchPlaceholder)}" autocomplete="off"></div><div class="filters" role="group" aria-label="${t().filterLabel}"><button data-filter="all" class="${libraryKind === "all" ? "selected" : ""}" aria-pressed="${libraryKind === "all"}">${t().allSources}</button><button data-filter="pdf" class="${libraryKind === "pdf" ? "selected" : ""}" aria-pressed="${libraryKind === "pdf"}">${t().pdfs}</button><button data-filter="video" class="${libraryKind === "video" ? "selected" : ""}" aria-pressed="${libraryKind === "video"}">${t().videos}</button><button data-filter="text" class="${libraryKind === "text" ? "selected" : ""}" aria-pressed="${libraryKind === "text"}">${t().texts}</button></div></div>
-    <div class="library-note"><strong>${t().aboutSources}</strong> ${t().libraryNote}${language === "es" ? ` <p>${t().originalLanguage}</p>` : ""}</div><div id="library-results" aria-live="polite"></div></div>`;
+    <div class="library-note"><strong>${t().catalogNoteTitle}</strong> ${t().catalogNote}</div>
+    <div class="library-tools"><label for="resource-search">${t().searchLabel}</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="resource-search" type="search" value="${escapeHTML(libraryQuery)}" placeholder="${escapeHTML(t().searchPlaceholder)}" autocomplete="off"></div><div class="filters" role="group" aria-label="${t().filterLabel}"><button data-filter="all" class="${libraryKind === "all" ? "selected" : ""}" aria-pressed="${libraryKind === "all"}">${t().allSources}</button><button data-filter="book" class="${libraryKind === "book" ? "selected" : ""}" aria-pressed="${libraryKind === "book"}">${t().books}</button><button data-filter="video" class="${libraryKind === "video" ? "selected" : ""}" aria-pressed="${libraryKind === "video"}">${t().videos}</button></div></div>
+    <div id="library-results" aria-live="polite"></div></div>`;
 }
 
 function glossaryPage() {
@@ -205,7 +172,7 @@ function render() {
   if (selected === "practical") bindPracticalPage();
   if (selected === "library") {
     renderLibraryResults();
-    const search = document.querySelector("#source-search");
+    const search = document.querySelector("#resource-search");
     if (search) search.addEventListener("input", () => { libraryQuery = search.value; renderLibraryResults(); });
     document.querySelectorAll("[data-filter]").forEach(button => button.addEventListener("click", () => {
       libraryKind = button.dataset.filter;
